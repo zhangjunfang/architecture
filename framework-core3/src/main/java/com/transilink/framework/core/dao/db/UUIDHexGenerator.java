@@ -3,9 +3,12 @@ package com.transilink.framework.core.dao.db;
 import java.net.InetAddress;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
 public class UUIDHexGenerator implements UUIDGenerator {
 	private String sep = "";
@@ -70,7 +73,6 @@ public class UUIDHexGenerator implements UUIDGenerator {
 	}
 
 	public static void main(String[] str) {
-		UUIDHexGenerator id = new UUIDHexGenerator();
 		for (int i = 0; i <= 100; i++)
 			new Thread() {
 				public void run() {

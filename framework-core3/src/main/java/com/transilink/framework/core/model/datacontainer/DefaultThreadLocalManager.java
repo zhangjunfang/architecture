@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  */
 public class DefaultThreadLocalManager implements ThreadLocalManager {
-	private static ConcurrentHashMap<String, ThreadLocalContainer> allContainers = new ConcurrentHashMap();
+	private static ConcurrentHashMap<String, ThreadLocalContainer> allContainers = new ConcurrentHashMap<String, ThreadLocalContainer>();
 	private static ThreadLocalContainer appContainer = new ThreadLocalContainer();
 	private static ThreadLocalContainer appFrameworkContainer = new ThreadLocalContainer();
 	private static ThreadLocalContainer frameworkContainer = new ThreadLocalContainer();

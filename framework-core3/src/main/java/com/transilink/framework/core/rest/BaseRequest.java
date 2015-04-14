@@ -12,10 +12,14 @@ import org.restlet.data.Request;
 import com.transilink.framework.core.model.FileAttach;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
+@SuppressWarnings("rawtypes")
 public abstract interface BaseRequest {
 	public abstract JSONObject getJSONObject();
 

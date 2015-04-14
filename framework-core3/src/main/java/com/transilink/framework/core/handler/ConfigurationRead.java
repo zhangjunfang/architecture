@@ -21,6 +21,7 @@ import com.transilink.framework.core.logs.LogEnabled;
  *
  */
 @Component
+@SuppressWarnings("rawtypes")
 public class ConfigurationRead implements LogEnabled {
 	private List<String> PFILE = null;
 
@@ -28,6 +29,7 @@ public class ConfigurationRead implements LogEnabled {
 
 	private Properties m_props = null;
 
+	@SuppressWarnings("unused")
 	private ConfigurationRead() {
 	}
 
@@ -71,6 +73,7 @@ public class ConfigurationRead implements LogEnabled {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<File> getFile(List<String> PFILE) throws URISyntaxException {
 		List files = new ArrayList();
 		if ((PFILE != null) && (PFILE.size() > 0)) {

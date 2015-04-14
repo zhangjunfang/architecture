@@ -10,9 +10,11 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public abstract class SafeDataContainer extends DataContainer {
 	private static final long serialVersionUID = 1L;
-	private Map<String, Boolean> readControlInfo = new ConcurrentHashMap();
+	@SuppressWarnings("unused")
+	private Map<String, Boolean> readControlInfo = new ConcurrentHashMap<String, Boolean>();
 
-	private Map<String, Boolean> writeControlInfo = new ConcurrentHashMap();
+	@SuppressWarnings("unused")
+	private Map<String, Boolean> writeControlInfo = new ConcurrentHashMap<String, Boolean>();
 
 	public Object getSafeValue(Property property) {
 		return super.getValue(property);

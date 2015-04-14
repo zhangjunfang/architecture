@@ -14,7 +14,9 @@ import com.transilink.framework.core.model.dbmeta.DBTable;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public abstract interface DbEngineService extends LogEnabled {
+	
 	public abstract List query(String paramString, Class paramClass,
 			boolean paramBoolean) throws BaseException;
 

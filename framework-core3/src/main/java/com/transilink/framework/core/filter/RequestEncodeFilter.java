@@ -18,7 +18,6 @@ import com.transilink.framework.core.utils.httpUtils.EscapeUtil;
  *
  */
 public class RequestEncodeFilter implements Filter {
-	private static final long serialVersionUID = 1530445419380216782L;
 	private String fromChartSet;
 	private String toChartSet;
 

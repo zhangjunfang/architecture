@@ -16,8 +16,10 @@ import com.transilink.framework.core.logs.LogEnabled;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("unused")
 public class SessionFactoryAutoDialectBean extends AnnotationSessionFactoryBean
 		implements LogEnabled {
+	
 	private static final String PROPERTY_NAME_DIALECT = "hibernate.dialect";
 	private static final String ORACLE_TYPE = "Oracle";
 	private static final String MYSQL_TYPE = "MySQL";

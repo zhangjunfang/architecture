@@ -12,12 +12,6 @@
 	<name>transilink :: foundation :: cppt</name>
 	<url>http://www.transilink.com</url>
 
-	<repositories>
-		<repository>
-			<id>repo1.transilink.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.transilink.com</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -32,7 +26,6 @@
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
-			<version>0.9.1.2</version>
 		</dependency>
 		<!--spring begin -->
 		<dependency>
@@ -146,12 +139,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.3</version>
 				<executions>
 					<execution>
 						<id>passport-server-jar</id>

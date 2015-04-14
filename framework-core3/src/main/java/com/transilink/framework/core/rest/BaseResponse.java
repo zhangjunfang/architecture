@@ -8,11 +8,15 @@ import org.restlet.data.Response;
 import org.restlet.resource.Representation;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
 public abstract interface BaseResponse {
+	@SuppressWarnings("rawtypes")
 	public abstract void toMultiView(String paramString, Map paramMap);
 
 	public abstract void print(Representation paramRepresentation);

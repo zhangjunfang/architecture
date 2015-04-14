@@ -243,6 +243,7 @@ public class JSONTools {
 		return result;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public static JSONArray parseToJSONObject(List list, JsonConfig jsonConfig) {
 		JSONArray result = null;
 		if (jsonConfig == null) {

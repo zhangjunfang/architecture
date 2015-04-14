@@ -38,6 +38,7 @@ public class SpringConext implements ApplicationContextAware,
 		return servletContext;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void setServletContext(ServletContext servletContext) {
 		this.servletContext = servletContext;

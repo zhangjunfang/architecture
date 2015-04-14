@@ -12,6 +12,10 @@ import org.apache.commons.lang.ObjectUtils;
  *
  */
 public class Variant implements Serializable, Cloneable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2290046135176718648L;
 	private int dataType;
 	private String name;
 	private Object value;

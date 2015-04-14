@@ -19,12 +19,14 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
 /**
- * 功能描述: Excel操纵类
- *
- * @author huangxin (3203317@qq.com)
- * @date 2011-4-22
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
+@SuppressWarnings({"deprecation","rawtypes"})
 public class ExcelTemplate {
 	private static Log logger = LogFactory.getLog(ExcelTemplate.class);
 	private static final String DATAS = "datas";
@@ -147,7 +149,7 @@ public class ExcelTemplate {
 		cell.setCellValue(currentRowIndex + num);
 	}
 
-	@SuppressWarnings("deprecation")
+	
 	private HSSFCell createCell() {
 		HSSFCell cell = currentRow.createCell((short) currentcol++);
 		cell.setEncoding(HSSFCell.ENCODING_UTF_16);
@@ -236,7 +238,7 @@ public class ExcelTemplate {
 			if (row == null)
 				continue;
 			int cellLength = row.getLastCellNum();
-			int rownum = row.getRowNum();
+			//int rownum = row.getRowNum();
 			for (int i = 0; i < cellLength; i++) {
 				HSSFCell cell = (HSSFCell) row.getCell((short) i);
 				if (cell == null)
@@ -272,6 +274,7 @@ public class ExcelTemplate {
 	/**
 	 * 读取模板中其它单元格的样式配置
 	 */
+	@SuppressWarnings("unchecked")
 	private void readCellStyles() {
 		Iterator rowit = sheet.rowIterator();
 		while (rowit.hasNext()) {

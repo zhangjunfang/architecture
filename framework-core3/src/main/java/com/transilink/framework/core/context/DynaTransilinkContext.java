@@ -8,6 +8,7 @@ import java.util.Map;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class DynaTransilinkContext extends AbstractTransilinkContext {
 	private Map cache;
 
@@ -35,6 +36,7 @@ public class DynaTransilinkContext extends AbstractTransilinkContext {
 		this.cache.remove(a(i, s));
 	}
 
+	@SuppressWarnings("unchecked")
 	public void setAttribute(int i, String s, Object obj) {
 		this.cache.put(a(i, s), obj);
 	}

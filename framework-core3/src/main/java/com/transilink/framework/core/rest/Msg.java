@@ -15,11 +15,12 @@ import org.restlet.resource.StringRepresentation;
 import com.transilink.framework.core.utils.stringUtils.JsonDateValueProcessor;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- * @修改时间
- * @<p>2014-12-22 15:28</p>
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
 public class Msg {
 	protected Logger log = Logger.getLogger(getClass());

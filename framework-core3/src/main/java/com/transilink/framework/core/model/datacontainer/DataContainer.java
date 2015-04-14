@@ -14,8 +14,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class DataContainer implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private Map<String, Object> propertyValueMap = new HashMap();
-	private Map<String, Property> propertyMap = new HashMap();
+	private Map<String, Object> propertyValueMap = new HashMap<String, Object>();
+	private Map<String, Property> propertyMap = new HashMap<String, Property>();
 
 	protected void init(Property[][] properties) {
 		for (Property[] ps : properties)

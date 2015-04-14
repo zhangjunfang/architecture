@@ -5,6 +5,7 @@ package com.transilink.framework.core.model.variant;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public final class DataType {
 	public static final String UNKNOWN_NAME = "";
 	public static final int UNKNOWN = 0;
@@ -38,6 +39,7 @@ public final class DataType {
 
 	static Class byteClazz = getClazz("java.lang.Byte");
 
+	
 	static Class doubleClazz = getClazz("java.lang.Double");
 
 	static Class floatClazz = getClazz("java.lang.Float");
@@ -70,6 +72,7 @@ public final class DataType {
 		return (10 <= dataType) && (dataType <= 12);
 	}
 
+	@SuppressWarnings("unchecked")
 	public static final boolean isBaseDataType(Class clazz) {
 		if (clazz.isPrimitive()) {
 			return true;

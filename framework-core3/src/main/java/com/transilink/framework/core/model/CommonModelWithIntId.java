@@ -18,6 +18,11 @@ import com.transilink.framework.core.model.datacontainer.Property;
  */
 @MappedSuperclass
 public class CommonModelWithIntId extends DataContainer implements DataObject {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1149816842528190867L;
+
 	public CommonModelWithIntId() {
 		init(new Property[][] { Base2ModelProperty.values() });
 	}

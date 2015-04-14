@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  */
 public class UrlMapping {
-	public static Map<String, String> loadUrlMap = new ConcurrentHashMap();
+	public static Map<String, String> loadUrlMap = new ConcurrentHashMap<String, String>();
 
-	public static Map<String, String> loadFrameworkMap = new ConcurrentHashMap();
+	public static Map<String, String> loadFrameworkMap = new ConcurrentHashMap<String, String>();
 }

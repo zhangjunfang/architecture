@@ -25,6 +25,7 @@ public class NspApplicationContextInterceptor extends HandlerInterceptorAdapter
 		return true;
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {

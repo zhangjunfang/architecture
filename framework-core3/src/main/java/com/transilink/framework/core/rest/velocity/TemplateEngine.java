@@ -2,8 +2,6 @@ package com.transilink.framework.core.rest.velocity;
 
 import java.io.StringWriter;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.velocity.Template;
 import org.apache.velocity.app.Velocity;
 import org.apache.velocity.context.Context;
@@ -12,20 +10,19 @@ import org.springframework.web.servlet.view.velocity.VelocityConfigurer;
 import com.transilink.framework.core.utils.springUtils.SpringConext;
 
 /**
- *
+ * 
+ * 描述：
  * <p>
  * 模版视图数据合成处理工具类
  * </p>
  * <p>
  * 暂只支持Velocity模版视图
  * </p>
- *
- * @author huangxin (3203317@qq.com)
- *
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
 public class TemplateEngine {
-	private static final Log log = LogFactory.getLog(TemplateEngine.class);
-
 	public static String parse(String templatePath, Context context)
 			throws Exception {
 		// 获取spring中velocity环境配置

@@ -2,8 +2,6 @@ package com.transilink.framework.core.rest;
 
 import java.util.Map;
 
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.apache.velocity.context.Context;
 import org.json.JSONObject;
@@ -79,8 +77,8 @@ public class BaseResponseImpl implements BaseResponse, LogEnabled {
 		return this.response;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public void toMultiView(String url, Map model) {
-		HttpServletResponse result = null;
-		result = WebUtils.getResponse(this.response.getRequest());
+		 WebUtils.getResponse(this.response.getRequest());
 	}
 }

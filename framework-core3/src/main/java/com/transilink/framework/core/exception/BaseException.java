@@ -10,7 +10,12 @@ import java.util.Collection;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class BaseException extends SysException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4879914894394409680L;
 	private Collection exceptions = new ArrayList();
 	private String messageKey = null;
 	private Object[] messageArgs = null;
@@ -31,10 +36,12 @@ public class BaseException extends SysException {
 		this.rootCause = cause;
 	}
 
+	
 	public Collection getCollection() {
 		return this.exceptions;
 	}
 
+	@SuppressWarnings("unchecked")
 	public void addException(BaseException ex) {
 		this.exceptions.add(ex);
 	}

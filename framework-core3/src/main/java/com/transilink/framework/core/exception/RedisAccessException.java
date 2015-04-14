@@ -10,7 +10,13 @@ import java.util.Collection;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class RedisAccessException extends SysException {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7775659323035256989L;
 	private Collection exceptions = new ArrayList();
 	private String messageKey = null;
 	private Object[] messageArgs = null;
@@ -35,6 +41,7 @@ public class RedisAccessException extends SysException {
 		return this.exceptions;
 	}
 
+	@SuppressWarnings("unchecked")
 	public void addException(RedisAccessException ex) {
 		this.exceptions.add(ex);
 	}

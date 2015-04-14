@@ -1304,3 +1304,2075 @@ Caused by: java.lang.NullPointerException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:07.010
 !MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 15:38:08.649
+!MESSAGE Could not download sources for jstl:jstl:1.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 15:38:10.917
+!MESSAGE Could not download sources for javax.servlet:servlet-api:2.5
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:10.925
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:17.319
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:17.323
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:17.347
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:17.349
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:38:18.163
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:40:03.951
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 15:40:04.234
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:56.795
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:57.038
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:57.112
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:57.247
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:57.622
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:41:58.067
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 15:41:58.284
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 15:41:59.735
+!MESSAGE Unable to configure foundation-cppt2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:06.067
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:10.069
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.096
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.314
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.319
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.345
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.348
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.350
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:21.823
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.039
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.182
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.185
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.204
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.206
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:23.208
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:24.013
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:25.295
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:25.300
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:25.326
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:25.329
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:42:25.509
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:17.741
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:17.744
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:17.768
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:17.770
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:17.967
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:27.540
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:27.544
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:27.571
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:27.574
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:43:27.827
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 15:45:09.776
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.ui 4 4 2015-04-14 16:09:33.589
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@394ad4c1)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@36f497b1)}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:12.723
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:12.948
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:12.980
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:13.073
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:13.700
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:13.999
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:21:14.224
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:21:17.074
+!MESSAGE Unable to configure foundation-cppt2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:29.910
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.527
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.675
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.680
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.700
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.702
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.704
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:33.873
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:36.859
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:36.980
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:36.984
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:37.002
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:37.003
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:37.005
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:37.175
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:39.560
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:39.565
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:39.585
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:39.588
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:21:39.829
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:24:05.824
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:24:05.940
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:24:58.086
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:24:58.090
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.core.resources 2 2 2015-04-14 16:25:16.794
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-04-14 16:25:16.794
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:26:22.209
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:26:22.214
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:30:40.944
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:30:41.235
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:30:42.907
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:30:42.911
+!MESSAGE Project read error
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:22.549
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:31:22.885
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:23.921
+!MESSAGE The POM for org.restlet:org.restlet:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:23.957
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:23.960
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:23.963
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:24.210
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:26.310
+!MESSAGE The POM for org.restlet:org.restlet:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:26.347
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:26.350
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:31:26.354
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.239
+!MESSAGE The POM for org.restlet:org.restlet:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.272
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.275
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.278
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.548
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:06.912
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:15.665
+!MESSAGE The POM for org.restlet:org.restlet:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:15.711
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:15.713
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:15.716
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:15.995
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:17.599
+!MESSAGE The POM for org.restlet:org.restlet:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:17.624
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:17.626
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:32:17.629
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:2.3.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:20.367
+!MESSAGE Could not download sources for org.restlet:org.restlet:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:22.833
+!MESSAGE Could not download sources for org.restlet:org.restlet:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:25.411
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.spring:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:27.888
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.spring:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:29.899
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.fileupload:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:32.351
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.velocity:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:34.827
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.velocity:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:34.833
+!MESSAGE Could not download sources for org.restlet:org.restlet:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:32:34.837
+!MESSAGE Could not download sources for org.restlet:org.restlet:2.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:10.626
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:10.659
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:10.661
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:10.664
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:10.869
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:11.181
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:33:11.444
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to transfer com.transilink:framework-config:pom:1.0.43 from http://localhost:8082/nexus/content/repositories/repo1.transilink.com was cached in the local repository, resolution will not be reattempted until the update interval of repo1.transilink.com has elapsed or updates are forced. Original error: Could not transfer artifact com.transilink:framework-config:pom:1.0.43 from/to repo1.transilink.com (http://localhost:8082/nexus/content/repositories/repo1.transilink.com): Connection refused: connect for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:12.686
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:12.714
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:12.716
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:12.719
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:12.939
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:13.261
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:13.311
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:13.314
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:33:13.318
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:33:16.217
+!MESSAGE Could not download sources for org.restlet:org.restlet:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:33:18.228
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.spring:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:33:20.241
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.velocity:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:26.708
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:26.732
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:26.734
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:26.737
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:26.937
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:27.219
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:27.247
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:27.250
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:27.252
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:27.423
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:29.533
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:29.570
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:29.573
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:29.576
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:29.830
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:46.717
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:46.745
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:46.748
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:46.750
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:47.356
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:47.875
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:47.899
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:47.901
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:47.904
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:34:48.081
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:27.578
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:27.601
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:27.967
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:27.973
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:28.155
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.009
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:43:29.312
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to find com.transilink:framework-config:pom:1.0.43 in http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.332
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.356
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.359
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.362
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:29.579
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.264
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.288
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.291
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.294
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.493
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.689
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.703
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.713
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.715
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.718
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.728
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.731
+!MESSAGE The POM for org.restlet:org.restlet.ext.fileupload:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.733
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:43:30.939
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:43:31.528
+!MESSAGE Could not download sources for org.restlet:org.restlet:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:43:31.987
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.fileupload:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:43:32.400
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.fileupload:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:56.941
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:56.962
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:56.975
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.163
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.359
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:46:57.511
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to find com.transilink:framework-config:pom:1.0.43 in http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.530
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.553
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.560
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:57.738
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:58.372
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:58.408
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:58.421
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:58.593
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.347
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.355
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.382
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.388
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.391
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.398
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:46:59.593
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:47:00.962
+!MESSAGE Could not download sources for org.restlet:org.restlet.ext.fileupload:1.1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:01.496
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:01.536
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:01.549
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:02.023
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:02.316
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:47:03.972
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to find com.transilink:framework-config:pom:1.0.43 in http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.002
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.027
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.036
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.227
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.749
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.780
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.793
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:04.959
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:05.137
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:05.166
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:05.174
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:09.408
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:09.451
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:09.468
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:09.772
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:44.792
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:44.817
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:44.826
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:45.000
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:45.548
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:47:45.822
+!MESSAGE Failed to build parent project for com.transilink:foundation-cppt:war:1.0.1 Error resolving project artifact: Failure to find com.transilink:framework-config:pom:1.0.43 in http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced for project com.transilink:framework-config:pom:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:45.841
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:45.863
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:45.871
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:46.049
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:46.448
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:46.475
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:46.483
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:46.640
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.128
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.143
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.162
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.174
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.174
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.187
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:47:47.395
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:45.780
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:45.913
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:45.920
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:45.946
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:46.686
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:46.891
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:47.454
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:47.461
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:47.495
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:47.497
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:51:47.749
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:30.722
+!MESSAGE The POM for oracle.jdbc.oracle:ojdbc14:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:30.729
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:30.751
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:30.759
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:30.913
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:31.972
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:32.190
+!MESSAGE The POM for oracle.jdbc.oracle:ojdbc14:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:32.201
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:32.237
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:32.250
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:32.468
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:33.088
+!MESSAGE The POM for oracle.jdbc.oracle:ojdbc14:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:33.100
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:33.165
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:33.182
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:33.413
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:58:34.547
+!MESSAGE Could not download sources for oracle.jdbc.oracle:ojdbc14:14
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:58:35.180
+!MESSAGE Could not download sources for oracle.jdbc.oracle:ojdbc14:14
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:35.190
+!MESSAGE The POM for oracle.jdbc.oracle:ojdbc14:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:35.200
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:35.237
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:35.252
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:58:35.559
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:27.716
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:27.732
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:27.754
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:27.762
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:27.910
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.156
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.448
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.467
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.508
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.518
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:29.684
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:30.252
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:30.264
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:30.300
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:30.314
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:30.499
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:59:31.630
+!MESSAGE Could not download sources for oracle.jdbc.oracle:oracle:14
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:31.631
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:31.644
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:31.673
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:31.683
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:31.889
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 16:59:32.231
+!MESSAGE Could not download sources for oracle.jdbc.oracle:oracle:14
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:32.233
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:32.318
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:32.483
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:32.498
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:32.677
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:33.492
+!MESSAGE The POM for oracle.jdbc.oracle:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:33.505
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:33.549
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:33.560
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 16:59:33.748
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:36.621
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:36.638
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:36.671
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:36.681
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:36.832
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:37.668
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:37.953
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:37.965
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:37.994
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:38.002
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:38.191
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:39.911
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:39.925
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:39.949
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:39.958
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:40.139
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 17:00:41.634
+!MESSAGE Could not download sources for oracle.jdbc:oracle:14
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-04-14 17:00:45.156
+!MESSAGE Could not download sources for oracle.jdbc:oracle:14
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:45.162
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:45.187
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:45.214
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:45.222
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:00:45.389
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:11.310
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:11.317
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:11.339
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:11.348
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:11.503
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:15.130
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:15.137
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:15.160
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:15.168
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:15.319
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:59.766
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:59.776
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:59.804
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:59.813
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:01:59.970
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:05.793
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:05.804
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:05.837
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:05.847
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:06.032
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:33.390
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:33.394
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:33.413
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:33.415
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:33.634
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:45.119
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:45.122
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:45.143
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:45.146
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:02:45.311
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.368
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.376
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.398
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.407
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.631
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.906
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.917
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.944
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:10.956
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:11.168
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:40.749
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:40.756
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:40.777
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:40.795
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:40.958
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:41.196
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:41.208
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:41.238
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:41.247
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:04:41.426
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:00.370
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:00.378
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:00.403
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:00.414
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:00.636
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:01.605
+!MESSAGE The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:01.646
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:02.302
+!MESSAGE The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:02.364
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:04.903
+!MESSAGE The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:05.010
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:39.918
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:39.938
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:39.966
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:39.978
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:06:40.180
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:07:50.352
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:07:50.359
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:07:50.381
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:07:50.389
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:07:50.550
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:08:02.018
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:08:02.027
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:08:02.058
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:08:02.072
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:08:02.325
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:08.654
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:08.661
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:08.684
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:08.693
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:08.847
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:30.620
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:30.631
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:30.665
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:30.676
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:13:30.831
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:18.585
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:18.592
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:18.627
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:18.635
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:18.794
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.096
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.248
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.253
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.274
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.284
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:45.465
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.408
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.531
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.535
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.559
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.569
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:15:46.802
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.318
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.430
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.434
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.453
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.462
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:20.633
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.291
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.427
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.431
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.447
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.466
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.479
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.612
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.618
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.644
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.656
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:29.720
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:30.046
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.297
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.458
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.462
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.485
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.495
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:38.714
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.234
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.239
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.259
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.265
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.275
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:51.585
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:53.707
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:53.713
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:53.754
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:53.761
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:53.774
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:16:54.105
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.170
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.315
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.319
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.343
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.352
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:17:24.517
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.429
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.575
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.580
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.603
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.603
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.614
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.727
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.731
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.754
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.763
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:01.812
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:02.370
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:17.095
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:17.100
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:17.129
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:17.131
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:17.310
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:28.582
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:28.587
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:28.606
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:28.608
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:28.776
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:29.467
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:29.472
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:29.495
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:29.497
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:19:29.667
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:01.721
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:01.870
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:01.874
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:01.900
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:01.913
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:02.158
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.079
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.085
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.108
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.114
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.124
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:14.614
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.397
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.401
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.423
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.429
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.438
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:20:16.732
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.367
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.373
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.397
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.402
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.412
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:44.704
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.516
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.521
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.547
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.556
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.570
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:48.907
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.084
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.089
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.115
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.121
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.131
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:24:54.437
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:44.921
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:44.927
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:44.963
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:44.969
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:44.983
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:45.497
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.578
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.585
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.617
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.624
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.638
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:49.999
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:54.559
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:54.564
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:54.592
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:54.600
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:54.614
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:55.004
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.039
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.043
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.063
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.069
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.078
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:41:59.383
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:15.601
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:15.605
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:15.625
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:15.631
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:15.642
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:16.012
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:42.760
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:42.766
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:42.795
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:42.798
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:42:43.020
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.224
+!MESSAGE The POM for net.foreworld:framework-core:jar:1.0.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.355
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.358
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.377
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.380
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:07.557
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.624
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.631
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.659
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.666
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.680
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.781
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.787
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.808
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.813
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:21.824
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:22.072
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:22.513
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.504
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.511
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.542
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.550
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.560
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:43:30.949
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:45:13.809
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:45:13.816
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:45:13.839
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:45:13.848
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:45:14.449
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.324
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.335
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.367
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.377
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.580
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.769
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.930
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.937
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.980
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:45.989
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:46.170
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:49.555
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:49.565
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:49.596
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:49.605
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:49.837
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:53.936
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:53.952
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:53.985
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:53.996
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:49:54.188
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:50.909
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:50.915
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:50.937
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:50.948
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.125
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.440
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.447
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.474
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.483
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:50:51.655
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.061
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.084
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.110
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.125
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.247
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.257
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.293
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.305
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.365
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:01.739
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:02.300
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:02.306
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:02.327
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:02.336
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:02.503
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.316
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.328
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.358
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.369
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.440
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.449
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.473
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.482
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.576
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.808
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.976
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:08.983
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:09.005
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:09.013
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:51:09.182
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:53:40.821
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:53:40.835
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:53:40.880
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:53:40.894
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-14 17:53:41.178
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1

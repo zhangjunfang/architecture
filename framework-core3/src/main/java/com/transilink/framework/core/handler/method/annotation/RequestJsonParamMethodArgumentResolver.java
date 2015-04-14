@@ -52,6 +52,7 @@ public class RequestJsonParamMethodArgumentResolver extends
 
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	protected Object resolveName(String name, MethodParameter parameter,
 			NativeWebRequest webRequest) throws Exception {
@@ -107,6 +108,7 @@ public class RequestJsonParamMethodArgumentResolver extends
 						+ "], only support one json parameter");
 	}
 
+	@SuppressWarnings("deprecation")
 	protected JavaType getJavaType(Class<?> clazz) {
 		return TypeFactory.type(clazz);
 	}

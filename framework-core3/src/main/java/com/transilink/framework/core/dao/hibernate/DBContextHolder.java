@@ -6,7 +6,7 @@ package com.transilink.framework.core.dao.hibernate;
  *
  */
 public class DBContextHolder {
-	private static final ThreadLocal<String> contextHolder = new ThreadLocal();
+	private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>();
 
 	public static void setDBType(String dbType) {
 		contextHolder.set(dbType);

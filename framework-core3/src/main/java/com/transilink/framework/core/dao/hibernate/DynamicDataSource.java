@@ -21,6 +21,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings({"unchecked","rawtypes"})
 public class DynamicDataSource extends AbstractRoutingDataSource implements
 		ApplicationContextAware {
 	private Logger log = Logger.getLogger(getClass());
@@ -78,6 +79,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource implements
 		dataSource.setInitialPoolSize(parent.getInitialPoolSize());
 		return dataSource;
 	}
+
 
 	public void selectDataSource(String serverId) throws PropertyVetoException {
 		Object sid = DBContextHolder.getDBType();

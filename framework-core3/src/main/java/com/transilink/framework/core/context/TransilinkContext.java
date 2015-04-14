@@ -1,16 +1,21 @@
 package com.transilink.framework.core.context;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
+@SuppressWarnings("rawtypes")
 public abstract class TransilinkContext {
 	public static final int REQUEST = 1;
 	public static final int SESSION = 5;
 	public static final int APPLICATION = 9;
 	private static ThreadLocal cache = new ThreadLocal();
 
+	@SuppressWarnings("unchecked")
 	public static void registerContext(TransilinkContext context) {
 		cache.set(context);
 	}
@@ -23,6 +28,7 @@ public abstract class TransilinkContext {
 		return (TransilinkContext) (TransilinkContext) obj;
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void unregisterContext() {
 		cache.set(null);
 	}

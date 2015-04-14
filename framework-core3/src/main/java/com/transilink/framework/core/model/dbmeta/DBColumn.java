@@ -17,6 +17,7 @@ public class DBColumn {
 	private String metaData;
 	boolean primaryKey;
 	DBColumn fkParentKey;
+	@SuppressWarnings("unused")
 	private String fkPropName;
 	private String propName;
 	private String javaType;

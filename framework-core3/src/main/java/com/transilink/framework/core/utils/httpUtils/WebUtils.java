@@ -20,16 +20,14 @@ import com.noelios.restlet.http.HttpRequest;
 import com.transilink.framework.core.logs.LogEnabled;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
 public class WebUtils implements LogEnabled {
-
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = -7121096516187376689L;
 
 	/**
 	 * 获取系统的Session对象

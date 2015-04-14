@@ -20,6 +20,7 @@ import com.transilink.framework.core.utils.dataUtils.DateUtil;
  */
 public class VelocityView extends
 		org.springframework.web.servlet.view.velocity.VelocityView {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected Context createVelocityContext(Map model,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {

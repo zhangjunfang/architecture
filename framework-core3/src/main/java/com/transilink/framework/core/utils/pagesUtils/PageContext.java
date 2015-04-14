@@ -21,7 +21,7 @@ public class PageContext {
 	}
 
 	public static void removeOffset() {
-		offset.remove();
+		offset.remove();   
 	}
 
 	@SuppressWarnings("unchecked")

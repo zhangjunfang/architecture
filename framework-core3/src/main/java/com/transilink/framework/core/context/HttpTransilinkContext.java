@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class HttpTransilinkContext extends AbstractTransilinkContext {
 	protected Stack reqeustStack;
 
@@ -34,6 +35,7 @@ public class HttpTransilinkContext extends AbstractTransilinkContext {
 		return httpservletrequest;
 	}
 
+	@SuppressWarnings("unchecked")
 	public void setRequest(HttpServletRequest httpservletrequest) {
 		boolean flag = false;
 		int i = this.reqeustStack.size();

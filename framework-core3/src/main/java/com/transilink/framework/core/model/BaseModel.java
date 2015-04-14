@@ -20,6 +20,7 @@ import com.transilink.framework.core.model.datacontainer.Property;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("serial")
 @MappedSuperclass
 public class BaseModel extends DataContainer implements DataObject {
 	public BaseModel() {

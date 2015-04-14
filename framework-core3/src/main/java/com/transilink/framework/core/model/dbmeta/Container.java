@@ -11,6 +11,7 @@ import java.util.Properties;
 public class Container {
 	private String packageName;
 	private Properties properties;
+	@SuppressWarnings("rawtypes")
 	private Map tables;
 	boolean fullyLoaded;
 
@@ -22,10 +23,12 @@ public class Container {
 		this.properties = properties;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public Map getTables() {
 		return this.tables;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public void setTables(Map tables) {
 		this.tables = tables;
 	}

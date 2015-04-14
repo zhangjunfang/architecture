@@ -11,6 +11,7 @@ import java.util.Properties;
 public class TypeResolver {
 	private static final Properties typeMap = new Properties();
 
+	@SuppressWarnings("rawtypes")
 	public static String resolveType(String type, boolean useDefault) {
 		if (null == type)
 			return null;

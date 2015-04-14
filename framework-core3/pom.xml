@@ -7,21 +7,17 @@
 		<version>1.0.43</version>
 	</parent>
 	<artifactId>framework-core</artifactId>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 	<name>transilink :: framework :: core</name>
 
-	<distributionManagement>
-		<repository>
-			<id>repo1.transilink.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.transilink.com</url>
-		</repository>
-	</distributionManagement>
+
 
 	<dependencies>
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-			<version>9.0.2.0.0</version>
+			<groupId>oracle.jdbc</groupId>
+			<artifactId>oracle</artifactId>
+			<version>14</version>
 		</dependency>
 
 		<!--restlet begin -->

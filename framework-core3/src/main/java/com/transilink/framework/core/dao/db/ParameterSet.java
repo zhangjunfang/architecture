@@ -11,7 +11,12 @@ import com.transilink.framework.core.model.variant.VariantSet;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class ParameterSet extends VariantSet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2739792296968240330L;
 	private Map b = new HashMap();
 
 	public Variant getVariant(String key) {
@@ -19,6 +24,7 @@ public class ParameterSet extends VariantSet {
 		return super.getVariant(str);
 	}
 
+	@SuppressWarnings("unchecked")
 	public void setVariant(String name, Variant variant) {
 		String str = name.toLowerCase();
 		this.b.put(str, name);

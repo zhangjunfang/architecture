@@ -14,6 +14,7 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("unused")
 public class ExceptionUtil implements LogEnabled {
 	private static final String ERROR_CODE = "err_code";
 

@@ -171,6 +171,7 @@ public class DateMorpherEx extends AbstractObjectMorpher {
 		throw new MorphException("Unable to parse the date " + value);
 	}
 
+	@SuppressWarnings("rawtypes")
 	public Class morphsTo() {
 		return Date.class;
 	}
@@ -182,6 +183,7 @@ public class DateMorpherEx extends AbstractObjectMorpher {
 			this.defaultValue = null;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public boolean supports(Class clazz) {
 		return String.class.isAssignableFrom(clazz);
 	}

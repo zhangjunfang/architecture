@@ -10,11 +10,19 @@ import com.transilink.framework.core.logs.LogEnabled;
 import com.transilink.framework.core.utils.clazzUtils.BeanUtils;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月14日
+ *  email：zhangjunfang0505@163.com
  */
+@SuppressWarnings("rawtypes")
 public class PagingResultSet implements Serializable, LogEnabled {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5202220197877650931L;
 	private int currRow;
 	private long rowCount;
 	private int pageCount;
@@ -24,6 +32,7 @@ public class PagingResultSet implements Serializable, LogEnabled {
 	private Class modelClass;
 	private List list;
 
+	@SuppressWarnings("unused")
 	private PagingResultSet() {
 	}
 
@@ -90,6 +99,7 @@ public class PagingResultSet implements Serializable, LogEnabled {
 			this.pageSize = pageSize;
 	}
 
+	@SuppressWarnings("unchecked")
 	private void updateList() throws Exception {
 		try {
 			caculFirstRow();

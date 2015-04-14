@@ -45,6 +45,7 @@ public class CZipInputStream extends InflaterInputStream implements
 	// one entry
 	private boolean entryEOF = false;
 	// Used to decide what encoding to use while reading zip entries
+	@SuppressWarnings("unused")
 	private static final String fileEncoding = (String) java.security.AccessController
 			.doPrivileged(new GetPropertyAction("sun.zip.encoding"));
 

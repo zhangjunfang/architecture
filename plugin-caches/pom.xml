@@ -1,16 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>net.foreworld</groupId>
+	<groupId>com.transilink</groupId>
 	<artifactId>plugin-caches</artifactId>
 	<version>0.0.1</version>
-	<distributionManagement>
-		<repository>
-			<id>repo1.foreworld.net</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.foreworld.net</url>
-		</repository>
-	</distributionManagement>
-
 	<properties>
 		<!-- Plugin的基本属性定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -80,7 +73,7 @@
 		</dependency> -->
 		<!-- 核心依赖 begin -->
 		<dependency>
-			<groupId>net.foreworld</groupId>
+			<groupId>com.transilink</groupId>
 			<artifactId>framework-core</artifactId>
 			<version>1.0.1</version>
 		</dependency>

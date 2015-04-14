@@ -7,27 +7,13 @@
 	<packaging>pom</packaging>
 	<name>transilink :: framework :: config</name>
 
-	<distributionManagement>
-		<repository>
-			<id>repo1.transilink.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.transilink.com</url>
-		</repository>
-	</distributionManagement>
-
-	<repositories>
-		<repository>
-			<id>repo1.transilink.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.transilink.com</url>
-		</repository>
-	</repositories>
-
 	<!--版本定义 -->
 	<properties>
 		<!-- Plugin的基本属性定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.6</jdk.version>
 		<!--核心类 -->
-		<transilink.framework.version>1.0.43</transilink.framework.version>
+		<transilink.framework.version>1.0.1</transilink.framework.version>
 		<!--spring -->
 		<spring.version>3.2.5.RELEASE</spring.version>
 		<!--hibernate -->
@@ -36,6 +22,7 @@
 		<cglib.version>2.2</cglib.version>
 		<!-- restlet -->
 		<restlet.version>1.1.10</restlet.version>
+		<!-- <restlet.version>2.3.1</restlet.version> -->
 		<restlet-servlet.version>1.1.10</restlet-servlet.version>
 		<restlet-noelios.version>1.1.10</restlet-noelios.version>
 		<restlet-noelios.spring.version>1.1.9</restlet-noelios.spring.version>

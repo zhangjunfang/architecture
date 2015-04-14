@@ -13,7 +13,7 @@ import java.util.Set;
  * @param <V>
  */
 public class MapWapper<K, V> {
-	private Map<K, V> innerMap = new HashMap();
+	private Map<K, V> innerMap = new HashMap<K, V>();
 
 	public void setInnerMap(Map<K, V> innerMap) {
 		this.innerMap = innerMap;

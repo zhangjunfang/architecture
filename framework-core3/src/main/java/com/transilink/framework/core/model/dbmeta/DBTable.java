@@ -12,6 +12,7 @@ import java.util.Properties;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class DBTable implements Comparable {
 	private String name;
 	private String metaData;
@@ -63,6 +64,7 @@ public class DBTable implements Comparable {
 		this.container = container;
 	}
 
+	@SuppressWarnings("unchecked")
 	public void notifyPrimaryKey(String columnName) {
 		DBColumn column = (DBColumn) this.columnMap.get(columnName);
 		if (column != null) {
@@ -73,12 +75,14 @@ public class DBTable implements Comparable {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public void notifyColumn(DBColumn column) {
 		column.setTable(this);
 		this.columns.add(column);
 		this.columnMap.put(column.getName(), column);
 	}
 
+	@SuppressWarnings("unchecked")
 	public void notifyForeignKey(String columnName, DBColumn parentKey) {
 		DBColumn column = (DBColumn) this.columnMap.get(columnName);
 		if (column != null) {
@@ -133,6 +137,7 @@ public class DBTable implements Comparable {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 
 	public List getColumns() {
 		return this.columns;

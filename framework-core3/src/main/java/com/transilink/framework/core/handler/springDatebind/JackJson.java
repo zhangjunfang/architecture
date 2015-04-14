@@ -22,6 +22,7 @@ import com.transilink.framework.core.logs.LogEnabled;
  *
  */
 public class JackJson implements LogEnabled {
+	@SuppressWarnings("unused")
 	private static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
 	public static <T> T fromJsonToObject(String json,
@@ -93,6 +94,7 @@ public class JackJson implements LogEnabled {
 		return null;
 	}
 
+	@SuppressWarnings("deprecation")
 	public static String fromObjectToJson(Object object, String filterName,
 			Set<String> properties) {
 		ObjectMapper mapper = new ObjectMapper();
@@ -111,6 +113,7 @@ public class JackJson implements LogEnabled {
 		return null;
 	}
 
+	@SuppressWarnings("deprecation")
 	public static String fromObjectToJson(Object object, String filterName,
 			String property) {
 		ObjectMapper mapper = new ObjectMapper();

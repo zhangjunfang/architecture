@@ -50,6 +50,7 @@ import com.transilink.framework.core.handler.util.MapWapper;
  * @author huangxin (3203317@qq.com)
  *
  */
+@SuppressWarnings("rawtypes")
 public class FormModelMethodArgumentResolver implements
 		HandlerMethodArgumentResolver {
 
@@ -231,6 +232,8 @@ public class FormModelMethodArgumentResolver implements
 	 * @throws Exception
 	 * @see ServletRequestDataBinderFactory
 	 */
+	
+	@SuppressWarnings("unchecked")
 	protected void bindRequestParameters(ModelAndViewContainer mavContainer,
 			WebDataBinderFactory binderFactory, WebDataBinder binder,
 			NativeWebRequest request, MethodParameter parameter)
@@ -377,6 +380,7 @@ public class FormModelMethodArgumentResolver implements
 		return name.substring(begin, end);
 	}
 
+	@SuppressWarnings("unchecked")
 	private ServletRequest prepareServletRequest(Object target,
 			NativeWebRequest request, MethodParameter parameter) {
 

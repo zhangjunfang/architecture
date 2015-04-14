@@ -9,8 +9,9 @@ import java.util.Map;
  *
  */
 public class ThreadLocalContainer {
-	private ThreadLocal<HashMap<String, Object>> threadLocals = new ThreadLocal();
+	private ThreadLocal<HashMap<String, Object>> threadLocals = new ThreadLocal<HashMap<String,Object>>();
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected Map<String, Object> getThreadLocals() {
 		if (null == this.threadLocals.get()) {
 			this.threadLocals.set(new HashMap());
@@ -26,6 +27,7 @@ public class ThreadLocalContainer {
 		getThreadLocals().put(name, value);
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void clearAll() {
 		for (Map.Entry entry : getThreadLocals().entrySet())
 			entry.setValue(null);
