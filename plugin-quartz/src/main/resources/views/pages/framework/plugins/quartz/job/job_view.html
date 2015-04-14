@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>job view</title>
+<style type="text/css">
+	.PopUpTableBorder{
+		border:1px solid #BAD3EB;
+		margin: auto;
+	}
+	.del{
+		width:17px;
+		height:19px;
+		background-color:transparent;
+		background-image: url(${_project.envRoot}/styles/css/privilege/v1.0/images/shanchu_ico.png);
+		background-repeat: no-repeat;
+		border: 0;
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript">
+	jQuery(function(){
+		if($!jobBean.recovery)jQuery("#recovery").attr("checked", "checked");
+		if($!jobBean.durable)jQuery("#durable").attr("checked", "checked");
+		if($!jobBean.disallowConcurrent)jQuery("#disallowConcurrent").attr("checked", "checked");
+		if($!jobBean.persistJobData)jQuery("#persistJobData").attr("checked", "checked");
+	});
+	
+	
+</script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<table id="viewtable" border="1" cellspacing="0" cellpadding="0"
+			class="PopUpTableBorder"  width="98%">
+			<tr>
+				<td class="PopUpTableTitle" width="160px"><font color="#FF0000">*</font>任务名：</td>
+				<td width="240px" align="left">$!jobBean.name</td>
+				<td class="PopUpTableTitle" width="150px"><font color="#FF0000">*</font>
+					分组：</td>
+				<td width="240px" align="left">$!jobBean.group</td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle"><font color="#FF0000">*</font>任务：</td>
+				<td colspan="3" align="left">$!jobBean.jobClass</td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle">任务描述：</td>
+				<td colspan="3" align="left">$!jobBean.description</td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle">任务恢复：</td>
+				<td colspan="3" align="left"><input type="checkbox"
+					id="recovery" name="jobBean.recovery" disabled="disabled" />&nbsp;<label
+					for="recovery">shouldRecover 应用重启之后忽略过期任务</label></td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle">保存任务：</td>
+				<td colspan="3" align="left"><input type="checkbox" id="durable"
+					name="jobBean.durable" disabled="disabled" />&nbsp;<label
+					for="durable">durable 任务不在被任何触发器所引用时依然保存。</label></td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle">并发执行：</td>
+				<td colspan="3" align="left"><input type="checkbox"
+					id="disallowConcurrent" disabled="disabled" />&nbsp;<label>禁用并发执行（使用注解org.quartz.DisallowConcurrentExecution实现）</label></td>
+			</tr>
+			<tr>
+				<td class="PopUpTableTitle">有状态任务：</td>
+				<td colspan="3" align="left"><input type="checkbox"
+					id="persistJobData" disabled="disabled" />&nbsp;<label>是否是有状态的任务（使用注解org.quartz.PersistJobDataAfterExecution实现）</label></td>
+			</tr>
+			<tr>
+				<td colspan="4"
+					style="font-size: 15px;font-weight: bold;text-align: left">◇任务运行参数</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="text-align: left">
+					<div id="parametersDiv"
+						style="overflow:auto; height: 90px; width: 100%; border: 0px;">
+						<table id="parameters"
+							style="overflow:auto; width: 100%; border-color: #BAD3EB;" cellspacing=0
+							cellpadding="5" border="1">
+							<tr>
+								<td class="PopUpTableTitle"
+									style="text-align: center;height: 2px;width: 150px">参数名</td>
+								<td style="width:300px;text-align: center">参数值</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4"
+					style="font-size: 15px;font-weight: bold;text-align: left">◇任务触发器</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="text-align: left">
+					<div id="parametersDiv"
+						style="overflow:auto; height: 90px; width: 100%; border: 0px;">
+						<table id="parameters"
+							style="overflow:auto; width: 100%; border-color: #BAD3EB;" cellspacing=0
+							cellpadding=5 border=1 bordercolordark="#ffffff"
+							bordercolorlight="#cc0000">
+							<tr>
+								<td>分组</td>
+								<td>触发器名</td>
+								<td>类型</td>
+								<td>下次触发时间</td>
+								<td>操作</td>
+							</tr>
+							#foreach($!trigger in $!jobTriggers)
+							<tr>
+								<td>$!trigger.triggerGroup</td>
+								<td>$!trigger.triggerName</td>
+								<td>$!trigger.type</td>
+								<td>$!trigger.nextFireTime</td>
+								<td><input type="button" class="del"
+									onclick="removeTrigger(this, '${trigger.triggerName}', '${trigger.triggerGroup}')" /></td>
+							</tr>
+							#end
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4"
+					style="font-size: 15px;font-weight: bold;text-align: left">◇任务监听器</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="text-align: left">
+					<div id="parametersDiv"
+						style="overflow:auto; height: 60px; width: 100%; border: 0px;">
+						<table id="parameters"
+							style="overflow:auto; width: 100%; border-color: #BAD3EB;" cellspacing=0
+							cellpadding=5 border=1 bordercolordark="#ffffff"
+							bordercolorlight="#cc0000">
+							<tr>
+								<td>名称</td>
+								<td>监听实体</td>
+								<td>操作</td>
+							</tr>
+							#foreach($!listener in $!jobListeners)
+							<tr>
+								<td>$!listener.name</td>
+								<td>$!listener.clazz</td>
+								<td><input type="button" class="del"
+									onclick="removeListener(this, '$!listener.name')" /></td>
+							</tr>
+							#end
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+<!--
+var parameterCount = 1;
+function addParameters(key, value){
+	var paraHtml = '<tr><td>'+key+'</td><td>'+value+'</td></tr>';
+	$("#parameters").append(paraHtml);
+	parameterCount++;
+}
+#foreach($!key in $!jobBean.parameters.keySet())
+	addParameters('$!key','$!jobBean.parameters.get($!key)');
+#end
+//-->
+</script>
+</body>
+</html>

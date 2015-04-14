@@ -1,0 +1,272 @@
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 2px
+}
+
+body {
+	background: url('images/bg.jpg') repeat scroll 0 0 rgba(0, 0, 0, 0)
+}
+
+body #backTop {
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1px;
+	bottom: 50px;
+	color: #3D4450;
+	cursor: pointer;
+	display: block;
+	font-size: 30px;
+	position: fixed;
+	right: 40px;
+	top: auto;
+	z-index: 999;
+	display: none
+}
+
+body #backTop:hover {
+	opacity: 1;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg)
+}
+
+body #backTop:before {
+	content: '\e114'
+}
+
+body #archives,body #tags {
+	margin-bottom: 10px
+}
+
+body #archives a,body #tags a {
+	color: #B94A48
+}
+
+body #archives a:hover,body #tags a:hover,body #archives a:focus,body #tags a:focus
+	{
+	text-decoration: underline
+}
+
+body #archives p,body #tags p {
+	font-size: 12px
+}
+
+body #archives p .badge,body #tags p .badge {
+	background-color: #999999
+}
+
+body #archives .badge:hover,body #tags .badge:hover {
+	background-color: #d9534f
+}
+
+body .breadcrumb {
+	font-size: 12px
+}
+
+body .breadcrumb a {
+	color: #D2322D
+}
+
+body .alert-info {
+	background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+	border-color: #DDDDDD;
+	color: #D9534F
+}
+
+body #banner .navbar-brand {
+	font-weight: bold
+}
+
+body #header {
+	margin-top: 70px
+}
+
+body #footer {
+	border-top: 1px solid #E5E5E5;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px
+		rgba(0, 0, 0, 0.075)
+}
+
+body #footer>div>div:first-child {
+	float: left
+}
+
+body #footer>div>div:last-child {
+	float: right
+}
+
+body #footer>div>div p {
+	margin-bottom: 0
+}
+
+body #footer>div>div p:last-child a {
+	color: black
+}
+
+body #footer>div>div p a {
+	color: #CC0000;
+	font-weight: bold
+}
+
+body #qrCode {
+	margin-bottom: 20px
+}
+
+body #qrCode img {
+	width: 100px;
+	height: 100px
+}
+
+.clearfix {
+	clear: both
+}
+
+.fl {
+	float: left
+}
+
+.ta {
+	text-align: center
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.badge {
+	background-color: #D9534F
+}
+
+.olx-text-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.olx-panel .panel-title {
+	font-size: 14px;
+	font-weight: bold
+}
+
+.olx-panel .panel-body {
+	padding: 0
+}
+
+.olx-panel .panel-body .list-group {
+	margin-bottom: 0
+}
+
+.olx-panel .panel-body .list-group .list-group-item {
+	border-left: 0 none;
+	border-right: 0 none;
+	border-bottom: 0 none
+}
+
+.olx-panel .panel-body .list-group .list-group-item:first-child {
+	border-top: 0 none
+}
+
+.olx-panel .panel-body .list-group li:hover,.olx-panel .panel-body .list-group li:focus
+	{
+	background-color: #F5F5F5
+}
+
+.olx-panel .panel-body .list-group li a {
+	color: #555555
+}
+
+.olx-panel .panel-body .list-group li a:hover,.olx-panel .panel-body .list-group li a:focus
+	{
+	color: #D9534F
+}
+
+.olx-panel .panel-body .list-group li a div {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right: 10px
+}
+
+.olx-panel .panel-body .list-group a {
+	font-size: 12px
+}
+
+.olx-panel .panel-body .list-group a:hover,.olx-panel .panel-body .list-group a:focus
+	{
+	color: #D9534F
+}
+
+.olx-panel-comment .list-group-item .comment-left {
+	float: left
+}
+
+.olx-panel-comment .list-group-item .comment-left>div img {
+	border: 1px solid #ccc;
+	padding: 2px
+}
+
+.olx-panel-comment .list-group-item .comment-left>div img:hover {
+	transform: scale(1.25);
+	transition: all .25s ease-in-out 0s
+}
+
+.olx-panel-comment .list-group-item .comment-right {
+	line-height: 20px;
+	font-size: 12px;
+	margin-left: 65px
+}
+
+.olx-panel-comment .list-group-item .comment-right .content {
+	padding-top: 7px
+}
+
+.olx-panel-comment .list-group-item .comment-right .opt span {
+	margin-right: 5px
+}
+
+.olx-panel-comment .list-group-item .comment-right .opt span a {
+	color: #960
+}
+
+.olx-panel-comment .list-group-item .comment-right .opt span a:hover {
+	text-decoration: underline
+}
+
+@font-face {
+	font-family: Spinnaker;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../fonts/Spinnaker-Regular.ttf')
+}
+
+@media screen and (min-width:768px) and (max-width:1010px) {
+	body #backTop {
+		right: 5px
+	}
+	#topSearchFrm {
+		display: none !important
+	}
+}
+
+@media screen and (max-width:800px) {
+	body #backTop {
+		right: 5px
+	}
+	#footer>div>div:last-child {
+		float: left !important
+	}
+}

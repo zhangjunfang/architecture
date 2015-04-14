@@ -1,0 +1,42 @@
+<table class="standard_table th-bg standard_table_tt">
+	<tbody>
+		<tr>
+			<th class="th-1"><input title="全选/不选" type="checkbox"
+				class="check_box" onclick="selectAll(this)"></th>
+			<th class="th-3">任务名</th>
+			<th class="th-4">任务组</th>
+			<th class="th-5">任务</th>
+			<th class="th-6">描述</th>
+		</tr>
+	</tbody>
+</table>
+<table class="standard_table standard_table_con">
+	<tbody>
+		#foreach($!job in $!pageView.records)
+		<tr>
+			<td class="td-1"><input type="checkbox" name="menuids"
+				value="$!job.name" data-group="$!job.groupName" class="check_box"></td>
+			<td class="td-3">$!job.name</td>
+			<td class="td-4">$!job.groupName</td>
+			<td class="td-5">$!job.jobClass</td>
+			<td class="td-6">$!job.description</td>
+		</tr>
+		#end
+	</tbody>
+</table>
+<table class="page-list">
+	<tr>
+		<td>
+			<table width="100%" border="0" cellspacing="0"
+				cellpadding="0" class="fenye_table">
+				<tr>
+					<td style="width:10px;"></td>
+				</tr>
+				<tr>
+					<td style="width:10px;"></td>
+					#paging($pageView)
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,48 @@
+<table class="standard_table th-bg standard_table_tt">
+	<tbody>
+		<tr>
+			<th class="th-1"><input title="全选/不选" type="checkbox"
+				class="check_box" onclick="selectAll(this)"></th>
+			<th class="th-3">触发器</th>
+			<th class="th-4">任务</th>
+			<th class="th-5">类型</th>
+			<th class="th-6">下次执行时间</th>
+			<th class="th-7">开始时间</th>
+			<th class="th-8">停止时间</th>
+			<th class="th-9">上次执行时间</th>
+			
+		</tr>
+	</tbody>
+</table>
+<table class="standard_table standard_table_con">
+	<tbody>
+		#foreach ($!trigger in $!pageView.records)
+		<tr>
+			<td class="td-1"><input type="checkbox" name="menuids"
+				value="$!trigger.jobName" data-group="$!trigger.jobGroup" class="check_box"></td>
+			<td class="td-3">$!trigger.triggerGroup.$!trigger.triggerName</td>
+			<td class="td-4">$!trigger.jobGroup.$!trigger.jobName</td>
+			<td class="td-5">$!trigger.type</td>
+			<td class="td-6">$!trigger.nextFireTime</td>
+			<td class="td-7">$!trigger.startTime</td>
+			<td class="td-8">$!trigger.stopTime</td>
+			<td class="td-9">$!trigger.previousFireTime</td>
+		</tr>
+		#end
+	</tbody>
+</table>
+<table class="page-list">
+	<tr>
+		<td>
+			<table width="100%" border="0" cellspacing="0"
+				cellpadding="0" class="fenye_table">
+				<tr>
+					<td style="width:10px;"></td>
+				</tr>
+				<tr>
+					<td style="width:10px;"></td>#paging($pageView)
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

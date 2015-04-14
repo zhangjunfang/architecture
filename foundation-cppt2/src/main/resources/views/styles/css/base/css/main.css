@@ -1,0 +1,129 @@
+html, body{font-family:"Microsoft YaHei" !important; font-size:12px;} 
+html { overflow-x:auto; overflow-y:auto; }
+body {
+	width:100%; 
+	height:100%; 
+	background:#f7f7f7;
+}
+.body-container {
+	padding:10px 20px;
+}
+
+div {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 登录页面 */
+.bg {
+    background: #E5E5E5;
+}
+
+.login_box {
+    width: 900px;
+    margin-top: 100px;
+}
+.login_banner {
+    background: url('../image/login_banner.png') no-repeat;
+    width: 900px;
+    height: 309px;
+}
+.login_content {
+    background: url('../image/login_content.png') no-repeat;
+    height: 60px;
+    width: 900px;
+}
+.login_content form {
+    padding-top: 10px;
+    text-align: center;
+    color:#878787;
+}
+.login_content form .form-control{
+    width: auto;
+}
+.login_content form .dropdown-menu{
+    min-width: 100px;
+}
+.login_footer {
+    background: url('../image/login_footer.png') no-repeat;
+    width: 900px;
+    height:148px;
+    text-align: center;
+    padding-top:30px;
+    font-size: 10px;
+}
+.login_footer .link {
+    color: #75B6E2;
+}
+
+/* 报维管理 */
+.report_repair {
+    float:right;
+}
+.give_score  {
+	margin-top:20px;
+}
+.give_score  .info{
+	font-size: 12px;
+	margin-top:10px;
+	margin-right:100px;
+}
+.look_report  {
+	margin-top:20px;
+}
+.look_report  .info{
+	font-size: 12px;
+	margin-top:10px;
+	margin-right:60px;
+}
+.give_score  .in_right{
+  margin-left:370px;
+}
+.give_score .score {
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555;
+	vertical-align: middle;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;	
+}
+
+.table > tbody > tr.selected_tr td {
+    background:#FFF9B3;
+}
+/* 树形结构 */
+.stree ul li{list-style-type:none;}
+.stree ul li span{margin-left:5px;vertical-align: 2px;}
+.stree .first{margin-right:10px;vertical-align: 2px;}
+
+/* tab 样式*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    background:#00a1cb;
+    color:#ffffff;
+    border:1px solid transparent;
+}
+.nav>li>a {
+    background: #77d3ee;
+    color:#666666;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+    background: #0099CC;
+    color:#ffffff;
+    border:1px solid transparent;
+}
+.body-container ul.nav-tabs{
+    background: #d2ebe7;
+}
+
+.body-container ul.nav-tabs li:last-child{
+    border-right: 1px solid transparent;
+}
+
+/* 添加设备 */
+.shebei_height {
+    height:300px;
+    overflow: scroll;
+}

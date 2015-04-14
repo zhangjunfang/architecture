@@ -1,0 +1,37 @@
+#macro(paging $pageView)    
+        <div class="pages" style="font-size: 13px;">  
+        	#if($!pageView.totalpage > 0)
+	  		      <font color="#000000">
+	   	 当前页:第$!{pageView.currentpage}页 | 总记录数:$!{pageView.totalrecord}条 | 每页显示:$!{pageView.maxresult}条 | 总页数:$!{pageView.totalpage}页</font>　
+	            #if($!pageView.currentpage != 1) 
+	                <a href="javascript:$!{pageView.jsMethod}(1)" title="首页" class="nav"><span>首页</span></a> 			 
+	                <a href="javascript:$!{pageView.jsMethod}($!{pageView.currentpage} - 1)" title="上一页" class="nav"><span>上一页</span></a>  
+	            #else  
+	                <span>首页</span>  
+	                <span>上一页</span>             
+	            #end  
+	            
+	            #foreach($index in $!pageView.totalpage)
+	           
+	                #if ($!pageView.currentpage == $index)  
+	                    <a href="#" class="current">${index}</a>  
+	                #else  
+	                    <a href="javascript:$!{pageView.jsMethod}(${index})" title="第${index}页" >${index}</a>    
+	                #end    
+	            #end    
+	              
+	            #if ($!pageView.currentpage != $pageView.totalpage && $!pageView.totalpage != 0) 
+	                <a href="javascript:$!{pageView.jsMethod}($!{pageView.currentpage} + 1)" title="下一页" class="nav"><span>下一页</span></a>  
+	                <a href="javascript:$!{pageView.jsMethod}($!{pageView.totalpage})" title="尾页" class="nav"><span>尾页</span></a>  
+	            #else  
+	                <span>下一页</span>  
+	                <span>未页</span>  
+	            #end
+	            
+	            <input type='text' name='offset' id='offset' size='2' value='$pageView.currentpage' /><input type='button' value='GO' onclick="$!{pageView.jsMethod}(0)" />
+            #else
+            	<div style="font-size: 13px;font-weight: 700;line-height: 177px;text-align: center;">暂无数据！</div>
+            #end
+        </div>  
+
+    #end   

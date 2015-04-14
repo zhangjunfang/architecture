@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>菜单管理 | 权限管理 | 产品平台</title>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/head.html')
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/index.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/iframe.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='${cdn}ztree/3.5.15/css/zTreeStyle/zTreeStyle.css' media='screen' />
+<style>
+ul.ztree {
+	border: 1px solid #DDDDDD;
+	height: 300px;
+	overflow-y: scroll;
+	overflow-x: auto;
+	margin-bottom: 10px;
+}
+ul.ztree * {
+	font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+}
+.ztree li span.button.switch.level0 {
+	visibility: hidden;
+	width: 1px;
+}
+.ztree li ul.level0 {
+	padding: 0;
+	background: none;
+}
+</style>
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-12 col-md-12'>
+				<ol class='breadcrumb'>
+					<li>
+						<i class='fa fa-home fa-fw'></i>
+						<a href='javascript:;'>产品平台</a></li>
+					<li class='active'>权限管理</li>
+					<li class='active'>菜单管理</li>
+					<li class='active'>菜单信息维护</li>
+				</ol>
+				<div id='info_alert' class='alert alert-info'>
+					<button type='button' class='close' data-dismiss='alert'>&times;</button>
+					<strong>提示：</strong>查询设置菜单信息。
+				</div>
+				<div class='panel panel-info'>
+					<div class='panel-heading'>
+						<h3 class='panel-title'><strong>查询条件</strong></h3>
+					</div>
+					<div class='panel-body'>
+						<form id='searchFrm' class='form-inline' role='form' onsubmit='return false;'>
+							<div class='form-group'>
+								<input type='text' class='form-control' id='searchFrm_MenuName' name='menu_name' placeholder='菜单名称'>
+							</div>
+							<button type='button' class='btn btn-default glyphicon glyphicon-search' id='searchFrm_btn_search'>&#8201;查询</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class='col-sm-12 col-md-3'>
+				<ul id="menuTree" class="ztree"></ul>
+			</div>
+			<div class='col-sm-12 col-md-9'>
+				<div class='panel panel-default table-responsive'>
+					<div class='panel-heading'>
+						<div class='btn-group btn-group-sm'>
+							<button class='btn btn-primary glyphicon glyphicon-plus-sign' data-toggle='modal' data-target='#addModal'>新增</button>
+							<button id='btn_edit' class='btn btn-default glyphicon glyphicon-edit' data-toggle='modal' data-target='#editModal'>编辑</button>
+							<button id='btn_del' class='btn btn-danger glyphicon glyphicon-remove-sign'>删除</button>
+						</div>
+					</div>
+					#parse('foundation/cppt/menu/pagelet/v1.0.1/index.list.html')
+				</div>
+			</div>
+		</div>
+	</div>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/js.html')
+	#parse('foundation/cppt/site/pagelet/v1.0.1/iframe.html')
+	<script type="text/javascript" src="${cdn}ztree/3.5.15/js/jquery.ztree.core-3.5.js"></script>
+	<script>
+		$('#searchFrm_btn_search').click(function(){
+			var formObj = $('#searchFrm').serializeObjectForm();
+			$ .ajax({
+				url: 'list.do',
+				type: 'GET',
+				dataType: 'JSON',
+				data: formObj
+			}).done(function (data) {
+				var data = data.msg;
+				if(!data.success) return;
+				var _data = data.data;
+				if(!_data) return;
+				$('#table1').html(_data);
+			});
+		});
+	</script>
+	<SCRIPT type="text/javascript">
+		<!--
+		(function($){
+			var setting = {
+				data: {
+					simpleData: {
+						enable: true
+					}
+				}, callback: {
+					beforeExpand: function(treeId, treeNode) {
+						var zTree = $ .fn.zTree.getZTreeObj(treeId);
+						if(treeNode.children) return;
+						$ .ajax({
+							url: 'list.do',
+							type: 'GET',
+							dataType: 'JSON',
+							data: {
+								pid: treeNode.id,
+								type: 'object'
+							}
+						}).done(function (data) {
+							if(!data.msg.success) return;
+							var items = data.msg.data.items;
+							for(var i=0,j=items.length;i<j;i++){
+								var item = items[i];
+								zTree.addNodes(treeNode, {
+									id: item.ID,
+									pId: treeNode.id,
+									isParent: !!item.ISPARENT,
+									name: item.MENU_NAME
+								});
+							}
+						});
+					}, onClick: function(event, treeId, treeNode, clickFlag){
+						var zTree = $ .fn.zTree.getZTreeObj(treeId);
+						$ .ajax({
+							url: 'list.do',
+							type: 'GET',
+							dataType: 'JSON',
+							data: {
+								pid: treeNode.id
+							}
+						}).done(function (data) {
+							var data = data.msg;
+							if(!data.success) return;
+							var _data = data.data;
+							if(!_data) return;
+							$('#table1').html(_data);
+						});
+					}
+				}
+			};
+			var zNodes = [{
+				id: '0',
+				name: 'Root',
+				open: true
+			}#foreach($!obj in $!treeView.records),{
+				id: '$!obj.ID',
+				pId: '$!obj.PID',
+				name: '$!obj.MENU_NAME',
+				isParent: !!$!obj.ISPARENT
+			}#end];
+
+			$(document).ready(function(){
+				$ .fn.zTree.init($("#menuTree"), setting, zNodes);
+			});
+		})($);
+		//-->
+	</SCRIPT>
+</body>
+</html>

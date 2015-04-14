@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cron</title>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/art/plugins/iframeTools.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/framework/plugins/quartz/job/tabber/tabber-minimized.js"></script>
+<link rel="stylesheet"
+	href="${_project.envRoot}/scripts/framework/plugins/quartz/job/tabber/example.css"
+	type="text/css" />
+<style type="text/css">
+.tabber {
+	display: none;
+}
+
+.tabbertab {
+	height: 150px;
+	font-size: 12px;
+}
+
+.cronField {
+	
+}
+
+#scrollbarDiv {
+	margin: auto auto !important;
+	SCROLLBAR-FACE-COLOR: #EFF4F9;
+	font-size: 10pt;
+	SCROLLBAR-HIGHLIGHT-COLOR: #C9D9F1;
+	OVERFLOW: auto;
+	width: 178px;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #EFF4F9;
+	SCROLLBAR-DARKSHADOW-COLOR: #C9D9F1;
+	height: 438px;
+	text-align: left;
+	color: #002280;
+	background-color: #FFFFFF;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		$("div[id$='Tip']").each(function(){
+			$(this).css("font-size","12px").css("width","280px");
+			$(this).css("text-align","left");
+		});
+		$(".PopUpInput").click(function() {
+			$(".PopUpInputHover").each(function() {
+				$(this).removeClass();
+				$(this).addClass("PopUpInput");
+			});
+			$(this).removeClass();
+			$(this).addClass("PopUpInputHover");
+		});
+		
+		$(".PopUptextarea").click(function() {
+			$(".PopUpInputHover").each(function() {
+				$(this).removeClass();
+				$(this).addClass("PopUpInput");
+			});
+		});
+		
+		$("#generateCronExp").click(function(){
+			grentSecond();
+			grentMinute();
+			grentHour();
+			grentDay();
+			grentMonth();
+			grentWeek();
+			
+			var isFull = true;
+			var cronExp = "";
+			$("input[name=cron]").each(function() {
+				var ex = $(this).val();
+				if(!ex) isFull = false;
+				cronExp += ex;
+				cronExp += " ";
+			});
+			if(isFull)$("#cronExp").val(cronExp);
+		});
+		$("#parseCronExp").click(function(){
+			var cronExp = $("#cronExp").val();
+			if(!cronExp){addError("表达式定不完整，不能进行测试！"); return;}
+			jQuery.ajax({
+				type:"post",
+				url:"testCronExpression",
+				data:"cronExp="+cronExp,
+				dataType:"json",
+				success:function(msg){
+					if(msg.success){
+						fillData(msg.data);
+					}else{
+						alert(msg.msg);
+					}
+				}
+			});
+		});
+		
+		$("#secondType0").click(function(){onSecondTypeChange();});
+		$("#secondType1").click(function(){onSecondTypeChange();});
+		$("#secondType2").click(function(){onSecondTypeChange();});
+		
+		$("#minuteType0").click(function(){onMinuteTypeChange();});
+		$("#minuteType1").click(function(){onMinuteTypeChange();});
+		$("#minuteType2").click(function(){onMinuteTypeChange();});
+		
+		$("#hourType0").click(function(){onHourTypeChange();});
+		$("#hourType1").click(function(){onHourTypeChange();});
+		$("#hourType2").click(function(){onHourTypeChange();});
+		
+		for(var i=1;i<=31;i++){
+			$("#dt4Day").append("<option>　"+i+"日</option>");
+		}
+		$('input:radio[name=dayType]').each(function() {$(this).click(function(){onDayTypeChange();});});
+		
+		$("#monthType0").click(function(){onMonthTypeChange();});
+		$("#monthType1").click(function(){onMonthTypeChange();});
+		$("#monthType2").click(function(){onMonthTypeChange();});
+		
+		$('input:radio[name=weekType]').each(function() {$(this).click(function(){onWeekTypeChange();});});
+		$("#useWeek").click(function(){onWeekTypeChange();});
+		
+		onSecondTypeChange();
+		onMinuteTypeChange();
+		onHourTypeChange();
+		onDayTypeChange();
+		onMonthTypeChange();
+		onWeekTypeChange();
+	});
+	function onSecondTypeChange(){
+		var type=$('input:radio[name="secondType"]:checked').attr("id");
+		
+		$("#delaySecond").attr("disabled", type!='secondType1');
+		$("#periodSecond").attr("disabled", type!='secondType1');
+		$("input[type=checkbox][name=second]").each(function() {
+			$(this).attr("disabled", type!='secondType2');
+		});
+	}
+	function onMinuteTypeChange(){
+		var type=$('input:radio[name="minuteType"]:checked').attr("id");
+		
+		$("#delayMinute").attr("disabled", type!='minuteType1');
+		$("#periodMinute").attr("disabled", type!='minuteType1');
+		$("input[type=checkbox][name=minute]").each(function() {
+			$(this).attr("disabled", type!='minuteType2');
+		});
+	}
+	function onHourTypeChange(){
+		var type=$('input:radio[name="hourType"]:checked').attr("id");
+		
+		$("#delayHour").attr("disabled", type!='hourType1');
+		$("#periodHour").attr("disabled", type!='hourType1');
+		$("input[type=checkbox][name=hour]").each(function() {
+			$(this).attr("disabled", type!='hourType2');
+		});
+	}
+	function onDayTypeChange(){
+		var type=$('input:radio[name="dayType"]:checked').attr("id");
+		
+		$("#delayDay").attr("disabled", type!='dayType1');
+		$("#periodDay").attr("disabled", type!='dayType1');
+		
+		$("#dt4Day").attr("disabled", "dayType4"!=type);
+		
+		$("input[type=checkbox][name=day]").each(function() {
+			$(this).attr("disabled", type!="dayType5");
+		});
+	}
+	function onMonthTypeChange(){
+		var type=$('input:radio[name="monthType"]:checked').attr("id");
+		
+		$("#delayDay").attr("disabled", type!='monthType1');
+		$("#periodDay").attr("disabled", type!='monthType1');
+	
+		$("input[type=checkbox][name=month]").each(function() {
+			$(this).attr("disabled", type!='monthType2');
+		});
+	}
+	function onWeekTypeChange(){
+		var useWeek = $("#useWeek").attr("checked");
+		$("input:radio[name=weekType]").each(function() {
+			$(this).attr("disabled", !useWeek);
+		});
+		var type=$('input:radio[name="weekType"]:checked').attr("id");
+		
+		$("#delayWeek").attr("disabled", type!='weekType1');
+		$("#periodWeek").attr("disabled", type!='weekType1');
+		
+		$("#wt2Num").attr("disabled", !useWeek || "weekType2"!=type);
+		$("#wt2Week").attr("disabled", !useWeek || "weekType2"!=type);
+		$("#wt3Week").attr("disabled", !useWeek || "weekType3"!=type);
+		
+		$("input[type=checkbox][name=week]").each(function() {
+			$(this).attr("disabled", !useWeek || "weekType4"!=type);
+		});
+	}
+	
+	function grentSecond(){
+		var type=$('input:radio[name="secondType"]:checked').attr("id");
+		if(type=='secondType0'){
+			$("#cron1").val("*");return true;
+		} else if(type=='secondType1'){
+			var delay = $("#delaySecond").val();
+			var period = $("#periodSecond").val();
+			if(delay && period){
+				$("#cron1").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("秒定义不完整。您选择的是‘循环’类型！");
+			}
+		} else if(type=='secondType2'){
+			var datas = $("input[type=checkbox][name=second]:checked");
+			if(datas.length == 0){
+				addError("秒定义不完整，未选择任何选项。您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=second]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("second", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron1").val(cronExp);
+				return true;
+			}
+		}
+	}
+	function grentMinute(){
+		var type=$('input:radio[name="minuteType"]:checked').attr("id");
+		if(type=='minuteType0'){
+			$("#cron2").val("*");return true;
+		} else if(type=='minuteType1'){
+			var delay = $("#delayMinute").val();
+			var period = $("#periodMinute").val();
+			if(delay && period){
+				$("#cron2").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("分钟定义不完整，您选择的是‘循环’类型！");
+			}
+		} else if(type=='minuteType2'){
+			var minutes = $("input[type=checkbox][name=minute]:checked");
+			if(minutes.length == 0){
+				addError("分钟定义不完整，未选择任何选项，您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=minute]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("minute", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron2").val(cronExp);
+				return true;
+			}
+		}
+	}
+	function grentHour(){
+		var type=$('input:radio[name="hourType"]:checked').attr("id");
+		if(type=='hourType0'){
+			$("#cron3").val("*"); return true;
+		}else if(type=='hourType1'){
+			var delay = $("#delayHour").val();
+			var period = $("#periodHour").val();
+			if(delay && period){
+				$("#cron3").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("分钟定义不完整，您选择的是‘循环’类型！");
+			}
+		}else if(type=='hourType2'){
+			var chks = $("input[type=checkbox][name=hour]:checked");
+			if(chks.length == 0){
+				addError("小时定义不完整，未选择任何选项，您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=hour]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("hour", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron3").val(cronExp);
+				return true;
+			}
+			return true;
+		}
+	}
+	function grentDay(){
+		var useWeek = $("#useWeek").attr("checked");
+		if(useWeek){
+			$("#cron4").val("?"); return true;
+		}
+		var type=$('input:radio[name="dayType"]:checked').attr("id");
+		if(type=="dayType0"){
+			$("#cron4").val("*"); return true;
+		}else if(type=="dayType1"){
+			var delay = $("#delayDay").val();
+			var period = $("#periodDay").val();
+			if(delay && period){
+				$("#cron4").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("小时定义不完整。您选择的是‘循环’类型！");
+			}
+		}else if(type=="dayType2"){
+			$("#cron4").val("L"); return true;
+		}else if(type=="dayType3"){
+			$("#cron4").val("LW"); return true;
+		}else if(type=="dayType4"){
+			var dt4Week = $("#dt4Day option:selected").attr("index") + 1;
+			$("#cron4").val(dt4Week + "W"); return true;
+		}else if(type=="dayType5"){
+			var chks = $("input[type=checkbox][name=day]:checked");
+			if(chks.length == 0){
+				addError("天定义不完整，未选择任何选项，您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=day]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("day", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron4").val(cronExp);
+				return true;
+			}
+			return true;
+		}
+	}
+	function grentMonth(){
+		var type=$('input:radio[name="monthType"]:checked').attr("id");
+		if(type=='monthType0'){
+			$("#cron5").val("*"); return true;
+		}else if(type=='monthType1'){
+			var delay = $("#delayMonth").val();
+			var period = $("#periodMonth").val();
+			if(delay && period){
+				$("#cron5").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("月份定义不完整。您选择的是‘循环’类型！");
+			}
+		}else if(type=='monthType2'){
+			var chks = $("input[type=checkbox][name=month]:checked");
+			if(chks.length == 0){
+				addError("月份定义不完整，未选择任何选项，您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=month]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("month", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron5").val(cronExp);
+				return true;
+			}
+			return true;
+		}
+	}
+	function grentWeek(){
+		var useWeek = $("#useWeek").attr("checked");
+		if(!useWeek){
+			$("#cron6").val("?");
+			return true;
+		}
+		var type=$('input:radio[name="weekType"]:checked').attr("id");
+		
+		if(type=="weekType0"){
+			$("#cron6").val("*"); return true;
+		}else if(type=="weekType1"){
+			var delay = $("#delayWeek").val();
+			var period = $("#periodWeek").val();
+			if(delay && period){
+				$("#cron6").val(delay + "/" + period);
+				return true;
+			} else {
+				addError("星期定义不完整。您选择的是‘循环’类型！");
+			}
+		}else if(type=="weekType2"){
+			var wt2Num = $("#wt2Num option:selected").attr("index") + 1;
+			var wt2Week = $("#wt2Week option:selected").attr("index") + 1;
+			$("#cron6").val(wt2Week + "#" + wt2Num);
+			return true;
+		}else if(type=="weekType3"){
+			var wt3Week = $("#wt3Week option:selected").attr("index") + 1;
+			$("#cron6").val(wt3Week + "L");
+			return true;
+		}else if(type=="weekType4"){
+			var chks = $("input[type=checkbox][name=week]:checked");
+			if(chks.length == 0){
+				addError("周定义不完整，未选择任何选项，您选择的是‘指定’类型！");
+			}else{
+				var cronExp = "";
+				$("input[type=checkbox][name=week]:checked").each(function() {
+					cronExp += $(this).attr("id").replace("week", "");
+					cronExp += ",";
+				});
+				cronExp = cronExp.substring(0, cronExp.length-1);
+				$("#cron6").val(cronExp);
+				return true;
+			}
+			return true;
+		}
+	}
+	
+	function fillData(jsonData){
+		var json = jsonData;
+		var result = json.result;
+		var msg = json.message;
+		if(result=="success"){
+			addInfo(msg + "参考开始时间：" + json.begin);
+			var i=0;
+			for(var t in json.fire){
+				addInfo("第"+(++i)+"次触发时间：" + json.fire[t]);
+			}
+			addInfo("第n次触发时间：... ...");
+		}else{
+			addError(msg);
+		}
+	}
+	
+	function scrollColsolDiv(){
+		var div = document.getElementById('console');
+		div.scrollTop = div.scrollHeight;
+	}
+	
+	function addError(msg){
+		$("#console").append("<p><a style='color:red'>错误</a>：" + msg + '</p>');
+		scrollColsolDiv();
+	}
+	function addInfo(msg){
+		$("#console").append("<p>信息：" + msg + '</p>');
+		scrollColsolDiv();
+	}
+	function setCron(){
+		doc=jQuery.dialog.top.document;
+		$("#cron",doc).val($("#cronExp").val());
+		jQuery.dialog.close();
+	}
+</script>
+</head>
+<body>
+	<div class="tabber">
+		<div class="tabbertab">
+			<h2>秒</h2>
+			<div>
+				<div>
+					<input id="secondType0" name="secondType" type="radio"
+						checked="checked" /><label for="secondType0">每秒</label>
+				</div>
+				<div>
+					<input id="secondType1" name="secondType" type="radio" value="true" /><label
+						for="secondType1">循环</label> 等待<input id="delaySecond"
+						name="delaySecond" type="text" style="width: 40px" />秒， 每<input
+						id="periodSecond" name="periodSecond" type="text"
+						style="width: 40px" />秒执行一次
+				</div>
+				<div>
+					<input id="secondType2" name="secondType" type="radio"
+						checked="checked" /><label for="secondType2">指定</label>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td></td>
+							<td><input id="second0" type="checkbox" name="second"
+								checked="checked" /><label for="second0">0</label></td>
+							<td><input id="second1" type="checkbox" name="second" /><label
+								for="second1">1</label></td>
+							<td><input id="second2" type="checkbox" name="second" /><label
+								for="second2">2</label></td>
+							<td><input id="second3" type="checkbox" name="second" /><label
+								for="second3">3</label></td>
+							<td><input id="second4" type="checkbox" name="second" /><label
+								for="second4">4</label></td>
+							<td><input id="second5" type="checkbox" name="second" /><label
+								for="second5">5</label></td>
+							<td><input id="second6" type="checkbox" name="second" /><label
+								for="second6">6</label></td>
+							<td><input id="second7" type="checkbox" name="second" /><label
+								for="second7">7</label></td>
+							<td><input id="second8" type="checkbox" name="second" /><label
+								for="second8">8</label></td>
+							<td><input id="second9" type="checkbox" name="second" /><label
+								for="second9">9</label></td>
+							<td><input id="second10" type="checkbox" name="second" /><label
+								for="second10">10</label></td>
+							<td><input id="second11" type="checkbox" name="second" /><label
+								for="second11">11</label></td>
+							<td><input id="second12" type="checkbox" name="second" /><label
+								for="second12">12</label></td>
+							<td><input id="second13" type="checkbox" name="second" /><label
+								for="second13">13</label></td>
+							<td><input id="second14" type="checkbox" name="second" /><label
+								for="second14">14</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="second15" type="checkbox" name="second" /><label
+								for="second15">15</label></td>
+							<td><input id="second16" type="checkbox" name="second" /><label
+								for="second16">16</label></td>
+							<td><input id="second17" type="checkbox" name="second" /><label
+								for="second17">17</label></td>
+							<td><input id="second18" type="checkbox" name="second" /><label
+								for="second18">18</label></td>
+							<td><input id="second19" type="checkbox" name="second" /><label
+								for="second19">19</label></td>
+							<td><input id="second20" type="checkbox" name="second" /><label
+								for="second20">20</label></td>
+							<td><input id="second21" type="checkbox" name="second" /><label
+								for="second21">21</label></td>
+							<td><input id="second22" type="checkbox" name="second" /><label
+								for="second22">22</label></td>
+							<td><input id="second23" type="checkbox" name="second" /><label
+								for="second23">23</label></td>
+							<td><input id="second24" type="checkbox" name="second" /><label
+								for="second24">24</label></td>
+							<td><input id="second25" type="checkbox" name="second" /><label
+								for="second25">25</label></td>
+							<td><input id="second26" type="checkbox" name="second" /><label
+								for="second26">27</label></td>
+							<td><input id="second27" type="checkbox" name="second" /><label
+								for="second27">27</label></td>
+							<td><input id="second28" type="checkbox" name="second" /><label
+								for="second28">28</label></td>
+							<td><input id="second29" type="checkbox" name="second" /><label
+								for="second29">29</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="second30" type="checkbox" name="second" /><label
+								for="second30">30</label></td>
+							<td><input id="second31" type="checkbox" name="second" /><label
+								for="second31">31</label></td>
+							<td><input id="second32" type="checkbox" name="second" /><label
+								for="second32">32</label></td>
+							<td><input id="second33" type="checkbox" name="second" /><label
+								for="second33">33</label></td>
+							<td><input id="second34" type="checkbox" name="second" /><label
+								for="second34">34</label></td>
+							<td><input id="second35" type="checkbox" name="second" /><label
+								for="second35">35</label></td>
+							<td><input id="second36" type="checkbox" name="second" /><label
+								for="second36">36</label></td>
+							<td><input id="second37" type="checkbox" name="second" /><label
+								for="second37">37</label></td>
+							<td><input id="second38" type="checkbox" name="second" /><label
+								for="second38">38</label></td>
+							<td><input id="second39" type="checkbox" name="second" /><label
+								for="second39">39</label></td>
+							<td><input id="second40" type="checkbox" name="second" /><label
+								for="second40">40</label></td>
+							<td><input id="second41" type="checkbox" name="second" /><label
+								for="second41">41</label></td>
+							<td><input id="second42" type="checkbox" name="second" /><label
+								for="second42">42</label></td>
+							<td><input id="second43" type="checkbox" name="second" /><label
+								for="second43">43</label></td>
+							<td><input id="second44" type="checkbox" name="second" /><label
+								for="second44">44</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="second45" type="checkbox" name="second" /><label
+								for="second45">45</label></td>
+							<td><input id="second46" type="checkbox" name="second" /><label
+								for="second46">47</label></td>
+							<td><input id="second47" type="checkbox" name="second" /><label
+								for="second47">47</label></td>
+							<td><input id="second48" type="checkbox" name="second" /><label
+								for="second48">48</label></td>
+							<td><input id="second49" type="checkbox" name="second" /><label
+								for="second49">49</label></td>
+							<td><input id="second50" type="checkbox" name="second" /><label
+								for="second50">50</label></td>
+							<td><input id="second51" type="checkbox" name="second" /><label
+								for="second51">51</label></td>
+							<td><input id="second52" type="checkbox" name="second" /><label
+								for="second52">52</label></td>
+							<td><input id="second53" type="checkbox" name="second" /><label
+								for="second53">53</label></td>
+							<td><input id="second54" type="checkbox" name="second" /><label
+								for="second54">54</label></td>
+							<td><input id="second55" type="checkbox" name="second" /><label
+								for="second55">55</label></td>
+							<td><input id="second56" type="checkbox" name="second" /><label
+								for="second56">57</label></td>
+							<td><input id="second57" type="checkbox" name="second" /><label
+								for="second57">57</label></td>
+							<td><input id="second58" type="checkbox" name="second" /><label
+								for="second58">58</label></td>
+							<td><input id="second59" type="checkbox" name="second" /><label
+								for="second59">59</label></td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="tabbertab">
+			<h2>分钟</h2>
+			<div>
+				<div>
+					<input id="minuteType0" name="minuteType" type="radio"
+						checked="checked" /><label for="minuteType0">每分钟</label>
+				</div>
+				<div>
+					<input id="minuteType1" name="minuteType" type="radio" value="true" /><label
+						for="minuteType1">循环</label> 等待<input id="delayMinute"
+						name="delayMinute" type="text" style="width: 40px" />分钟， 每<input
+						id="periodMinute" name="periodMinute" type="text"
+						style="width: 40px" />分钟执行一次
+				</div>
+				<div>
+					<input id="minuteType2" name="minuteType" type="radio"
+						checked="checked" /><label for="minuteType2">指定</label>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td></td>
+							<td><input id="minute0" type="checkbox" name="minute"
+								checked="checked" /><label for="minute0">0</label></td>
+							<td><input id="minute1" type="checkbox" name="minute" /><label
+								for="minute1">1</label></td>
+							<td><input id="minute2" type="checkbox" name="minute" /><label
+								for="minute2">2</label></td>
+							<td><input id="minute3" type="checkbox" name="minute" /><label
+								for="minute3">3</label></td>
+							<td><input id="minute4" type="checkbox" name="minute" /><label
+								for="minute4">4</label></td>
+							<td><input id="minute5" type="checkbox" name="minute" /><label
+								for="minute5">5</label></td>
+							<td><input id="minute6" type="checkbox" name="minute" /><label
+								for="minute6">6</label></td>
+							<td><input id="minute7" type="checkbox" name="minute" /><label
+								for="minute7">7</label></td>
+							<td><input id="minute8" type="checkbox" name="minute" /><label
+								for="minute8">8</label></td>
+							<td><input id="minute9" type="checkbox" name="minute" /><label
+								for="minute9">9</label></td>
+							<td><input id="minute10" type="checkbox" name="minute" /><label
+								for="minute10">10</label></td>
+							<td><input id="minute11" type="checkbox" name="minute" /><label
+								for="minute11">11</label></td>
+							<td><input id="minute12" type="checkbox" name="minute" /><label
+								for="minute12">12</label></td>
+							<td><input id="minute13" type="checkbox" name="minute" /><label
+								for="minute13">13</label></td>
+							<td><input id="minute14" type="checkbox" name="minute" /><label
+								for="minute14">14</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="minute15" type="checkbox" name="minute" /><label
+								for="minute15">15</label></td>
+							<td><input id="minute16" type="checkbox" name="minute" /><label
+								for="minute16">16</label></td>
+							<td><input id="minute17" type="checkbox" name="minute" /><label
+								for="minute17">17</label></td>
+							<td><input id="minute18" type="checkbox" name="minute" /><label
+								for="minute18">18</label></td>
+							<td><input id="minute19" type="checkbox" name="minute" /><label
+								for="minute19">19</label></td>
+							<td><input id="minute20" type="checkbox" name="minute" /><label
+								for="minute20">20</label></td>
+							<td><input id="minute21" type="checkbox" name="minute" /><label
+								for="minute21">21</label></td>
+							<td><input id="minute22" type="checkbox" name="minute" /><label
+								for="minute22">22</label></td>
+							<td><input id="minute23" type="checkbox" name="minute" /><label
+								for="minute23">23</label></td>
+							<td><input id="minute24" type="checkbox" name="minute" /><label
+								for="minute24">24</label></td>
+							<td><input id="minute25" type="checkbox" name="minute" /><label
+								for="minute25">25</label></td>
+							<td><input id="minute26" type="checkbox" name="minute" /><label
+								for="minute26">27</label></td>
+							<td><input id="minute27" type="checkbox" name="minute" /><label
+								for="minute27">27</label></td>
+							<td><input id="minute28" type="checkbox" name="minute" /><label
+								for="minute28">28</label></td>
+							<td><input id="minute29" type="checkbox" name="minute" /><label
+								for="minute29">29</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="minute30" type="checkbox" name="minute" /><label
+								for="minute30">30</label></td>
+							<td><input id="minute31" type="checkbox" name="minute" /><label
+								for="minute31">31</label></td>
+							<td><input id="minute32" type="checkbox" name="minute" /><label
+								for="minute32">32</label></td>
+							<td><input id="minute33" type="checkbox" name="minute" /><label
+								for="minute33">33</label></td>
+							<td><input id="minute34" type="checkbox" name="minute" /><label
+								for="minute34">34</label></td>
+							<td><input id="minute35" type="checkbox" name="minute" /><label
+								for="minute35">35</label></td>
+							<td><input id="minute36" type="checkbox" name="minute" /><label
+								for="minute36">36</label></td>
+							<td><input id="minute37" type="checkbox" name="minute" /><label
+								for="minute37">37</label></td>
+							<td><input id="minute38" type="checkbox" name="minute" /><label
+								for="minute38">38</label></td>
+							<td><input id="minute39" type="checkbox" name="minute" /><label
+								for="minute39">39</label></td>
+							<td><input id="minute40" type="checkbox" name="minute" /><label
+								for="minute40">40</label></td>
+							<td><input id="minute41" type="checkbox" name="minute" /><label
+								for="minute41">41</label></td>
+							<td><input id="minute42" type="checkbox" name="minute" /><label
+								for="minute42">42</label></td>
+							<td><input id="minute43" type="checkbox" name="minute" /><label
+								for="minute43">43</label></td>
+							<td><input id="minute44" type="checkbox" name="minute" /><label
+								for="minute44">44</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="minute45" type="checkbox" name="minute" /><label
+								for="minute45">45</label></td>
+							<td><input id="minute46" type="checkbox" name="minute" /><label
+								for="minute46">47</label></td>
+							<td><input id="minute47" type="checkbox" name="minute" /><label
+								for="minute47">47</label></td>
+							<td><input id="minute48" type="checkbox" name="minute" /><label
+								for="minute48">48</label></td>
+							<td><input id="minute49" type="checkbox" name="minute" /><label
+								for="minute49">49</label></td>
+							<td><input id="minute50" type="checkbox" name="minute" /><label
+								for="minute50">50</label></td>
+							<td><input id="minute51" type="checkbox" name="minute" /><label
+								for="minute51">51</label></td>
+							<td><input id="minute52" type="checkbox" name="minute" /><label
+								for="minute52">52</label></td>
+							<td><input id="minute53" type="checkbox" name="minute" /><label
+								for="minute53">53</label></td>
+							<td><input id="minute54" type="checkbox" name="minute" /><label
+								for="minute54">54</label></td>
+							<td><input id="minute55" type="checkbox" name="minute" /><label
+								for="minute55">55</label></td>
+							<td><input id="minute56" type="checkbox" name="minute" /><label
+								for="minute56">57</label></td>
+							<td><input id="minute57" type="checkbox" name="minute" /><label
+								for="minute57">57</label></td>
+							<td><input id="minute58" type="checkbox" name="minute" /><label
+								for="minute58">58</label></td>
+							<td><input id="minute59" type="checkbox" name="minute" /><label
+								for="minute59">59</label></td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabbertab">
+			<h2>小时</h2>
+			<div>
+				<div>
+					<input id="hourType0" name="hourType" type="radio"
+						checked="checked" value="true" /><label for="hourType0">每小时</label>
+				</div>
+				<div>
+					<input id="hourType1" name="hourType" type="radio" value="true" /><label
+						for="hourType1">循环</label> 等待<input id="delayHour"
+						name="delayHour" type="text" style="width: 40px" />小时， 每<input
+						id="periodHour" name="periodHour" type="text" style="width: 40px" />是小时执行一次
+				</div>
+				<div>
+					<input id="hourType2" name="hourType" type="radio" /><label
+						for="hourType2">指定</label>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td>上午：</td>
+							<td><input id="hour0" type="checkbox" name="hour" /><label
+								for="hour0">0</label></td>
+							<td><input id="hour1" type="checkbox" name="hour" /><label
+								for="hour1">1</label></td>
+							<td><input id="hour2" type="checkbox" name="hour" /><label
+								for="hour2">2</label></td>
+							<td><input id="hour3" type="checkbox" name="hour" /><label
+								for="hour3">3</label></td>
+							<td><input id="hour4" type="checkbox" name="hour" /><label
+								for="hour4">4</label></td>
+							<td><input id="hour5" type="checkbox" name="hour" /><label
+								for="hour5">5</label></td>
+							<td><input id="hour6" type="checkbox" name="hour" /><label
+								for="hour6">6</label></td>
+							<td><input id="hour7" type="checkbox" name="hour" /><label
+								for="hour7">7</label></td>
+							<td><input id="hour8" type="checkbox" name="hour" /><label
+								for="hour8">8</label></td>
+							<td><input id="hour9" type="checkbox" name="hour" /><label
+								for="hour9">9</label></td>
+							<td><input id="hour10" type="checkbox" name="hour" /><label
+								for="hour10">10</label></td>
+							<td><input id="hour11" type="checkbox" name="hour" /><label
+								for="hour11">11</label></td>
+						</tr>
+						<tr>
+							<td>下午：</td>
+							<td><input id="hour12" type="checkbox" name="hour" /><label
+								for="hour12">12</label></td>
+							<td><input id="hour13" type="checkbox" name="hour" /><label
+								for="hour13">13</label></td>
+							<td><input id="hour14" type="checkbox" name="hour" /><label
+								for="hour14">14</label></td>
+							<td><input id="hour15" type="checkbox" name="hour" /><label
+								for="hour15">15</label></td>
+							<td><input id="hour16" type="checkbox" name="hour" /><label
+								for="hour16">16</label></td>
+							<td><input id="hour17" type="checkbox" name="hour" /><label
+								for="hour17">17</label></td>
+							<td><input id="hour18" type="checkbox" name="hour" /><label
+								for="hour18">18</label></td>
+							<td><input id="hour19" type="checkbox" name="hour" /><label
+								for="hour19">19</label></td>
+							<td><input id="hour20" type="checkbox" name="hour" /><label
+								for="hour20">20</label></td>
+							<td><input id="hour21" type="checkbox" name="hour" /><label
+								for="hour21">21</label></td>
+							<td><input id="hour22" type="checkbox" name="hour" /><label
+								for="hour22">22</label></td>
+							<td><input id="hour23" type="checkbox" name="hour" /><label
+								for="hour23">23</label></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabbertab">
+			<h2>天</h2>
+			<div>
+				<div>
+					<input id="dayType0" name="dayType" type="radio" checked="checked"
+						value="true" /><label for="dayType0">每天</label> <input
+						id="dayType2" name="dayType" type="radio" /><label for="dayType2">最后一天</label>
+				</div>
+				<div>
+					<input id="dayType1" name="dayType" type="radio" value="true" /><label
+						for="dayType1">循环</label> 等待<input id="delayDay" name="delayDay"
+						type="text" style="width: 40px" />天， 每<input id="periodDay"
+						name="periodDay" type="text" style="width: 40px" />天执行一次
+				</div>
+				<div>
+					<input id="dayType3" name="dayType" type="radio" /><label
+						for="dayType3">最后一个工作日</label>
+				</div>
+				<div>
+					<input id="dayType4" name="dayType" type="radio" /><label
+						for="dayType4">最近工作日</label> <select id="dt4Day"></select>最近工作日
+				</div>
+				<div>
+					<input id="dayType5" name="dayType" type="radio" /><label
+						for="dayType5">指定</label>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td></td>
+							<td><input id="day1" type="checkbox" name="day" /><label
+								for="day1">1</label></td>
+							<td><input id="day2" type="checkbox" name="day" /><label
+								for="day2">2</label></td>
+							<td><input id="day3" type="checkbox" name="day" /><label
+								for="day3">3</label></td>
+							<td><input id="day4" type="checkbox" name="day" /><label
+								for="day4">4</label></td>
+							<td><input id="day5" type="checkbox" name="day" /><label
+								for="day5">5</label></td>
+							<td><input id="day6" type="checkbox" name="day" /><label
+								for="day6">6</label></td>
+							<td><input id="day7" type="checkbox" name="day" /><label
+								for="day7">7</label></td>
+							<td><input id="day8" type="checkbox" name="day" /><label
+								for="day8">8</label></td>
+							<td><input id="day9" type="checkbox" name="day" /><label
+								for="day9">9</label></td>
+							<td><input id="day10" type="checkbox" name="day" /><label
+								for="day10">10</label></td>
+							<td><input id="day11" type="checkbox" name="day" /><label
+								for="day11">11</label></td>
+							<td><input id="day12" type="checkbox" name="day" /><label
+								for="day12">12</label></td>
+							<td><input id="day13" type="checkbox" name="day" /><label
+								for="day13">13</label></td>
+							<td><input id="day14" type="checkbox" name="day" /><label
+								for="day14">14</label></td>
+							<td><input id="day15" type="checkbox" name="day" /><label
+								for="day15">15</label></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id="day16" type="checkbox" name="day" /><label
+								for="day16">16</label></td>
+							<td><input id="day17" type="checkbox" name="day" /><label
+								for="day17">17</label></td>
+							<td><input id="day18" type="checkbox" name="day" /><label
+								for="day18">18</label></td>
+							<td><input id="day19" type="checkbox" name="day" /><label
+								for="day19">19</label></td>
+							<td><input id="day20" type="checkbox" name="day" /><label
+								for="day20">20</label></td>
+							<td><input id="day21" type="checkbox" name="day" /><label
+								for="day21">21</label></td>
+							<td><input id="day22" type="checkbox" name="day" /><label
+								for="day22">22</label></td>
+							<td><input id="day23" type="checkbox" name="day" /><label
+								for="day23">23</label></td>
+							<td><input id="day24" type="checkbox" name="day" /><label
+								for="day24">24</label></td>
+							<td><input id="day25" type="checkbox" name="day" /><label
+								for="day25">25</label></td>
+							<td><input id="day26" type="checkbox" name="day" /><label
+								for="day26">27</label></td>
+							<td><input id="day27" type="checkbox" name="day" /><label
+								for="day27">27</label></td>
+							<td><input id="day28" type="checkbox" name="day" /><label
+								for="day28">28</label></td>
+							<td><input id="day29" type="checkbox" name="day" /><label
+								for="day29">29</label></td>
+							<td><input id="day30" type="checkbox" name="day" /><label
+								for="day30">30</label></td>
+							<td><input id="day31" type="checkbox" name="day" /><label
+								for="day31">31</label></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="tabbertab">
+			<h2>月</h2>
+			<div>
+				<div>
+					<input id="monthType0" name="monthType" type="radio"
+						checked="checked" value="true" /><label for="monthType0">每月</label>
+				</div>
+				<div>
+					<input id="monthType1" name="monthType" type="radio" value="true" /><label
+						for="monthType1">循环</label> 等待<input id="delayMonth"
+						name="delayMonth" type="text" style="width: 40px" />月， 每<input
+						id="periodMonth" name="periodMonth" type="text"
+						style="width: 40px" />月执行一次
+				</div>
+				<div>
+					<input id="monthType2" name="monthType" type="radio" /><label
+						for="monthType2">指定</label>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td></td>
+							<td><input id="month1" type="checkbox" name="month" /><label
+								for="month1">1</label></td>
+							<td><input id="month2" type="checkbox" name="month" /><label
+								for="month2">2</label></td>
+							<td><input id="month3" type="checkbox" name="month" /><label
+								for="month3">3</label></td>
+							<td><input id="month4" type="checkbox" name="month" /><label
+								for="month4">4</label></td>
+							<td><input id="month5" type="checkbox" name="month" /><label
+								for="month5">5</label></td>
+							<td><input id="month6" type="checkbox" name="month" /><label
+								for="month6">6</label></td>
+							<td><input id="month7" type="checkbox" name="month" /><label
+								for="month7">7</label></td>
+							<td><input id="month8" type="checkbox" name="month" /><label
+								for="month8">8</label></td>
+							<td><input id="month9" type="checkbox" name="month" /><label
+								for="month9">9</label></td>
+							<td><input id="month10" type="checkbox" name="month" /><label
+								for="month10">10</label></td>
+							<td><input id="month11" type="checkbox" name="month" /><label
+								for="month11">11</label></td>
+							<td><input id="month12" type="checkbox" name="month" /><label
+								for="month12">12</label></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabbertab">
+			<h2>星期</h2>
+			<div>
+				<input id="useWeek" type="checkbox" name="useWeek" /><label
+					for="useWeek">使用星期</label> <font color="red">(注：使用周定义时，天定义无效)</font>
+			</div>
+			<div>
+				<input id="weekType0" name="weekType" type="radio" value="true" /><label
+					for="weekType0">每天</label>
+			</div>
+			<div>
+				<input id="weekType1" name="weekType" type="radio" value="true" /><label
+					for="weekType1">循环</label> 以周为周期，等待<input id="delayWeek"
+					name="delayWeek" type="text" style="width: 40px" />天， 每<input
+					id="periodWeek" name="periodWeek" type="text" style="width: 40px" />天执行一次
+			</div>
+			<div>
+				<input id="weekType2" name="weekType" type="radio" value="true" /><label
+					for="weekType2">第N个周几</label> 第<select id="wt2Num"><option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option></select> 个 <select id="wt2Week"><option>星期天</option>
+					<option>星期一</option>
+					<option>星期二</option>
+					<option>星期三</option>
+					<option>星期四</option>
+					<option>星期五</option>
+					<option>星期六</option></select>
+			</div>
+			<div>
+				<input id="weekType3" name="weekType" type="radio" /><label
+					for="weekType3">最后一个</label> 最后一个<select id="wt3Week"><option>星期天</option>
+					<option>星期一</option>
+					<option>星期二</option>
+					<option>星期三</option>
+					<option>星期四</option>
+					<option>星期五</option>
+					<option>星期六</option></select>
+			</div>
+			<div>
+				<input id="weekType4" name="weekType" type="radio" checked="checked" /><label
+					for="weekType4">指定</label>
+			</div>
+			<div>
+				<input id="week1" type="checkbox" name="week" /><label for="week1">星期天</label>
+				<input id="week2" type="checkbox" name="week" /><label for="week2">星期一</label>
+				<input id="week3" type="checkbox" name="week" /><label for="week3">星期二</label>
+				<input id="week4" type="checkbox" name="week" /><label for="week4">星期三</label>
+				<input id="week5" type="checkbox" name="week" /><label for="week5">星期四</label>
+				<input id="week6" type="checkbox" name="week" /><label for="week6">星期五</label>
+				<input id="week7" type="checkbox" name="week" /><label for="week7">星期六</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- 展示区域 -->
+	<div>
+		<table style="width: 600px; font-size: 12px; border: 1px solid #999;">
+			<tr>
+				<td style="width: 80px;text-align: right">表达式字段：</td>
+				<td style="width: 30px">秒<input id="cron1" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 60%" /></td>
+				<td style="width: 70px">分<input id="cron2" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 90%" /></td>
+				<td style="width: 55px">时<input id="cron3" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 85%" /></td>
+				<td style="width: 55px">天<input id="cron4" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 85%" /></td>
+				<td style="width: 30px">月<input id="cron5" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 60%" /></td>
+				<td style="width: 80px">周<input id="cron6" type="text"
+					name="cron" readonly="readonly" class="cronField"
+					style="width: 70%" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: right">Cron表达式：</td>
+				<td colspan="5"><input id="cronExp" type="text" name="cronExp"
+					style="width: 100%" /></td>
+				<td colspan="2"><input type="button" value="生成"
+					id="generateCronExp" class="ButtonStyle_Blue" /> <input
+					type="button" value="测试" id="parseCronExp" class="ButtonStyle_Blue" /></td>
+			</tr>
+		</table>
+		<div id="scroll_main" style="font-size: 12px;">
+			<span class="notice">控制台信息：</span><br />
+			<div id="console"
+				style="overflow:auto; height: 100px; width: 600px; border: 1px solid #999;" /></div>
+		</div>
+	</div>
+	<div style="text-align: center;">
+			<input type="button" onclick="setCron()" value="确定"/>
+	</div>
+</body>
+</html>

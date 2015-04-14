@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>job</title>
+<link href="${_project.envRoot}/styles/css/privilege/v1.0/css/style.css"
+	type="text/css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="${_project.envRoot}/scripts/lib/ztree/css/zTreeStyle/zTreeStyle.css"
+	type="text/css" />
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery.form.min.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/foundation/privilege/v1.0/privilege.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery-form.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/json2.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/ztree/js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/art/plugins/iframeTools.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/foundation/trigger/trigger.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/DatePicker/WdatePicker.js"></script>
+<style type="text/css">
+	.PopUpTableBorder{
+		border: 1px solid #BAD3EB;
+		margin-left: 5px;
+		margin-top: 5px;
+		border-collapse: collapse;
+	}
+	.PopUpTableTitle{
+		background-color: #EEF9FF;
+	}
+</style>
+<script type="text/javascript">
+function submitForm(cmd) {
+	if (cmd.indexOf('stop') >= 0) {
+		if (!confirm('是否要强行停止调度控制?\n强行停止后，必须重新启动应用才能重新启动调度器！')){
+			return;
+		}
+	} 
+	if (cmd.indexOf('waitAndStopScheduler') >= 0) {
+		if (!confirm('是否要等待停止调度控制?\n停止后，必须重新启动应用才能重新启动调度器！')){
+			return;
+		}
+	}
+	document.getElementById("command").value=cmd;
+	document.getElementById("frmChooseScheduler").submit();
+}	
+</script>
+</head>
+<body>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td align="left" valign="top">
+				<div class="current-address">
+					当前位置：<a href="javascript:;">首页</a><img
+						src="${_project.envRoot}/styles/css/portal/office/images/arrowbg.png" /><a
+						href="javascript:;">调度控制</a><img
+						src="${_project.envRoot}/styles/css/portal/office/images/arrowbg.png" />
+				</div>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="box">
+					<table class="PopUpTableBorder" border="1" style="width:80%">
+						<tr>
+							<td class="PopUpTableTitle"
+								style="text-align: left; font-weight: bold" colspan="4">
+								◇调度器基本信息</td>
+						</tr>
+						<tr>
+							<form id="frmChooseScheduler" name="chooseSchedulerForm"
+								method="post" action="schedulerUI">
+								<input type="hidden" id="command" name="command" value="" />
+							</form>
+							<td class="PopUpTableTitle" style="width:15%; text-align: right">调度器：</td>
+							<td style="width:35%; text-align: left"><select
+								id="schedulerName" name="schedulerName" class="PopUpInput"
+								onchange="submit()"> 
+									#foreach($!schedule in $!scheduleInfo.schedulers)
+									<option id='$!schedule.schedulerName'
+										value="$!schedule.schedulerName">$!schedule.schedulerName</option>
+									#end
+							</select> 实例ID：$!scheduleInfo.scheduler.schedulerId</td>
+							<td class="PopUpTableTitle" style="text-align: right">存储/线程池：</td>
+							<td style="text-align: left">
+								$!scheduleInfo.scheduler.persistenceType /
+								$!scheduleInfo.scheduler.threadPoolSize个</td>
+						</tr>
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: right">状态/版本：</td>
+							<td style="text-align: left">
+								$!scheduleInfo.scheduler.state <font color="red">(完成任务数:$!scheduleInfo.scheduler.numJobsExecuted)
+							</font>$!scheduleInfo.scheduler.version
+							</td>
+							<td class="PopUpTableTitle" style="text-align: right">启动时间：</td>
+							<td style="text-align: left">
+								$!scheduleInfo.scheduler.runningSince</td>
+						</tr>
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: right">系统信息：</td>
+							<td
+								style="word-break: break-all; word-wrap:break-word; text-align: left"
+								colspan="3"><font color="red">$!scheduleInfo.message</font></td>
+						</tr>
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: right">操作：</td>
+							<td style="text-align: left" colspan="3">
+								<div>
+									<a onclick="submitForm('start')"
+										style="font-size:14px; cursor:pointer">启动</a><input
+										type="image" align="middle" value="start"
+										src="${_project.envRoot}/styles/css/privilege/v1.0/images/Play24.gif" alt="启动调度"
+										onclick="submitForm(this.value)" border="0" /> <a
+										onclick="submitForm('pause')"
+										style="font-size:14px; cursor:pointer"> 暂停</a><input
+										type="image" align="middle" value="pause"
+										src="${_project.envRoot}/styles/css/privilege/v1.0/images/Pause24.gif" alt="调度暂停"
+										onclick="submitForm(this.value)" border="0" /> <a
+										onclick="submitForm('stop')"
+										style="font-size:14px; cursor:pointer"> 强行停止</a><input
+										type="image" align="middle" value="stop"
+										src="${_project.envRoot}/styles/css/privilege/v1.0/images/Stop24.gif" alt="强行停止"
+										onclick="submitForm(this.value)" border="0" /> <a
+										onclick="submitForm('waitAndStopScheduler')"
+										style="font-size:14px; cursor:pointer"> 等待停止</a><input
+										type="image" align="middle" value="waitAndStopScheduler"
+										src="${_project.envRoot}/styles/css/privilege/v1.0/images/Stop24.gif" alt="等待停止"
+										onclick="submitForm(this.value)" border="0" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table class="PopUpTableBorder" border="1" style="width:80%">
+						<tr>
+							<td class="PopUpTableTitle"
+								style="text-align: left; font-weight: bold" colspan="4">
+								◇正在执行任务列表 (#if ($!scheduleInfo.executingJobs.size()==0)><font
+								color="red">当前无正执行任务。</font>#end)
+							</td>
+						</tr>
+						#if ($!scheduleInfo.executingJobs.size()>0)>
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: center">分组</td>
+							<td class="PopUpTableTitle" style="text-align: center">任务名称</td>
+							<td class="PopUpTableTitle" style="text-align: center">任务描述</td>
+							<td class="PopUpTableTitle" style="text-align: center">任务Class</td>
+						</tr>
+						#foreach($!job in $!scheduleInfo.executingJobs)
+						<tr>
+							<td>$!job.groupName</td>
+							<td>$!job.name</td>
+							<td>$!job.description</td>
+							<td>$!job.jobClass</td>
+						</tr>
+						#end
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: right">操作：</td>
+							<td colspan="3" style="text-align: left"><div>
+									<a style="font-size:14px; cursor:pointer">暂停所有任务</a><input
+										type="image" align="middle"
+										src="${wctx}/pub/v3/quartz/icon/Pause24.gif"
+										　 value="pauseAll" alt="暂停所有任务"
+										onclick="submitForm(this.value)" /> <a
+										style="font-size:14px; cursor:pointer"> 重新开始所有任务</a><input
+										type="image" align="middle"
+										src="${wctx}/pub/v3/quartz/icon/Play24.gif" value="resumeAll"
+										alt="重新开始所有任务" onclick="submitForm(this.value)" />
+								</div></td>
+						</tr>
+						#end
+						<tr>
+							<td class="PopUpTableTitle" style="text-align: center">描述:</td>
+							<td colspan="3" style="text-align: left"><p>
+									<i><pre> $!scheduleInfo.scheduler.summary</pre></i>
+								</p></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>添加用户 | 用户管理 | 系统管理 | 产品平台</title>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/head.html')
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/index.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/iframe.css' media='screen' />
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-12 col-md-12'>
+				<ol class='breadcrumb'>
+					<li>
+						<i class='fa fa-home fa-fw'></i>
+						<a href='javascript:;'>产品平台</a></li>
+					<li class='active'>权限管理</li>
+					<li class='active'>用户管理</li>
+					<li class='active'>用户信息维护</li>
+					<li class='active'>新增用户</li>
+				</ol>
+				<div id='info_alert' class='alert alert-info'>
+					<button type='button' class='close' data-dismiss='alert'>&times;</button>
+					<strong>提示：</strong>新增用户信息。
+				</div>
+				<div class='panel panel-default'>
+					<div class='panel-body'>
+						<form class='form-horizontal' id='addFrm' role='form' onsubmit='return false;' data-url='add.do'>
+							<div class='form-group'>
+								<label class='col-sm-2 hidden-xs control-label' for='addFrm_UserName'>用户名 <span class='must'>*</span></label>
+								<div class='col-sm-4'>
+									<input type='text' class='form-control' name='user_name' id='addFrm_UserName' placeholder='用户名'>
+								</div>
+							</div>
+							<div class='form-group'>
+								<label class='col-sm-2 hidden-xs control-label' for='addFrm_RealName'>真实姓名 <span class='must'>*</span></label>
+								<div class='col-sm-4'>
+									<input type='text' class='form-control' name='real_name' id='addFrm_RealName' placeholder='真实姓名'>
+								</div>
+							</div>
+							<div class='form-group'>
+								<label class='col-sm-2 hidden-xs control-label' for='addFrm_Sex'>性别</label>
+								<div class='col-sm-4'>
+									<select class='form-control' name='sex' id='addFrm_Sex'>
+										<option value='1'>男</option>
+										<option value='2'>女</option>
+										<option value='3'>未知</option>
+									</select>
+								</div>
+							</div>
+							<div class='form-group'>
+								<div class='col-sm-offset-2 col-sm-4'>
+									<button id='addFrm_btn_sub' type='button' class='btn btn-primary btn-sm'>保存</button>
+									<a class='btn btn-default btn-sm' href="javascript:go('#page/${virtualPath}user/index')">返回</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/js.html')
+	#parse('foundation/cppt/site/pagelet/v1.0.1/iframe.html')
+</body>
+</html>

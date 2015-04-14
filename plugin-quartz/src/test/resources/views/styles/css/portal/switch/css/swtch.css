@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#333;
+	
+}
+select, input, button, button img, textarea, label, img {
+    margin: 0;
+    vertical-align: middle;border:0;
+}
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+h1,h2,h3{ font-size:14px; margin:0px; padding:0px;}
+a{text-decoration:none; color:#666;}
+a:hover { color:#fe0000;}
+/*�л�ҳ��*/
+.ui-switimg {
+	height: 164px;
+	width: 246px;
+	margin: 20px;
+	float: left;
+}
+.ui-switimg  label a{
+	height: 162px;
+	width: 244px;
+	float: left;
+	border:1px solid #dddddd;
+	padding:1px;
+}
+.ui-switimg  label a:hover{
+	height: 162px;
+	width: 244px;
+	float: left;
+	border:1px solid  #FF0000;
+	padding:1px;
+}
+.ui-switimg h1 {
+	text-align: center;
+	width: 244px;
+	font-size: 12px;
+	line-height: 30px;
+}
+.ui-switch {
+	margin-top: 20px;
+	margin-left: 20px;
+	height:230px;
+}

@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*css_reset_start */
+*{
+margin:0;
+padding:0;
+}
+body, div,p, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea {
+margin:0;
+padding:0;
+font-style: normal;
+font:12px/22px Arial, Helvetica, sans-serif;
+} 
+ol, ul ,li{list-style: none;} 
+img {border: 0; vertical-align:baseline;} 
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none; color:#666;}
+a:hover {color:#fe0000;}
+ul, ol {
+    list-style: none outside none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+select, input, button, button img, textarea, label, img {
+    margin: 0;
+    vertical-align: middle;
+}
+select{
+height:22px;
+color:#333;
+}
+/*css_reset_end */
+
+/*frame_start*/
+#header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100px;
+	background:#F4F8FD url(images/topbodybg.jpg) repeat-x left 0;
+}
+#main-content{
+	position:absolute;
+	top:100px;
+	right:0;
+	bottom:23px;
+	left:0;
+	overflow:auto;
+	width:100%;
+	_height:100%;
+	background:#fff;
+
+}
+#footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100px;
+	color:#999;
+	height:23px;
+    background:url(images/footer_bg.png) repeat-x;
+	text-align:right;
+	line-height:23px;
+	
+}
+#footer span{
+margin-right:5px;
+font-size:12px;
+}
+/*frame_end*/
+
+/*header_start*/
+
+.logo{
+width:194px;
+height:27px;
+margin-left:5px;
+background:url(images/logo.png) no-repeat;
+}
+/*tab*/
+.header-menu{
+	overflow:hidden;
+	height:95px;
+	position:absolute;
+	top:0px;
+}
+.one-menu{
+	height:30px;
+	overflow:hidden;
+	font-size:12px;
+	margin-left:220px;
+	
+}
+.one-menu ul{ height:30px;}
+.one-menu ul li a{color:#05406F;}
+.one-menu ul li a:hover{color:#0D67B2;}
+.one-menu ul li{
+	display:inline;
+	cursor:pointer;
+	width:102px;
+	text-align:center;
+	overflow:hidden;
+	float:left;
+	line-height:30px;
+	color:#05406F;
+}
+.one-menu ul li.hover {
+	cursor:pointer;
+	width:102px;
+	color:#025DA5;
+	text-align:center;
+	height:30px;
+	overflow:hidden;
+	float:left;
+	background-image: url(images/often_down.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.tab1{ overflow:hidden;}
+.tab1 ul{
+margin:2px 0 0 5px;
+height:65px;
+}
+.tab1 ul li{
+float:left;
+margin:0 10px;
+text-align:center;
+padding-right:15px;
+background:url(images/menu_vline.png) no-repeat right center;
+}
+
+.tab1 ul li img{
+display:block;
+margin:0 auto;
+width:48px;
+height:40px;
+}
+.tab1 ul li a{
+display:block;
+padding:0 5px;
+
+}
+.tab1 ul li a:hover{
+color:#000;
+background:#FFFF99;
+}
+/*tab结束*/
+.quit_btn a{
+position:absolute;
+display:block;
+right:6px;
+top:3px;
+width:20px;
+height:20px;
+background:url(images/security_btn.png) no-repeat;
+}
+.quit_btn a:hover{
+background:url(images/security_btn_over.png) no-repeat;
+}
+/*header_end*/
+
+/*navbar_start*/
+
+#navbar-body{
+background:#E4EFF9;
+margin:0;
+padding:0;
+  }
+#navbar{width:216px;}
+#navbar .menu-head{
+height:35px;
+line-height:35px;
+cursor:pointer;
+position:relative;
+border-bottom:1px solid #84A7C3;
+background:#c8e4fc url(images/navbar_title_bg.jpg) center left no-repeat;
+}
+#navbar .menu-head a{
+width:216px;
+height:35px;
+display:block;
+color:#333;
+text-decoration:none;
+font-size:14px;
+text-indent:11px;
+}
+#navbar .menu-head a:hover{
+font-weight:bold;
+background:#c8e4fc url(images/navbar_title_bgover.jpg) center left no-repeat;
+}
+#navbar .menu-head a img{
+vertical-align:text-bottom;
+margin-right:5px;
+margin-top:5px;
+}
+#navbar .menu-list .current{
+background:url(images/navbar_title_bgover.jpg) center left no-repeat;
+font-weight:bold;
+}
+#navbar .menu-body{display:none;}
+#navbar .menu-body a{
+display:block;color:#333;
+text-indent:31px;font-size:12px;
+text-decoration:none;
+height:30px;line-height:30px;
+border-bottom:1px solid #CBD8E3;
+text-decoration:none;
+}
+#navbar .menu-body a:hover{
+color:#000;
+font-weight:bold;
+text-decoration:none;
+background:#FFFCC5;
+}
+/*navbar_end*/
+/*main_content_start*/
+
+.iframe-div{
+width:100%;
+height:100%;
+}
+
+/*main_content_end*/
+

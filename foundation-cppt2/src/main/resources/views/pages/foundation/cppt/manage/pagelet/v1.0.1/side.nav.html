@@ -1,0 +1,31 @@
+<div class='panel-group' id='accordion'>
+	#foreach($!obj in $!sideNavView)
+		##if(4 == $!obj.ID.length())
+		#set ($len = 0)
+		#foreach ($item in $!obj.PATH.split(","))
+			#set ($len = $velocityCount)
+		#end
+		#if(3 == $len)
+	<div class='panel panel-default'>
+		<div class='panel-heading'>
+			<h4 class='panel-title'>
+				<a data-toggle='collapse' data-parent='#accordion' href='#collapse$!obj.ID'>$!obj.MENU_NAME</a>
+			</h4>
+		</div>
+		<div id='collapse$!obj.ID' class='panel-collapse collapse#if(1 == $velocityCount) in#end'>
+			<div class='panel-body'>
+				#foreach($!obj2 in $!sideNavView)
+					#set ($len = 0)
+					#foreach ($item in $!obj2.PATH.split(","))
+						#set ($len = $velocityCount)
+					#end
+					#if(4 == $len && $!obj.ID == $!obj2.PID)
+				<p><a href='#page/${virtualPath}$!obj2.MENU_URL'>$!obj2.MENU_NAME</a></p>
+					#end
+				#end
+			</div>
+		</div>
+	</div>
+		#end
+	#end
+</div>

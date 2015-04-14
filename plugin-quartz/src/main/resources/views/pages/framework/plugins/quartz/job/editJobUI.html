@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="${_project.envRoot}/styles/css/privilege/v1.0/css/rolestyle.css"
+	type="text/css" rel="stylesheet" />
+<style type="text/css">
+	.inputtext{
+		width: 240px;
+	}
+	.add{
+		background:transparent url(${_project.envRoot}/styles/css/privilege/v1.0/images/zengjia_ico.png) no-repeat center left;
+		border: 0;
+		background-color: #fff;
+		cursor: pointer;
+		padding-left: 15px;
+	}
+	.del{
+		width:17px;
+		height:19px;
+		background-color:transparent;
+		background-image: url(${_project.envRoot}/styles/css/privilege/v1.0/images/shanchu_ico.png);
+		background-repeat: no-repeat;
+		border: 0;
+		cursor: pointer;
+	}
+	#parameters{
+		border-spacing: 3px;
+		border-collapse:   separate; 
+	}
+	#parameters td{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<form id="stuform"  method="post" enctype="multipart/form-data">
+		<div class="ui-dialog" style="width: 570px;">
+			<div class="cl"></div>
+			<div class="ui-dialog-content">
+				<ul>
+					<li class="ui-dialog-li01"><font color="red">*</font>任务名：</li>
+					<li class="ui-dialog-li02"><input id="name" name="name"
+						type="text" class="inputtext" value="$!jobBean.name"/></li>
+
+					<li class="ui-dialog-li01 cl"><font color="red">*</font>分组：</li>
+					<li class="ui-dialog-li02"><input id="group" name="group"
+						type="text" class="inputtext" value="$!jobBean.group"/></li>
+						
+					<li class="ui-dialog-li01 cl"><font color="red">*</font>任务(类名)：</li>
+					<li class="ui-dialog-li02"><input id="jobClass" name="jobClass"
+						type="text" class="inputtext" value="$!jobBean.jobClass"/></li>
+					<li class="ui-dialog-li01 cl">任务描述：</li>
+					<li class="ui-dialog-li02">
+						<textarea rows="4" cols="50" id="description" name="description">$!jobBean.description</textarea>
+					</li>
+
+					<li class="ui-dialog-li01 cl">任务恢复：</li>
+					<li class="ui-dialog-li02" style="width: 250px;">
+						<input type="checkbox" id="recovery" name="recovery" value="true"/>&nbsp;<label for="recovery">shouldRecover应用重启之后忽略过期任务</label>
+					</li>
+					<li class="ui-dialog-li01 cl">保存任务：</li>
+					<li class="ui-dialog-li02" style="width: 300px;">
+						<input type="checkbox" id="durable" name="durable" value="true"/>&nbsp;<label for="durable">durable 任务不在被任何触发器所引用时依然保存。</label>
+					</li>
+					<li class="ui-dialog-li01 cl">并发执行：</li>
+					<li class="ui-dialog-li02" style="width: 400px;">
+						禁用并发执行（使用注解org.quartz.DisallowConcurrentExecution实现）
+					</li>
+					<li class="ui-dialog-li01 cl">有状态任务：</li>
+					<li class="ui-dialog-li02" style="width: 450px;">
+						是否是有状态的任务（使用注解org.quartz.PersistJobDataAfterExecution实现）
+					</li>
+					<li class="ui-dialog-li01 cl" style="width: 200px;font-size: 15px;font-weight: bold;text-align: left;">◇任务运行参数：</li>
+					<li class="ui-dialog-li02">
+						<input type="button" id="add_job_parameters" class="add" value="增加参数" onclick="addParameters('','')"/>
+					</li>
+					<li class="ui-dialog-li01" style="clear: both;">
+						<div id="parametersDiv" style="overflow:auto; height: 150px; width: 500px; border: 0px;">
+							<table id="parameters" style="width: 100%;">
+								<tr>
+									<td style="width: 200px;">参数名</td>
+									<td style="width: 200px;">参数值</td>
+									<td >删除</td>
+								</tr>
+								#foreach($!key in $!jobBean.parameters.keySet())
+									<tr>
+										<td><input style="width:150px" class="parameter_name"
+											type="text" value="$!key"/></td>
+										<td><input style="width: 150px" type="text"
+											class="parameter_val" value="$!jobBean.parameters.get($!key)"/></td>
+										<td><input type="button" class="del"
+											onclick="removeParameters(this)" /></td>
+									</tr>
+								#end
+							</table>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-dialog-buttonpane">
+				<div class="sub-btn-frame">
+					<a class="sub-btn sub-btn-over" href="javascript:updateJob();">
+						<span>保 存</span>
+					</a>
+				</div>
+
+				<div class="sub-btn-frame">
+					<a class="sub-btn sub-btn-over" href="javascript:void(0);"> <span
+						onclick="art.dialog({id:'editjobid'}).close();">取 消</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		function addParameters(key, value){
+			var paraHtml = '<tr><td><input style="width:150px" class="parameter_name" type="text" /></td><td><input style="width: 150px" type="text" class="parameter_val" /></td><td><input type="button" class="del" onclick="removeParameters(this)"/></td></tr>';
+			$("#parameters").append(paraHtml);
+			$("#parametersDiv").scrollTop($("#parametersDiv")[0].scrollHeight);
+		}
+		function removeParameters(but){
+			$(but).parent().parent().remove();
+		}
+		$(function(){
+			if($!jobBean.recovery)jQuery("#recovery").attr("checked", "checked");
+			if($!jobBean.durable)jQuery("#durable").attr("checked", "checked");
+		});
+	</script>
+</body>
+</html>
