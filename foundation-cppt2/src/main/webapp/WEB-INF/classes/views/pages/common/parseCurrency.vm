@@ -1,0 +1,3 @@
+#macro(parseCurrency $money)
+	#set($result = $money / 100.00)
+￥$result#end

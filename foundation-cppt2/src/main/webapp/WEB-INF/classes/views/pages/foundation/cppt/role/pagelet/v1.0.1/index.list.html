@@ -1,0 +1,16 @@
+<table id='table1' data-olx-type='olx.grid' class='table table-bordered table-hover table-condensed table-striped' data-url='/role/list' data-current='1' data-pagesize='20' data-count='561'>
+	<thead>
+		<tr>
+			<th class='ta'><input type='checkbox' title='全选/取消'></th>
+			<th>角色名称</th>
+			<th>角色描述</th>
+		</tr>
+	</thead>
+	<tbody>
+		#foreach($!role in $!pageView.records)<tr>
+			<td class='ta'><input type='checkbox' value='$!role.ID'></td>
+			<td>$!role.ROLE_NAME</td>
+			<td>$!role.ROLE_DESC</td>
+		</tr>#end
+	</tbody>
+</table>

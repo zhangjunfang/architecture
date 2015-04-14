@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>修改密码 | 配置 | 产品平台</title>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/head.html')
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/index.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/iframe.css' media='screen' />
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-12 col-md-12'>
+				<ol class='breadcrumb'>
+					<li>
+						<i class='fa fa-home fa-fw'></i>
+						<a href='javascript:;'>产品平台</a></li>
+					<li class='active'>配置</li>
+					<li class='active'>修改密码</li>
+				</ol>
+				<div class='panel panel-default'>
+					<div class='panel-body'>
+						<form class='form-horizontal' id='chpwdFrm' role='form' onsubmit='return false;' data-url='changePwd'>
+							<div class='form-group'>
+								<label class='col-sm-4 hidden-xs control-label' for='chpwdFrm_OldPass'>旧的登录密码</label>
+								<div class='col-sm-4'>
+									<input type='password' class='form-control' name='OldPass' id='chpwdFrm_OldPass' placeholder='旧的登录密码'>
+								</div>
+							</div>
+							<div class='form-group'>
+								<label class='col-sm-4 hidden-xs control-label' for='chpwdFrm_NewPass'>新密码</label>
+								<div class='col-sm-4'>
+									<input type='password' class='form-control' name='NewPass' id='chpwdFrm_NewPass' placeholder='新密码'>
+								</div>
+							</div>
+							<div class='form-group'>
+								<label class='col-sm-4 hidden-xs control-label' for='chpwdFrm_NewPass2'>再次输入新密码</label>
+								<div class='col-sm-4'>
+									<input type='password' class='form-control' id='chpwdFrm_NewPass2' placeholder='再次输入新密码'>
+								</div>
+							</div>
+							<div class='form-group'>
+								<div class='col-sm-offset-4 col-sm-4'>
+									<button id='chpwdFrm_btn_sub' type='button' class='btn btn-primary'>修改密码</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/js.html')
+	#parse('foundation/cppt/site/pagelet/v1.0.1/iframe.html')
+</body>
+</html>

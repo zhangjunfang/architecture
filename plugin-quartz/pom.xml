@@ -76,11 +76,11 @@
 
 	<dependencies>
 		<!-- 核心依赖 begin -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.foreworld</groupId>
 			<artifactId>framework-core</artifactId>
 			<version>1.0.1</version>
-		</dependency>
+		</dependency> -->
 		<!-- 核心依赖 end -->
 		<!-- httpclient -->
 		<dependency>
@@ -263,11 +263,11 @@
 			<artifactId>org.restlet.ext.spring</artifactId>
 			<version>${restlet.version}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.restlet</groupId>
 			<artifactId>org.restlet.ext.fileupload</artifactId>
 			<version>${restlet-fileupload.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.restlet</groupId>
 			<artifactId>org.restlet.ext.velocity</artifactId>

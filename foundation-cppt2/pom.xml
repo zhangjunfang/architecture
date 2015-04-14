@@ -6,7 +6,6 @@
 		<artifactId>framework-config</artifactId>
 		<version>1.0.43</version>
 	</parent>
-	<groupId>com.transilink</groupId>
 	<artifactId>foundation-cppt</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.1</version>

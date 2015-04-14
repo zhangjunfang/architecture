@@ -1,0 +1,1 @@
+#macro(parseActType $actType)#if(1 == $actType)HTML#elseif(2 == $actType)JSON#end#end

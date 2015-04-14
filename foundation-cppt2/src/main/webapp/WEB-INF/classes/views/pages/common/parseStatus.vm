@@ -1,0 +1,1 @@
+#macro(parseStatus $status)#if(1 == $status)启用#elseif(2 == $status)禁用#end#end

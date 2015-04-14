@@ -6,9 +6,7 @@
 		<artifactId>framework-config</artifactId>
 		<version>1.0.43</version>
 	</parent>
-	<groupId>com.transilink</groupId>
 	<artifactId>framework-core</artifactId>
-	<version>1.0.43</version>
 	<packaging>jar</packaging>
 	<name>transilink :: framework :: core</name>
 
