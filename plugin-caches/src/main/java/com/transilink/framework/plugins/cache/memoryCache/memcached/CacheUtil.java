@@ -22,9 +22,12 @@ import com.transilink.framework.core.cache.ICache;
 import com.transilink.framework.plugins.cache.memoryCache.ICacheManager;
 
 /**
+ * 
+ * 描述：
  * Cache工具类
- * @author andy
- *
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 public class CacheUtil
 {
@@ -61,6 +64,7 @@ public class CacheUtil
 	 * @param 是否需要缓存，如果为否则将不缓存
 	 * @return 返回的接口实现实例
 	 */
+	@SuppressWarnings("unused")
 	public static <I> I getInstanceByInterface(Class<I> interfaceDefinition
 			,ClassLoader classLoader,String defaultImplClass,boolean needCache)
 	{

@@ -17,6 +17,10 @@ import com.transilink.framework.plugins.cache.utils.StringUtils;
 
 public class MemberCacheEngine extends AbstractCacheEngine {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -659930763038762971L;
 	public MemCachedClient cache = null;
 	/**server列表，格式为ip+端口**/
 	private List<String> servers = null;
@@ -129,6 +133,7 @@ public class MemberCacheEngine extends AbstractCacheEngine {
 		
 		
 	}
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void setSingleLevel(String level){
 		if(level.indexOf(StringUtils.Symbol.COMMA)==-1){
 			List levels = new ArrayList<Integer>(1);
@@ -165,6 +170,7 @@ public class MemberCacheEngine extends AbstractCacheEngine {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T get(String key, Class<T> clazz) {
 		return (T)cache.get(key);

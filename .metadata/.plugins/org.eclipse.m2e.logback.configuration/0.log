@@ -6602,3 +6602,811 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact oracle.jdbc:o
 2015-04-14 18:31:19,416 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2015-04-14 18:31:19,417 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-04-14 18:31:19,418 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:29:32,756 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 11:29:32,803 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 11:29:32,933 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:29:32,939 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:29:34,269 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:29:35,547 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 11:31:02,782 [Worker-248] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-15 11:31:02,788 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 11:31:02,792 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 11:31:02,812 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:02,817 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:02,826 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:04,205 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0.pom
+2015-04-15 11:31:04,957 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0.pom
+2015-04-15 11:31:05,213 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3.pom
+2015-04-15 11:31:06,301 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3.pom
+2015-04-15 11:31:06,990 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 11:31:07,386 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0.jar
+2015-04-15 11:31:21,264 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0.jar
+2015-04-15 11:31:21,464 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3.jar
+2015-04-15 11:31:26,596 [Worker-248] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3.jar
+2015-04-15 11:31:28,731 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:31:28,731 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:31:28,732 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:31:28,732 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:31:29,706 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 11:31:29,712 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 11:31:29,745 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:29,752 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:29,764 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:31:31,556 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 11:31:32,427 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0-sources.jar
+2015-04-15 11:31:34,267 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:31:34,268 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:31:34,271 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:31:34,272 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:31:36,533 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0-sources.jar
+2015-04-15 11:31:37,450 [Worker-244] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for redis.clients:jedis:2.7.0
+2015-04-15 11:31:37,662 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0-javadoc.jar
+2015-04-15 11:31:59,276 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/redis/clients/jedis/2.7.0/jedis-2.7.0-javadoc.jar
+2015-04-15 11:32:00,102 [Worker-244] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for redis.clients:jedis:2.7.0
+2015-04-15 11:32:00,312 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3-sources.jar
+2015-04-15 11:32:06,865 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3-sources.jar
+2015-04-15 11:32:07,424 [Worker-244] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-pool2:2.3
+2015-04-15 11:32:07,641 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3-javadoc.jar
+2015-04-15 11:32:19,330 [Worker-244] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3-javadoc.jar
+2015-04-15 11:32:20,163 [Worker-244] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.apache.commons:commons-pool2:2.3
+2015-04-15 11:32:20,446 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:32:20,446 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:32:20,447 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:32:20,447 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:36:21,053 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:21,054 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:36:21,055 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:21,055 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:36:38,207 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:38,207 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:36:38,208 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:38,208 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:36:44,760 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:44,760 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:36:44,761 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:44,762 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:36:48,013 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:48,014 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:36:48,015 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:36:48,015 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:37:39,927 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:37:39,927 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:37:39,928 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:37:39,928 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:38:02,135 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:02,135 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:38:02,137 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:02,137 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:38:12,448 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:12,449 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:38:12,450 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:12,450 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:38:38,171 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:38,171 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:38:38,172 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:38,173 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:38:51,039 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:51,040 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:38:51,041 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:38:51,041 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:39:49,000 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:39:49,000 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:39:49,001 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:39:49,001 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:41:05,497 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:41:05,498 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 11:41:05,517 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:41:05,518 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:41:43,667 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 11:41:43,673 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 11:41:43,705 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:41:43,712 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:41:43,725 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 11:41:44,148 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 11:41:44,409 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:41:44,430 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:41:44,972 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:41:44,973 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:43:25,587 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:43:25,629 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:43:25,726 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:43:25,727 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:44:19,147 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:44:19,171 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:44:19,233 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:44:19,234 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:44:33,755 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:44:33,778 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:44:33,849 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:44:33,850 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:45:00,540 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:45:00,568 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:45:00,625 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:45:00,625 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 11:45:47,956 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:45:47,979 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 11:45:48,037 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 11:45:48,037 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:15:00,819 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:15:01,223 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:15:01,295 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:15:01,295 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:15:34,921 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:15:35,000 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:15:35,061 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:15:35,062 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:16:04,175 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:16:04,203 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:16:04,271 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:16:04,271 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:18:46,932 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:18:46,963 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:18:47,035 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:18:47,035 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:19:21,979 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:19:21,999 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:19:22,055 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:19:22,055 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:19:30,932 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:19:30,958 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:19:31,012 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:19:31,012 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:20:04,344 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:20:04,371 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:20:04,443 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:20:04,444 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:20:39,250 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:20:39,274 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:20:39,329 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:20:39,329 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:21:40,805 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:21:40,827 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:21:40,883 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:21:40,884 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:22:05,932 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:22:05,954 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:22:06,019 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:22:06,019 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:22:39,943 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:22:39,966 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:22:40,022 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:22:40,022 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:23:00,898 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:23:00,927 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:23:00,982 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:23:00,983 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:24:16,871 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:16,904 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:24:16,979 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:16,980 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:24:29,907 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:29,930 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:24:29,986 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:29,987 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:24:39,928 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:39,954 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:24:40,024 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:40,025 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:24:55,043 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:55,065 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:24:55,120 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:24:55,121 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:25:30,397 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:25:30,423 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:25:30,492 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:25:30,493 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:25:42,056 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:25:42,087 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:25:42,147 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:25:42,147 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:26:07,279 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:07,302 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:26:07,359 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:07,360 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:26:20,226 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:20,246 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:26:20,303 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:20,303 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:26:37,957 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:37,983 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:26:38,052 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:38,052 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:26:46,073 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:46,101 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:26:46,162 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:46,163 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:26:59,204 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:59,232 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:26:59,307 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:26:59,307 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:27:05,057 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:05,078 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:27:05,132 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:05,132 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:27:21,276 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:21,297 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:27:21,352 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:21,352 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:27:44,415 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:44,436 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 12:27:44,496 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:27:44,497 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:28:14,391 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:28:14,392 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:28:14,392 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:28:14,393 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:28:51,022 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:28:51,023 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:28:51,024 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:28:51,024 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:29:44,254 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:29:44,254 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:29:44,256 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:29:44,256 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:30:00,790 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:00,790 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:30:00,791 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:00,792 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:30:06,883 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:06,884 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:30:06,885 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:06,885 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:30:11,707 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:11,708 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:30:11,709 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:11,709 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:30:54,924 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:54,924 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:30:54,925 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:30:54,926 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:14,665 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:14,666 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:14,667 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:14,667 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:23,621 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:23,622 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:23,623 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:23,624 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:35,757 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:35,758 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:35,759 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:35,759 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:42,062 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:42,063 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:42,064 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:42,064 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:49,251 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:49,252 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:49,253 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:49,253 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:31:56,387 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:56,388 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:31:56,389 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:31:56,390 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:32:02,749 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:02,750 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:32:02,751 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:02,752 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:32:12,759 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:12,760 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:32:12,761 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:12,761 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:32:19,247 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:19,248 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:32:19,249 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:19,249 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:32:53,228 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:53,229 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:32:53,231 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:32:53,232 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:33:51,967 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:33:51,967 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:33:51,968 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:33:51,968 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:35:30,707 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:35:30,708 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:35:30,709 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:35:30,709 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:35:41,738 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:35:41,738 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:35:41,739 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:35:41,739 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:37:41,871 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:37:41,871 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:37:41,872 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:37:41,873 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:38:35,468 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:38:35,469 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:38:35,470 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:38:35,470 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:39:50,842 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:39:50,843 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:39:50,844 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:39:50,844 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:40:07,757 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:40:07,758 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:40:07,759 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:40:07,759 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:41:07,052 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:41:07,052 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:41:07,053 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:41:07,053 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:43:57,244 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:43:57,245 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:43:57,246 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:43:57,246 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:44:45,175 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:44:45,176 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:44:45,177 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:44:45,178 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:45:36,339 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:45:36,339 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:45:36,340 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:45:36,341 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:46:45,385 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:46:45,386 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:46:45,387 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:46:45,387 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:47:18,059 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:47:18,059 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:47:18,060 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:47:18,061 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:49:34,947 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:34,947 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:49:34,948 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:34,949 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:49:35,413 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:35,485 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 12:49:35,577 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:35,577 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 12:49:35,892 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:35,892 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:49:35,893 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:35,894 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:49:36,078 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:36,078 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:49:36,079 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:49:36,080 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:50:22,056 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:22,056 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:50:22,057 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:22,057 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:50:30,752 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:30,753 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:50:30,754 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:30,754 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:50:38,462 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:38,463 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:50:38,464 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:38,464 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:50:44,259 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:44,259 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:50:44,260 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:44,260 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:50:49,776 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:49,777 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:50:49,778 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:50:49,778 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:54:24,171 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:54:24,171 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:54:24,176 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:54:24,176 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:55:03,597 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:03,598 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:55:03,599 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:03,599 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:55:48,271 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:48,272 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:55:48,272 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:48,273 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:55:58,177 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:58,178 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:55:58,179 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:55:58,180 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:57:07,480 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:07,481 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:57:07,482 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:07,482 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:57:33,979 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:33,980 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:57:33,981 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:33,981 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:57:53,611 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:53,612 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:57:53,612 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:57:53,613 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:58:54,605 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:58:54,606 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:58:54,607 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:58:54,607 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 12:59:05,969 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:59:05,970 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 12:59:05,971 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 12:59:05,971 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:05:38,841 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:05:38,841 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:05:38,842 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:05:38,842 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:06:52,882 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:06:52,882 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:06:52,883 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:06:52,883 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:07:51,085 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:07:51,085 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:07:51,085 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:07:51,086 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:10:18,620 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:10:18,620 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:10:18,621 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:10:18,621 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:15:12,664 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/help,null}
+2015-04-15 13:16:00,965 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:16:00,982 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:01,071 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:01,097 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:02,704 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:04,718 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:16:04,767 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 13:16:04,850 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:16:04,850 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:16:18,614 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-04-15 13:16:22,651 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-15 13:16:22,666 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:16:22,680 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:22,726 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:22,745 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:23,111 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:23,293 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.transilink:framework-config:1.0.43 @ D:\architecture\framework-config2\pom.xml.
+2015-04-15 13:16:23,332 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-15 13:16:23,344 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 13:16:23,932 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-15 13:16:23,937 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:16:24,156 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:24,418 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-15 13:16:24,433 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:24,651 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-15 13:16:24,669 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:27,811 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:16:27,828 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:27,886 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:27,903 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:28,355 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:30,641 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /foundation-cppt2/src/main/java
+2015-04-15 13:16:30,641 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /foundation-cppt2/src/main/resources
+2015-04-15 13:16:30,654 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /foundation-cppt2/src/test/java
+2015-04-15 13:16:32,093 [Worker-7] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure foundation-cppt2
+org.eclipse.m2e.wtp.MarkedException: Unable to configure foundation-cppt2
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:97) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:70) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:477) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:470) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:408) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:321) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1344) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:318) [org.eclipse.m2e.core_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.5.1.20150109-1820.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313) ~[org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:150) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:93) ~[na:na]
+	... 18 common frames omitted
+2015-04-15 13:16:33,149 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /framework-core3/src/main/java
+2015-04-15 13:16:33,149 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /framework-core3/src/main/resources
+2015-04-15 13:16:33,150 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /framework-core3/src/test/java
+2015-04-15 13:16:33,150 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /framework-core3/src/test/resources
+2015-04-15 13:16:33,484 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-caches/src/main/java
+2015-04-15 13:16:33,484 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-caches/src/main/resources
+2015-04-15 13:16:33,485 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-caches/src/test/java
+2015-04-15 13:16:33,485 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-caches/src/test/resources
+2015-04-15 13:16:33,724 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-log/src/main/java
+2015-04-15 13:16:33,725 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-log/src/main/resources
+2015-04-15 13:16:33,726 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-log/src/test/java
+2015-04-15 13:16:33,726 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-log/src/test/resources
+2015-04-15 13:16:34,029 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-quartz/src/main/java
+2015-04-15 13:16:34,029 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-quartz/src/main/resources
+2015-04-15 13:16:34,039 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /plugin-quartz/src/test/java
+2015-04-15 13:16:34,041 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /plugin-quartz/src/test/resources
+2015-04-15 13:16:39,245 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-15 13:16:39,254 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:39,784 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:16:39,798 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:39,848 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:39,868 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:40,190 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:41,031 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for foundation-cppt2
+2015-04-15 13:16:44,026 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-15 13:16:44,035 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 13:16:44,976 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-15 13:16:44,985 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:45,930 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-15 13:16:45,944 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:53,107 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-15 13:16:53,119 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:16:53,944 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 35 sec
+2015-04-15 13:16:58,736 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:16:58,801 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:58,845 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:58,861 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:16:59,154 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 13:16:59,825 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:16:59,826 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:16:59,944 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:16:59,944 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:17:00,844 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:17:00,855 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:00,887 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:00,903 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:01,397 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:17:01,611 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:01,620 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 13:17:08,393 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:08,393 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:17:09,741 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:17:09,760 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:17:09,798 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:09,807 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:09,823 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:10,402 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:17:11,503 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:11,503 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:17:11,507 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:11,507 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:17:12,203 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:17:12,210 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:17:12,249 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:12,260 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:12,276 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:12,776 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:17:13,760 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:13,760 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:17:13,773 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:13,774 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:17:14,111 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:17:14,120 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:17:14,171 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:14,183 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:14,208 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:17:14,829 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:17:15,124 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:15,129 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:17:23,112 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:17:23,115 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:18:10,192 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-15 13:18:10,202 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:18:10,209 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:18:10,247 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:10,259 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:10,274 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:10,741 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:18:11,232 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:11,303 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:18:12,056 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:12,105 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:18:27,557 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:18:27,577 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:18:27,716 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:27,726 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:27,741 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:28,235 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:18:28,464 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:28,469 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:18:29,569 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:29,572 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:18:35,942 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-15 13:18:35,951 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:18:35,957 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:18:35,990 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:36,000 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:36,024 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:36,569 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:18:37,640 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:37,640 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:18:37,643 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:37,643 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:18:57,228 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-15 13:18:57,239 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:18:57,246 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:18:57,282 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:57,291 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:57,305 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:18:57,867 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:18:58,340 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:58,341 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:18:58,343 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:18:58,343 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:00,682 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:19:00,694 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:19:00,736 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:00,747 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:00,766 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:01,355 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:19:02,641 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:02,641 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:02,644 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:02,645 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:36,816 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-15 13:19:36,820 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:19:36,832 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:36,895 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:36,918 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:37,243 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 13:19:37,596 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:37,597 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:37,601 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:37,601 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:42,301 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:19:42,314 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:42,352 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:42,366 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:19:42,612 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 13:19:43,101 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:43,101 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:19:43,103 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:19:43,104 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:20:12,541 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-15 13:20:12,551 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:20:12,563 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:12,601 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:12,617 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:12,952 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:20:13,250 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:20:13,260 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:13,287 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:13,298 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:13,652 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:20:14,089 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:20:14,108 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 13:20:16,690 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:20:16,690 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:20:23,053 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:20:23,064 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:23,104 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:23,127 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:20:23,388 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:20:23,718 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:20:23,722 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 13:20:24,224 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:20:24,224 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:22:52,937 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:22:52,938 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:22:52,940 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:22:52,940 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:23:31,776 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:23:31,776 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-15 13:23:31,777 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:23:31,777 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:24:27,711 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:24:27,724 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:27,782 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:27,799 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:28,239 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:24:28,497 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:24:28,507 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:28,542 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:28,557 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:24:28,870 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:09,927 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for foundation-cppt2
+2015-04-15 13:25:13,069 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:13,076 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:13,107 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:13,116 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:13,129 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:13,661 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:14,164 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:14,169 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:14,196 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:14,203 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:14,214 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:14,558 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:20,995 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:20,999 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:21,022 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:21,027 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:21,037 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:21,427 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:22,755 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:22,755 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:22,758 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:22,758 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:22,936 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:22,946 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:22,970 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:22,983 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:23,248 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:24,509 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:24,512 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 13:25:25,093 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:25,093 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 13:25:26,080 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:26,087 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:26,118 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:26,128 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:26,142 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:26,598 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:27,598 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:27,599 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:27,602 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:27,602 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:28,256 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:28,261 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:28,289 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:28,296 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:28,308 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:28,686 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:30,541 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:30,542 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:30,545 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:30,545 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 13:25:30,900 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 13:25:30,906 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 13:25:30,938 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:30,953 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:30,985 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 13:25:31,354 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 13:25:31,736 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:31,739 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 13:25:32,269 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 13:25:32,272 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 14:08:48,583 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 14:08:48,613 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:48,701 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:48,729 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:49,362 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-15 14:08:50,180 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:08:50,186 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:08:50,201 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:08:50,202 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:08:54,506 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 14:08:54,521 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:54,594 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:54,643 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:08:55,238 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 14:08:56,112 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:08:56,145 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-15 14:08:56,695 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:08:56,695 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-15 14:09:00,267 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 14:09:00,275 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 14:09:00,358 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:00,368 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:00,387 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:01,907 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 14:09:02,733 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:02,733 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:09:02,737 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:02,738 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:09:03,059 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 14:09:03,067 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 14:09:03,107 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:03,117 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:03,134 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:03,708 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 14:09:04,236 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:04,236 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:09:04,240 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:04,240 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-15 14:09:11,738 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-15 14:09:11,742 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-15 14:09:11,768 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:11,778 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:11,793 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-15 14:09:12,542 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-15 14:09:13,465 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:13,474 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-15 14:09:14,006 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-15 14:09:14,009 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources

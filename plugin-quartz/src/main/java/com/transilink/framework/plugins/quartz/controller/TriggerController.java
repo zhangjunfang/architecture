@@ -27,8 +27,12 @@ import com.transilink.framework.core.utils.pagesUtils.PageView;
 import com.transilink.framework.plugins.quartz.vo.TriggerForm;
 
 /**
- * @author 景明超
- * @version TriggerController.java 2014-1-6 下午1:45:51
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 @Controller
 @Scope("prototype")
@@ -64,16 +68,16 @@ public class TriggerController extends MultiViewResource{
 			}
 		}
 	    
-	    PageView<TriggerForm>pageView=new PageView<TriggerForm>(PageContext.getPagesize(), PageContext.getOffset());
+	    PageView<TriggerForm>pageView=new PageView<TriggerForm>(PageContext.getPageSize(), PageContext.getOffset());
 	    if(PageContext.getOffset()==0){
 			PageContext.setOffset(1);
 		}
-	    int fromIndex=(PageContext.getOffset()-1)*PageContext.getPagesize();
-		int toIndex=fromIndex+PageContext.getPagesize();
+	    int fromIndex=(PageContext.getOffset()-1)*PageContext.getPageSize();
+		int toIndex=fromIndex+PageContext.getPageSize();
 		if(toIndex>allList.size()){
 			toIndex=allList.size();
 		}
-		pageView.setTotalrecord(allList.size());
+		pageView.setTotalRecord(allList.size());
 		pageView.setRecords(allList.subList(fromIndex, toIndex));
 		pageView.setJsMethod("reloadTriggerList");
 		modelMap.put("pageView", pageView);

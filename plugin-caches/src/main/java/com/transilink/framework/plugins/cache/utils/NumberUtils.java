@@ -63,7 +63,7 @@ public abstract class NumberUtils
 	public static String format(Object obj,String pattern){
 		if(obj==null || !NumberUtils.canParseDouble(obj)){	return "";}
 		DecimalFormat df=new DecimalFormat(pattern);
-		return df.format(NumberUtils.toDouble(obj));
+		return df.format(NumberUtils.uble(obj));
 	}
 	
 	
@@ -79,7 +79,7 @@ public abstract class NumberUtils
 	
 	/** 整数部分无分隔, 小数部分位数4位  ZhouBo 2011-08-01*/
 	public static double defaultFormatSOC4(double dbl){
-		return toDouble(format(dbl, S0C4_FORMAT));
+		return uble(format(dbl, S0C4_FORMAT));
 	}
 
 	public static String nullSafeFormat(Object obj,String pattern){
@@ -134,12 +134,12 @@ public abstract class NumberUtils
 	
 	//===========format end==========================
 
-	public static Double toDouble(Object obj) {
-		return NumberUtils.toDouble(obj, false);
+	public static Double uble(Object obj) {
+		return NumberUtils.uble(obj, false);
 	}
 	
-	public static Double toDoubleNull2Zero(Object obj) {
-		Double d = NumberUtils.toDouble(obj, false);
+	public static Double ubleNull2Zero(Object obj) {
+		Double d = NumberUtils.uble(obj, false);
 		return d==null?0D:d;
 	}
 	public static Float toFloat(Object obj){
@@ -164,7 +164,7 @@ public abstract class NumberUtils
 		}
 		return d;
 	}
-	public static Double toDouble(Object obj, boolean isThrowException) {
+	public static Double uble(Object obj, boolean isThrowException) {
 		Double d = null;
 		try {
 			if(null == obj){
@@ -182,7 +182,7 @@ public abstract class NumberUtils
 		return d;
 	}
 
-	public static Double toDouble(Object obj, Double defaultValue) {
+	public static Double uble(Object obj, Double defaultValue) {
 		Double d = null;
 		try {
 			String str = obj.toString();
@@ -315,14 +315,14 @@ public abstract class NumberUtils
 	 *  转化成 double 
 	 * */
 	public static double doubleValue(Object obj){
-		return toDouble(obj, true);
+		return uble(obj, true);
 	}
 
 	/**
 	 * 转化成 double ,转换过程中出现错误则返回自定义值
 	 * */
 	public static double doubleValue(Object obj,double defaultValue){
-		Double d = toDouble(obj, false);
+		Double d = uble(obj, false);
 		return d==null?defaultValue:d;
 	}
 

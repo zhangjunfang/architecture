@@ -512,7 +512,7 @@ public class BaseRequestImpl implements BaseRequest {
 	 * @param object
 	 * @throws Exception
 	 */
-	public void parameterToDO(Object object) {
+	public void parameter(Object object) {
 		if (object instanceof Map) {
 			parametersToMap((Map) object);
 			return;
@@ -585,7 +585,7 @@ public class BaseRequestImpl implements BaseRequest {
 	 * @param dest
 	 * @throws Exception
 	 */
-	public void attributiesToDO(Object dest) {
+	public void attributies(Object dest) {
 		if (dest instanceof Map) {
 			attributiesToMap((Map) dest);
 			return;
@@ -660,7 +660,7 @@ public class BaseRequestImpl implements BaseRequest {
 	 * 获取原始request
 	 */
 	public Request getOrginRequest() {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		return this.request;
 	}
 

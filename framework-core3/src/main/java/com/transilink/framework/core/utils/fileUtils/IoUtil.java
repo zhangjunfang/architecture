@@ -26,10 +26,10 @@ import com.transilink.framework.core.utils.zipUtils.CZipEntry;
 import com.transilink.framework.core.utils.zipUtils.CZipOutputStream;
 
 /**
- * 方便操作文件的类.
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述： 方便操作文件的类
+ * 
+ * @author ocean 2015年4月15日 email：zhangjunfang0505@163.com
  */
 public class IoUtil {
 
@@ -242,13 +242,18 @@ public class IoUtil {
 			return null;
 		if (charSet == null || charSet.trim().length() == 0)
 			charSet = DEFAULT_CHAR_SET;
-		FileInputStream inputStream = new FileInputStream(fileName);
-		InputStreamReader reader = new InputStreamReader(inputStream, charSet);
 		StringBuffer buffer = new StringBuffer();
-		char[] buf = new char[64];
-		int count = 0;
-		while ((count = reader.read(buf)) != -1) {
-			buffer.append(buf, 0, count);
+		try (FileInputStream inputStream = new FileInputStream(fileName);
+				InputStreamReader reader = new InputStreamReader(inputStream,
+						charSet)) {
+
+			char[] buf = new char[64];
+			int count = 0;
+			while ((count = reader.read(buf)) != -1) {
+				buffer.append(buf, 0, count);
+			}
+		} catch (Exception e) {
+			throw new IOException();
 		}
 		return buffer.toString();
 
@@ -262,13 +267,17 @@ public class IoUtil {
 			throws IOException {
 		if (charSet == null || charSet.trim().length() == 0)
 			charSet = DEFAULT_CHAR_SET;
-		FileInputStream inputStream = new FileInputStream(file);
-		InputStreamReader reader = new InputStreamReader(inputStream, charSet);
 		StringBuffer buffer = new StringBuffer();
-		char[] buf = new char[64];
-		int count = 0;
-		while ((count = reader.read(buf)) != -1) {
-			buffer.append(buf, 0, count);
+		try (FileInputStream inputStream = new FileInputStream(file);
+				InputStreamReader reader = new InputStreamReader(inputStream,
+						charSet)) {
+			char[] buf = new char[64];
+			int count = 0;
+			while ((count = reader.read(buf)) != -1) {
+				buffer.append(buf, 0, count);
+			}
+		} catch (Exception e) {
+			throw new IOException();
 		}
 		return buffer.toString();
 	}
@@ -588,6 +597,7 @@ public class IoUtil {
 	 * @param ch
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static boolean isSeparator(char ch) {
 		return (ch == UNIX_SEPARATOR) || (ch == WINDOWS_SEPARATOR);
 	}

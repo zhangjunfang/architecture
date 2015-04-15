@@ -310,7 +310,7 @@ public class BeanUtils implements LogEnabled {
 					}
 					if (propertyName.equals("CREATE_DATETIME")) {
 
-						// TODO
+						// 
 						// value = ((oracle.sql.TIMESTAMP)
 						// value).timestampValue();
 					}
@@ -387,7 +387,7 @@ public class BeanUtils implements LogEnabled {
 	 *            false:根据原始字段名给对象属性赋值
 	 * @return
 	 */
-	public static Object resultSetToDO(ResultSet resultSet, Class modelClass,
+	public static Object resultSet(ResultSet resultSet, Class modelClass,
 			boolean convertFieldName) {
 		try {
 			Object object = null;

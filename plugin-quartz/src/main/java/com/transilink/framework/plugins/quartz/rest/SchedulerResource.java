@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.transilink.framework.plugins.quartz.rest;
 
 import java.util.ArrayList;
@@ -28,8 +26,12 @@ import com.transilink.framework.plugins.quartz.vo.ListenerForm;
 import com.transilink.framework.plugins.quartz.vo.SchedulerDTO;
 
 /**
- * @author 景明超
- * @version SchedulerResource.java 2014-1-2 下午3:11:22
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 @Component
 @Scope(value="prototype")
@@ -40,8 +42,8 @@ public class SchedulerResource extends BaseResource {
 	
 	public void schedulerUI(BaseRequest request,BaseResponse response){
 		String command=JSONTools.getString(getJsonObject(), "command");
-		if (this.log.isDebugEnabled()) {
-			this.log.debug("command=" + command);
+		if (SchedulerResource.log.isDebugEnabled()) {
+			SchedulerResource.log.debug("command=" + command);
 		}
 		ChooseSchedulerForm scheduleInfo = new ChooseSchedulerForm();
 
@@ -64,18 +66,18 @@ public class SchedulerResource extends BaseResource {
 			}
 		} catch (SchedulerException e) {
 			scheduleInfo.setMessage("命令‘" + command + "’执行失败，失败原因：" + e.getMessage());
-			this.log.warn("error in Scheduler Controller,  command=:" + command, e);
+			SchedulerResource.log.warn("error in Scheduler Controller,  command=:" + command, e);
 		} catch (Exception e) {
 			scheduleInfo.setMessage("命令‘" + command + "’执行失败，失败原因：" + e.toString());
-			this.log.error("error in Scheduler Controller,  command=:" + command, e);
+			SchedulerResource.log.error("error in Scheduler Controller,  command=:" + command, e);
 		}
 		try {
 			this.populateSchedulerForm(this.scheduler, scheduleInfo);
 		} catch (SchedulerException e) {
-			log.error(null, e);
+			SchedulerResource.log.error(null, e);
 		}
-		getNewcapectViewContext().put("scheduleInfo", scheduleInfo);
-		response.toView(getUrl("scheduler.schedulerUI"), getNewcapectViewContext());
+		getTransilinkViewContext().put("scheduleInfo", scheduleInfo);
+		response.toView(getUrl("scheduler.schedulerUI"), getTransilinkViewContext());
 	}
 
 	/**

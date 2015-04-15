@@ -65,11 +65,11 @@ public abstract interface BaseRequest {
 
 	public abstract String[] getStringValues(String paramString);
 
-	public abstract void parameterToDO(Object paramObject);
+	public abstract void parameter(Object paramObject);
 
 	public abstract Map parametersToMap();
 
-	public abstract void attributiesToDO(Object paramObject);
+	public abstract void attributies(Object paramObject);
 
 	public abstract Map attributiesToMap();
 

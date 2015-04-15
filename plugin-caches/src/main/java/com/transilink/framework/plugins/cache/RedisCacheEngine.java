@@ -6,6 +6,7 @@ import javax.naming.InitialContext;
 import com.transilink.framework.plugins.cache.memoryCache.CacheController;
 import com.transilink.framework.plugins.cache.utils.PropertyUtils;
 import com.transilink.framework.plugins.cache.utils.SerializeUtils;
+
 import redis.clients.jedis.Jedis;
 /****
  * 
@@ -14,6 +15,10 @@ import redis.clients.jedis.Jedis;
  */
 public class RedisCacheEngine extends AbstractCacheEngine {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5305301107489561540L;
 	private Jedis redis = null;
 	private String host;
 	private Integer port;
@@ -63,15 +68,14 @@ public class RedisCacheEngine extends AbstractCacheEngine {
 		redis.expire(key, Integer.valueOf(time.toString())*60);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T get(String key, Class<T> clazz) {
-		// TODO Auto-generated method stub
 		return (T)SerializeUtils.unserialize(redis.get(key.getBytes()));
 	}
 
 	@Override
 	public Object get(String key) {
-		// TODO Auto-generated method stub
 		return SerializeUtils.unserialize(redis.get(key.getBytes()));
 	}
 

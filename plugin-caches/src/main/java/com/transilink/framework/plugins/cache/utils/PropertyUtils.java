@@ -105,7 +105,7 @@ public abstract class PropertyUtils {
 			}else if(Integer.class.equals(type)){
 				PropertyUtils.setProperty(t,key, NumberUtils.toInteger(value));
 			}else if(Double.class.equals(type)){
-				PropertyUtils.setProperty(t,key, NumberUtils.toDouble(value));
+				PropertyUtils.setProperty(t,key, NumberUtils.uble(value));
 			}else if(Date.class.equals(type) || java.sql.Date.class.equals(type)){
 				String v = ObjectUtils.nullSafeToEmptyString(value);
 				if(v.length()>11){

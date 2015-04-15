@@ -115,7 +115,7 @@ public class DateUtil implements LogEnabled {
 		try {
 			return datetimeFormat.parse(date);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
+			//  Auto-generated catch block
 			e.printStackTrace();
 			return null;
 		}
@@ -745,7 +745,7 @@ public class DateUtil implements LogEnabled {
 	 * @return
 	 */
 	public static Date getCurrDay() {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		return new Date();
 	}
 

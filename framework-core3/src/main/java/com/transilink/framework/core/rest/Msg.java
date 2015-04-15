@@ -31,7 +31,7 @@ public class Msg {
 	private Object data;
 
 	public Msg() {
-		// TODO
+		// 
 	}
 
 	public Msg(String msg) {

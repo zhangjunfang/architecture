@@ -55,8 +55,12 @@ import com.transilink.framework.plugins.quartz.vo.JobListenerBean;
 import com.transilink.framework.plugins.quartz.vo.TriggerForm;
 
 /**
- * @author 景明超
- * @version JobController.java 2013-12-26 上午10:01:50
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 @Component
 @Scope("prototype")
@@ -109,16 +113,16 @@ public class JobController extends MultiViewResource{
 				}
 			}
 		}
-		PageView<JobDetailForm>pageView=new PageView<JobDetailForm>(PageContext.getPagesize(), PageContext.getOffset());
+		PageView<JobDetailForm>pageView=new PageView<JobDetailForm>(PageContext.getPageSize(), PageContext.getOffset());
 		if(PageContext.getOffset()==0){
 			PageContext.setOffset(1);
 		}
-		int fromIndex=(PageContext.getOffset()-1)*PageContext.getPagesize();
-		int toIndex=fromIndex+PageContext.getPagesize();
+		int fromIndex=(PageContext.getOffset()-1)*PageContext.getPageSize();
+		int toIndex=fromIndex+PageContext.getPageSize();
 		if(toIndex>allList.size()){
 			toIndex=allList.size();
 		}
-		pageView.setTotalrecord(allList.size());
+		pageView.setTotalRecord(allList.size());
 		pageView.setRecords(allList.subList(fromIndex, toIndex));
 		pageView.setJsMethod("reloadJobList");
 		modelMap.put("pageView", pageView);

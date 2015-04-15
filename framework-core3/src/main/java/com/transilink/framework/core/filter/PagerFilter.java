@@ -29,7 +29,7 @@ public class PagerFilter implements Filter {
 	private static int framework_default_pagesize = 10;
 
 	public void destroy() {
-		// TODO
+		// 
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response,

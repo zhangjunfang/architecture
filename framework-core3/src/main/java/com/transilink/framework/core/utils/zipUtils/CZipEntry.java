@@ -121,7 +121,7 @@ public class CZipEntry implements ZipConstants, Cloneable {
 		// if (sun.jkernel.DownloadManager.isCurrentThreadDownloading())
 		// this.time = sun.jkernel.DownloadManager.KERNEL_STATIC_MODTIME;
 		// else
-		this.time = javaToDosTime(time);
+		this.time = javasTime(time);
 	}
 
 	/**
@@ -327,7 +327,7 @@ public class CZipEntry implements ZipConstants, Cloneable {
 	 * Converts Java time to DOS time.
 	 */
 	@SuppressWarnings("deprecation")
-	private static long javaToDosTime(long time) {
+	private static long javasTime(long time) {
 		Date d = new Date(time);
 		int year = d.getYear() + 1900;
 		if (year < 1980) {

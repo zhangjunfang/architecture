@@ -18,8 +18,12 @@ import org.apache.commons.lang.math.NumberUtils;
 import org.apache.log4j.Logger;
 
 /**
- * @JSONUtil.java
- * @author huangxin (3203317@qq.com)
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 public class JSONTools {
 

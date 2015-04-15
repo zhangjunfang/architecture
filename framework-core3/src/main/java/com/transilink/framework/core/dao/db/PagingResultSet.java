@@ -104,7 +104,7 @@ public class PagingResultSet implements Serializable, LogEnabled {
 		try {
 			caculFirstRow();
 			for (int i = 0; (i < this.pageSize) && (isLast()); i++)
-				this.list.add(BeanUtils.resultSetToDO(this.resultSet,
+				this.list.add(BeanUtils.resultSet(this.resultSet,
 						this.modelClass, true));
 		} finally {
 		}

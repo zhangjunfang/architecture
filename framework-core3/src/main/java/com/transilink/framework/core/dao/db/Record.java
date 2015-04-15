@@ -10,9 +10,12 @@ import com.transilink.framework.core.utils.clazzUtils.BeanUtils;
 import com.transilink.framework.core.utils.stringUtils.StringUtil;
 
 /**
- *
- * @author huangxin (3203317@qq.com)
- *
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 @SuppressWarnings("all")
 public class Record extends VariantSet {

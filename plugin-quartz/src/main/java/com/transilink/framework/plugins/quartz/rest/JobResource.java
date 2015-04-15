@@ -53,8 +53,12 @@ import com.transilink.framework.plugins.quartz.vo.JobListenerBean;
 import com.transilink.framework.plugins.quartz.vo.TriggerForm;
 
 /**
- * @author 景明超
- * @version JobController.java 2013-12-26 上午10:01:50
+ * 
+ * 描述：
+ * 
+ * @author ocean
+ * 2015年4月15日
+ *  email：zhangjunfang0505@163.com
  */
 @Component
 @Scope("prototype")
@@ -66,7 +70,7 @@ public class JobResource extends BaseResource{
 
 	public void jobListUI(BaseRequest request,BaseResponse response){
 		jobListGrid(request,response);
-		response.toView(getUrl("job.jobListUI"), getNewcapectViewContext());
+		response.toView(getUrl("job.jobListUI"), getTransilinkViewContext());
 	}
 
 	public void jobListGrid(BaseRequest request,BaseResponse response){
@@ -104,22 +108,23 @@ public class JobResource extends BaseResource{
 				}
 			}
 		}
-		PageView<JobDetailForm>pageView=new PageView<JobDetailForm>(PageContext.getPagesize(), PageContext.getOffset());
+		PageView<JobDetailForm>pageView=new PageView<JobDetailForm>(PageContext.getPageSize(), PageContext.getOffset());
 		if(PageContext.getOffset()==0){
 			PageContext.setOffset(1);
 		}
-		int fromIndex=(PageContext.getOffset()-1)*PageContext.getPagesize();
-		int toIndex=fromIndex+PageContext.getPagesize();
+		int fromIndex=(PageContext.getOffset()-1)*PageContext.getPageSize();
+		int toIndex=fromIndex+PageContext.getPageSize();
 		if(toIndex>allList.size()){
 			toIndex=allList.size();
 		}
-		pageView.setTotalrecord(allList.size());
+		pageView.setTotalRecord(allList.size());
 		pageView.setRecords(allList.subList(fromIndex, toIndex));
 		pageView.setJsMethod("reloadJobList");
-		getNewcapectViewContext().put("pageView", pageView);
-		response.toView(getUrl("job.jobListGrid"), getNewcapectViewContext());
+		getTransilinkViewContext().put("pageView", pageView);
+		response.toView(getUrl("job.jobListGrid"), getTransilinkViewContext());
 	}
 
+	@SuppressWarnings("unchecked")
 	public void view(BaseRequest request,BaseResponse response){
 		editJobUI(request,response);
 		String name=JSONTools.getString(getJsonObject(), "name");
@@ -148,7 +153,7 @@ public class JobResource extends BaseResource{
 			jobTriggers.add(tForm);
 		}
 
-		getNewcapectViewContext().put("jobTriggers", jobTriggers);
+		getTransilinkViewContext().put("jobTriggers", jobTriggers);
 
 		java.util.Collection<JobListenerBean> jobListeners = new java.util.ArrayList<JobListenerBean>();
 		ListenerManager listenerManager = null;
@@ -177,8 +182,8 @@ public class JobResource extends BaseResource{
 				jobListeners.add(listenerBean);
 			}
 		}
-		getNewcapectViewContext().put("jobListeners", jobListeners);
-		response.toView(getUrl("job.jobView"), getNewcapectViewContext());
+		getTransilinkViewContext().put("jobListeners", jobListeners);
+		response.toView(getUrl("job.jobView"), getTransilinkViewContext());
 	}
 
 	public void editJobUI(BaseRequest request,BaseResponse response) {
@@ -206,20 +211,20 @@ public class JobResource extends BaseResource{
 
 				jobBean.setParameters(parameters);
 				jobBean.setHasError(false);
-				getNewcapectViewContext().put("jobBean", jobBean);
+				getTransilinkViewContext().put("jobBean", jobBean);
 			} catch (org.quartz.JobPersistenceException e) {
-				this.log.warn(null, e);
+				JobResource.log.warn(null, e);
 				jobBean.setJobClass(e.getCause().getMessage());
 			} catch (Exception e) {
-				this.log.warn(null, e);
+				JobResource.log.warn(null, e);
 			}
 		}
-		response.toView(getUrl("job.editJobUI"), getNewcapectViewContext());
+		response.toView(getUrl("job.editJobUI"), getTransilinkViewContext());
 	}
 
 	public void addJobUI(BaseRequest request,BaseResponse response){
 		jobListGrid(request,response);
-		response.toView(getUrl("job.addJobUI"), getNewcapectViewContext());
+		response.toView(getUrl("job.addJobUI"), getTransilinkViewContext());
 	}
 
 	public void removeJobTrigger(BaseRequest request,BaseResponse response){
@@ -259,6 +264,7 @@ public class JobResource extends BaseResource{
 
 	public void add(BaseRequest request,BaseResponse response){
 		response.print(doExpAssert(new AssertObject() {
+			@SuppressWarnings("unchecked")
 			@Override
 			public void AssertMethod(Msg msg) {
 				String name=JSONTools.getString(getJsonObject(), "name");
@@ -337,9 +343,9 @@ public class JobResource extends BaseResource{
 	public void executeSimpleUI(BaseRequest request,BaseResponse response){
 		String name=JSONTools.getString(getJsonObject(), "name");
 		String group=JSONTools.getString(getJsonObject(), "group");
-		getNewcapectViewContext().put("name", name);
-		getNewcapectViewContext().put("group", group);
-		response.toView(getUrl("job.executeSimpleUI"), getNewcapectViewContext());
+		getTransilinkViewContext().put("name", name);
+		getTransilinkViewContext().put("group", group);
+		response.toView(getUrl("job.executeSimpleUI"), getTransilinkViewContext());
 	}
 	public void executeSimple(BaseRequest request,BaseResponse response){
 		response.print(doExpAssert(new AssertObject() {
@@ -394,13 +400,13 @@ public class JobResource extends BaseResource{
 	public void executeCronUI(BaseRequest request,BaseResponse response){
 		String name=JSONTools.getString(getJsonObject(), "name");
 		String group=JSONTools.getString(getJsonObject(), "group");
-		getNewcapectViewContext().put("name", name);
-		getNewcapectViewContext().put("group", group);
-		response.toView(getUrl("job.executeCronUI"), getNewcapectViewContext());
+		getTransilinkViewContext().put("name", name);
+		getTransilinkViewContext().put("group", group);
+		response.toView(getUrl("job.executeCronUI"), getTransilinkViewContext());
 	}
 	
 	public void createCronUI(BaseRequest request,BaseResponse response){
-		response.toView(getUrl("job.createCronUI"), getNewcapectViewContext());
+		response.toView(getUrl("job.createCronUI"), getTransilinkViewContext());
 	}
 
 	private Map<String, List<JobDetailForm>> getJobDetails() throws Exception {
@@ -417,7 +423,7 @@ public class JobResource extends BaseResource{
 						try {
 							detail = this.scheduler.getJobDetail(jobKey);
 						} catch (org.quartz.JobPersistenceException e) {
-							this.log.warn(null, e);
+							JobResource.log.warn(null, e);
 							JobDetailForm jobForm = new JobDetailForm();
 							jobForm.setName(jobKey.getName());
 							jobForm.setGroupName(jobKey.getGroup());
@@ -425,7 +431,7 @@ public class JobResource extends BaseResource{
 							jobForm.setDescription(e.toString());
 							jgs.add(jobForm);
 						} catch (Exception e) {
-							this.log.warn(null, e);
+							JobResource.log.warn(null, e);
 						}
 						if (detail == null) continue;
 
@@ -527,6 +533,6 @@ public class JobResource extends BaseResource{
 		}).toJSONObjectPresention());
 	}
 	public void cronHelp(BaseRequest request,BaseResponse response) {
-		response.toView(getUrl("job.cronHelp"), getNewcapectViewContext());
+		response.toView(getUrl("job.cronHelp"), getTransilinkViewContext());
 	}
 }

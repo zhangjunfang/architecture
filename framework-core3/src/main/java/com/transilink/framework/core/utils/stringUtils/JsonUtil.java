@@ -197,7 +197,7 @@ public class JsonUtil implements LogEnabled {
 	private static JSONObject objectToJsonObject(Object obj, String[] names) {
 		JSONObject jsonObject = new JSONObject();
 		if (names == null || names.length == 0) {
-			// TODO xuya
+			//  xuya
 			// jsonObject = new JSONObject("");
 		} else {
 			for (int i = 0, len = names.length; i < len; i++) {

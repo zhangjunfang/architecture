@@ -75,7 +75,7 @@ public class DbEngineServiceImpl implements DbEngineService, LogEnabled {
 			rs = pstmt.executeQuery();
 
 			while (rs.next()) {
-				model.add(BeanUtils.resultSetToDO(rs, modelClass,
+				model.add(BeanUtils.resultSet(rs, modelClass,
 						convertFieldName));
 			}
 
@@ -163,7 +163,7 @@ public class DbEngineServiceImpl implements DbEngineService, LogEnabled {
 			rs = pstmt.executeQuery();
 
 			while (rs.next()) {
-				model.add(BeanUtils.resultSetToDO(rs, modelClass,
+				model.add(BeanUtils.resultSet(rs, modelClass,
 						convertFieldName));
 			}
 

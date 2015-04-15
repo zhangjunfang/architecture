@@ -83,7 +83,7 @@ public class UserController extends MultiViewResource {
 
 	@RequestMapping(value = "logout", method = RequestMethod.GET)
 	public String logout() {
-		// TODO
+		// 
 		return redirect("login");
 	}
 

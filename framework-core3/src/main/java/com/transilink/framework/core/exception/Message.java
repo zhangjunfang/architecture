@@ -116,7 +116,7 @@ public class Message implements LogEnabled {
 				if (entityObject != null) {
 					Map params = BeanUtils.describe(entityObject);
 					if (params != null && !params.isEmpty()) {
-						// TODO
+						// 
 					}
 				}
 				String msg = MessageFormat.format(s, parms);

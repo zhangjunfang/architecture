@@ -67,19 +67,19 @@ public class OperateLogServiceImpl  implements OperateLogService, DisposableBean
 	
 	@Override
 	public OperateLog get(String arg0) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void removeUnused(String arg0) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		
 	}
 
 	@Override
 	public void saveOrUpdate(OperateLog arg0) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		
 	}
 
