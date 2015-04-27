@@ -18,7 +18,7 @@ import com.transilink.framework.core.logs.LogEnabled;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class JackJson implements LogEnabled {

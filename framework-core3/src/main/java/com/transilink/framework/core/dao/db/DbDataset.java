@@ -30,7 +30,7 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

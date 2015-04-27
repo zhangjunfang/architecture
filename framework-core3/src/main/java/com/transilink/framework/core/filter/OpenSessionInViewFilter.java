@@ -8,7 +8,7 @@ import org.springframework.orm.hibernate3.SessionFactoryUtils;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class OpenSessionInViewFilter extends

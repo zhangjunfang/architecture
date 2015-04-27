@@ -15,7 +15,7 @@ import com.transilink.framework.core.utils.fileUtils.SysConfigUtil;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class NspApplicationContextInterceptor extends HandlerInterceptorAdapter

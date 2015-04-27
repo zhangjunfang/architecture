@@ -8,7 +8,7 @@ import org.apache.commons.lang.ObjectUtils;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class Variant implements Serializable, Cloneable {

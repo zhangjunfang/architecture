@@ -5,7 +5,7 @@ import com.transilink.framework.core.utils.clazzUtils.ClassLoaderUtils;
 /**
  * 文件加载工厂类
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

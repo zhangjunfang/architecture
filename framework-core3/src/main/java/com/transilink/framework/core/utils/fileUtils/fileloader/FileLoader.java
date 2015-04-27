@@ -9,7 +9,7 @@ import java.net.URL;
 /**
  * 文件加载器的抽象类
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public abstract class FileLoader {

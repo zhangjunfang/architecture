@@ -14,7 +14,7 @@ import com.transilink.framework.core.model.variant.Variant;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class BaseRepresention extends StringRepresentation {

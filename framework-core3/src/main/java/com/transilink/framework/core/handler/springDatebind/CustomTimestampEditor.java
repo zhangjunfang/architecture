@@ -8,7 +8,7 @@ import org.springframework.util.StringUtils;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class CustomTimestampEditor extends PropertyEditorSupport {

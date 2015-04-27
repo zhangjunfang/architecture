@@ -12,7 +12,7 @@ import java.net.URL;
 /**
  * 本地文件读取器.
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class PathFileLoader extends FileLoader {

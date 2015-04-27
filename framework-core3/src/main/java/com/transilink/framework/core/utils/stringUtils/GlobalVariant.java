@@ -8,7 +8,7 @@ import java.util.Map;
  * 注册全局变量的类
  * </p>
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class GlobalVariant {

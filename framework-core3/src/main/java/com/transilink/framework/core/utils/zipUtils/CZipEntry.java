@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class CZipEntry implements ZipConstants, Cloneable {

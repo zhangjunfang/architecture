@@ -23,7 +23,7 @@ import com.transilink.framework.core.model.variant.VariantUtil;
 /**
  * 提供对对象操作的几个日常方法.如COPY,获取对象某属性的值等.
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

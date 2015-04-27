@@ -9,7 +9,7 @@ import java.net.URL;
 /**
  * 类资源加载器
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class ResourceFileLoader extends FileLoader {

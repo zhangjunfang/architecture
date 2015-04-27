@@ -10,7 +10,7 @@ import org.springframework.web.context.ServletContextAware;
 /**
  * spring上下文工具类
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @Component

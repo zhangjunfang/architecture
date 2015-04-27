@@ -4,7 +4,7 @@ import com.transilink.framework.core.exception.BaseException;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class Assert {

@@ -2,7 +2,7 @@ package com.transilink.framework.core.rest.velocity;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class PathUtil {

@@ -7410,3 +7410,283 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2015-04-15 14:09:13,474 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
 2015-04-15 14:09:14,006 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-04-15 14:09:14,009 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-23 17:19:31,187 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:19:32,146 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:19:32,253 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:19:32,714 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:32,771 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:33,024 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:35,519 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:19:35,542 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:19:36,094 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:38,856 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:39,874 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:19:39,980 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:41,831 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:19:41,870 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-23 17:19:42,583 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:19:42,589 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:19:42,660 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:43,031 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-23 17:19:43,035 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:19:43,057 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:43,064 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:43,082 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:43,450 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:19:43,627 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:19:43,638 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:19:43,901 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:44,114 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-23 17:19:44,133 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:44,623 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-23 17:19:44,863 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:45,107 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:19:45,111 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:45,449 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-23 17:19:45,463 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:45,985 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-23 17:19:45,994 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:19:46,226 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:19:46,239 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:46,499 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-23 17:19:46,510 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:49,735 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:19:49,735 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-23 17:19:54,076 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-23 17:19:54,080 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:19:54,093 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:54,125 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:54,135 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:54,479 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:19:54,753 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:19:54,758 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:19:54,803 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:55,137 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:19:55,229 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:19:58,518 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:19:58,522 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:19:58,571 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:19:58,572 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:19:59,126 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:19:59,136 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:19:59,142 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:19:59,172 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:59,180 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:59,193 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:19:59,682 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:03,447 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:03,447 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:03,486 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:03,487 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:03,604 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-23 17:20:03,613 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:03,618 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:03,650 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:03,659 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:03,674 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:04,131 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:05,838 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:05,839 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:06,010 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:06,011 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:06,926 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-23 17:20:06,935 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:06,942 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:06,978 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:06,987 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:07,003 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:07,523 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:08,731 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:08,740 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-23 17:20:13,884 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:13,890 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-23 17:20:22,805 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:20:22,960 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:23,206 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:23,216 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:23,222 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:23,222 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-23 17:20:23,231 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:20:23,234 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:20:23,373 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:26,279 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-23 17:20:26,320 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:26,333 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:26,338 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:26,353 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:26,679 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:20:26,912 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:20:26,923 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:27,151 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:27,746 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-23 17:20:28,012 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:28,822 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-23 17:20:28,848 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:29,752 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-23 17:20:29,757 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:29,939 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-quartz:1.0.0 @ D:\architecture\plugin-quartz\pom.xml.
+2015-04-23 17:20:29,948 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:30,222 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-23 17:20:30,244 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:20:30,442 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-caches:0.0.1 @ D:\architecture\plugin-caches\pom.xml.
+2015-04-23 17:20:30,448 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:30,729 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:plugin-log:0.0.1 @ D:\architecture\plugin-log\pom.xml.
+2015-04-23 17:20:30,740 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:31,536 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:31,546 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:31,584 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:31,609 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:31,876 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:20:31,984 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:31,986 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:31,989 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:31,990 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:35,341 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:35,348 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:35,383 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:35,393 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:35,415 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:35,902 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:36,080 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:36,081 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:36,084 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:36,085 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:37,061 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:37,068 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:37,110 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:37,120 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:37,137 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:37,562 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:38,550 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:38,551 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:38,554 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:38,555 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-23 17:20:47,533 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:47,537 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:47,567 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:47,576 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:47,592 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:48,043 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:48,174 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:48,193 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-23 17:20:48,859 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:48,875 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 541 resources
+2015-04-23 17:20:54,730 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:20:54,865 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:57,100 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+2015-04-23 17:20:57,207 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:57,309 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:57,309 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:57,310 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:57,311 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-23 17:20:57,352 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:57,364 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:57,401 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:57,417 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:57,715 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-23 17:20:57,829 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:57,829 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:57,831 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:57,831 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:57,853 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:57,860 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:57,894 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:57,902 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:57,916 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:58,401 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:20:58,566 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:58,567 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:58,572 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:20:58,573 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:20:58,598 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:20:58,602 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:20:58,632 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:58,637 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:58,649 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:20:59,084 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:21:00,145 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:21:00,145 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:21:00,146 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:21:00,147 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:21:00,173 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-23 17:21:00,180 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+2015-04-23 17:21:00,210 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:21:00,216 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:21:00,226 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-23 17:21:00,584 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-23 17:21:00,763 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:21:00,763 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-23 17:21:00,765 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-23 17:21:00,765 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:43,057 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.transilink:framework-config:1.0.43 @ D:\architecture\framework-config2\pom.xml.
+2015-04-27 11:19:43,098 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-27 11:19:43,106 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:43,114 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:43,142 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:43,152 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:43,418 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:43,664 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-27 11:19:43,670 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-27 11:19:43,890 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:43,903 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:43,945 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:43,956 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:44,167 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:45,477 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:45,485 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:45,510 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:45,522 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:45,699 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-27 11:19:45,804 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.transilink:framework-config:1.0.43 @ D:\architecture\framework-config2\pom.xml.
+2015-04-27 11:19:45,852 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:45,853 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:45,855 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:45,855 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:46,334 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:foundation-cppt:1.0.1 @ D:\architecture\foundation-cppt2\pom.xml.
+2015-04-27 11:19:46,347 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:46,363 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:46,395 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:46,405 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:46,808 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:47,021 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.transilink:framework-core:1.0.1 @ D:\architecture\framework-core3\pom.xml.
+2015-04-27 11:19:47,404 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-27 11:19:51,351 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:51,365 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:51,411 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:51,428 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:51,734 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:51,891 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:51,917 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-27 11:19:52,969 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:52,970 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-27 11:19:53,260 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:53,357 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:53,392 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:53,406 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:53,894 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:54,445 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:54,459 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:54,501 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:54,518 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:54,726 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+2015-04-27 11:19:54,836 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:54,837 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:54,838 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:54,838 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:54,858 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+2015-04-27 11:19:54,868 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:54,900 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:54,910 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+2015-04-27 11:19:55,172 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+2015-04-27 11:19:55,358 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:55,358 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:19:55,359 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:19:55,359 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources
+2015-04-27 11:25:01,266 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:25:01,267 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-04-27 11:25:01,268 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:25:01,268 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-27 11:25:01,369 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:25:01,392 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 475 resources
+2015-04-27 11:25:01,434 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-27 11:25:01,434 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\foundation-cppt2\src\test\resources

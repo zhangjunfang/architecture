@@ -5,7 +5,7 @@ import org.hibernate.type.StandardBasicTypes;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class TransilinkOracleDialect extends Oracle10gDialect {

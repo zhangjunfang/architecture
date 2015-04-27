@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class FileAttach implements Serializable {

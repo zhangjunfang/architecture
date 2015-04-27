@@ -11,7 +11,7 @@ import org.springframework.web.context.request.WebRequest;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class SpringDateBind implements WebBindingInitializer {

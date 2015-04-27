@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringEscapeUtils;
 /**
  * 用于编码和解码字符串中的不安全字符，使之可以在各种网络环境中安全的传输。
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public final class EscapeUtil {

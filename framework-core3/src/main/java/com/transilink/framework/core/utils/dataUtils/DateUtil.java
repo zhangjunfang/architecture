@@ -15,7 +15,7 @@ import com.transilink.framework.core.logs.LogEnabled;
 /**
  * 提供对日期时间操作的几个日常方法.
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class DateUtil implements LogEnabled {

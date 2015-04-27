@@ -20,7 +20,7 @@ import com.transilink.framework.core.utils.stringUtils.JsonDateValueProcessor;
 
 /**
  * @JSONUtil.java
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  */
 public class JSONTools {
 

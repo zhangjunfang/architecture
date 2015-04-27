@@ -15,7 +15,7 @@ import com.transilink.framework.core.exception.DuplicateKeyException;
 /**
  * 对象列表的实现。此类相当于org.apache.commons.collections.map.LinkedMap 的Adapter
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

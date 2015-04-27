@@ -11,7 +11,7 @@ import com.transilink.framework.core.utils.clazzUtils.BeanUtils;
 /**
  * 国际化消息查找. 国际化消息查找.可支持从数据库或资源文件查找.
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

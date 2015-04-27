@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @Target({ java.lang.annotation.ElementType.PARAMETER })

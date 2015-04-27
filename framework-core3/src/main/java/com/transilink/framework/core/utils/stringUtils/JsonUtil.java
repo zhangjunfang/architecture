@@ -17,7 +17,7 @@ import com.transilink.framework.core.utils.clazzUtils.BeanUtils;
 /**
  * json 工具类
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @SuppressWarnings("all")

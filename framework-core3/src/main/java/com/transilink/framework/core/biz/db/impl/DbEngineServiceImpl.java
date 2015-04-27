@@ -33,7 +33,7 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
 /**
  * 数据库SQL查询服务
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @Service("dbEngineService")

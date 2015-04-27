@@ -19,7 +19,7 @@ import sun.security.action.GetPropertyAction;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class CZipInputStream extends InflaterInputStream implements

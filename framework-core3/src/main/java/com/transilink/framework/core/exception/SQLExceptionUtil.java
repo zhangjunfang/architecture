@@ -4,7 +4,7 @@ import org.apache.commons.lang.exception.ExceptionUtils;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class SQLExceptionUtil {

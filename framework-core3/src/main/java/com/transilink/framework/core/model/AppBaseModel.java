@@ -6,7 +6,7 @@ import com.transilink.framework.core.model.datacontainer.DataObject;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @MappedSuperclass

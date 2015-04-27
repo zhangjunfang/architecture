@@ -12,7 +12,7 @@ import com.transilink.framework.core.utils.listUtils.ObjectList;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 public class VariantSet implements Serializable, Cloneable {

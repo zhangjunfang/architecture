@@ -16,7 +16,7 @@ import com.transilink.framework.core.utils.pagesUtils.Page;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  *
  */
 @Service("menuService")

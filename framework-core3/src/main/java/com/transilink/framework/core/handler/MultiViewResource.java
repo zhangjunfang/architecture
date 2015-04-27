@@ -22,7 +22,7 @@ import com.transilink.framework.core.rest.velocity.TemplateEngine;
 
 /**
  *
- * @author huangxin (3203317@qq.com)
+ * @author ocean(zhangjufang0505@163.com)
  * @修改时间
  * @<p> 2014-12-22 15:25 </p>
  *
