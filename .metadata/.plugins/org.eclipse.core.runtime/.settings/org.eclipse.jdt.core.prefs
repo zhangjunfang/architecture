@@ -18,3 +18,7 @@ org.eclipse.jdt.core.codeComplete.staticFinalFieldPrefixes=
 org.eclipse.jdt.core.codeComplete.staticFinalFieldSuffixes=
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.taskCaseSensitive=enabled
+org.eclipse.jdt.core.compiler.taskPriorities=NORMAL,HIGH,NORMAL
+org.eclipse.jdt.core.compiler.taskTags=TODO,FIXME,XXX
+org.eclipse.jdt.core.timeoutForParameterNameFromAttachedJavadoc=50

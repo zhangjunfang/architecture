@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>framework-base</groupId>
+		<artifactId>com.ocean.base</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>base-web</artifactId>
+	<packaging>pom</packaging>
+	<name>base-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>base-web</finalName>
+		<plugins>
+			<!-- 合并多个war -->
+			<!-- 1.被合并的子web项目packaging属性必须是war 2.被合并的子web项目，必须在主项目中添加依赖关系。 3. 被合并的子web项目中，如果没有web.xml，则需要在pom.xml中声明 
+				<failOnMissingWebXml>false</failOnMissingWebXml> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<packagingExcludes>WEB-INF/web.xml</packagingExcludes>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<dependentWarIncludes>**/IncludeME,**/images</dependentWarIncludes>
+					<useCache>true</useCache>
+					<webResources>
+						<!-- <resource> 元配置文件的目录，相对于pom.xml文件的路径 <directory>src/main/webapp/WEB-INF</directory> 
+							是否过滤文件，也就是是否启动auto-config的功能 <filtering>true</filtering> 目标路径 <targetPath>WEB-INF</targetPath> 
+							</resource> -->
+					</webResources>
+					<dependentWarExcludes>
+						<!-- */web.xml,WEB-INF/lib/*,/sql-map-config.xml,/jdbc.properties,/META-INF/* -->
+					</dependentWarExcludes>
+					<overlays>
+						<!--The <overlay> element can have the following child elements: 1.id 
+							- the id of the overlay. If none is provided, the WAR Plugin will generate 
+							one. 2.groupId - the groupId of the overlay artifact you want to configure. 
+							3.artifactId - the artifactId of the overlay artifact you want to configure. 
+							4.type - the type of the overlay artifact you want to configure. Default 
+							value is: war. 4.classifier - the classifier of the overlay artifact you 
+							want to configure if multiple artifacts matches the groupId/artifactId. 5.includes 
+							- the files to include. By default, all files are included. 6.excludes - 
+							the files to exclude. By default, the META-INF directory is excluded. 7.targetPath 
+							- the target relative path in the webapp structure, which is only available 
+							for overlays of type war. By default, the content of the overlay is added 
+							in the root structure of the webapp. 8.skip - set to true to skip this overlay. 
+							Default value is: false. 9.filtered - whether to apply filtering to this 
+							overlay. Default value is false. -->
+						<overlay>
+							<!-- 添加需要打成war 项目的groupId和artifactId -->
+							<!-- <groupId>framework-base</groupId>
+							<artifactId>base-web-springMVC</artifactId> -->
+							<!-- <excludes> <exclude>WEB-INF/classes/images/sampleimage-dependency.jpg</exclude> 
+								</excludes> -->
+						</overlay>
+						<overlay>
+							<!-- empty groupId/artifactId represents the current build -->
+							<!-- 添加需要打成war 项目的groupId和artifactId -->
+							<!--空 代表当前项目war -->
+						</overlay>
+					</overlays>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	<modules>
+		<module>base-web-springMVC</module>
+	</modules>
+</project>

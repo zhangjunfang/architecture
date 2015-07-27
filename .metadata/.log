@@ -4636,3 +4636,1359 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-07-27 09:56:18.068 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 4 567 2015-07-27 09:56:24.271
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2015-07-27 09:56:24.271
+!MESSAGE Could not read metadata for 'RemoteSystemsTempFiles'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:884)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:864)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:715)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1565)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2464)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2219)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:447)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:136)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2015-07-27 09:56:24.273
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-07-27 09:57:07.023
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:51.702
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:52.289
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:53.193
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:53.868
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:55.198
+!MESSAGE The artifact poi:poi-contrib:jar:3.1-FINAL has been relocated to org.apache.poi:poi-contrib:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:55.502
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:55.513
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:55.557
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:55.570
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:56.026
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:56.588
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:58.148
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:58.176
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:58.182
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:27:58.258
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:00.246
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.514
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.521
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.556
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.566
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.577
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:01.966
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:02.408
+!MESSAGE The POM for oracle.jdbc:oracle:jar:14 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:02.412
+!MESSAGE The POM for com.noelios.restlet:com.noelios.restlet.ext.servlet:jar:1.1.9 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:02.443
+!MESSAGE The POM for org.restlet:org.restlet:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:02.452
+!MESSAGE The POM for org.restlet:org.restlet.ext.spring:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:02.465
+!MESSAGE The POM for org.restlet:org.restlet.ext.velocity:jar:1.1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:28:03.026
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.core.resources 2 2 2015-07-27 10:32:54.219
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-07-27 10:32:54.219
+!MESSAGE The project description file (.project) for 'base-tool' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:51:21.813
+!MESSAGE The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:51:21.925
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:51:25.606
+!MESSAGE The POM for com.transilink:framework-core:jar:1.0.43 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 10:51:25.687
+!MESSAGE The artifact org.slf4j:jcl104-over-slf4j:jar:1.5.9.RC1 has been relocated to org.slf4j:jcl-over-slf4j:jar:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:28.832
+!MESSAGE Could not download sources for com.transilink:framework-core:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:29.390
+!MESSAGE Could not download sources for com.transilink:framework-core:1.0.43
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:29.931
+!MESSAGE Could not download sources for javassist:javassist:3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:30.430
+!MESSAGE Could not download sources for javassist:javassist:3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:31.011
+!MESSAGE Could not download sources for org.slf4j:jcl-over-slf4j:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:31.718
+!MESSAGE Could not download sources for org.slf4j:slf4j-log4j12:1.5.9.RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 10:51:32.219
+!MESSAGE Could not download sources for org.slf4j:slf4j-api:1.5.9.RC1
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-07-27 10:51:32.223
+!MESSAGE An internal error occurred during: "Download sources and javadoc".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.attachSourcesAndJavadoc(BuildPathManager.java:809)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:176)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1348)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-07-27 11:27:35.780 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 4 4 2015-07-27 11:27:42.053
+!MESSAGE Exception loading preferences from: /base-tool/.settings/org.eclipse.core.resources.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.core.resources.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.core.resources.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 19 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-07-27 11:27:42.056
+!MESSAGE File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.core.resources.prefs.
+!STACK 0
+java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.core.resources.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2015-07-27 11:27:42.061
+!MESSAGE Exception loading preferences from: D:/architecture/com.ocean.base/base-tool/.settings/org.eclipse.core.resources.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /base-tool/.settings/org.eclipse.core.resources.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 4 2015-07-27 11:27:42.951
+!MESSAGE Exception loading preferences from: /base-tool/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.jdt.core.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.jdt.internal.core.JavaProject.getEclipsePreferences(JavaProject.java:1490)
+	at org.eclipse.jdt.internal.core.JavaProject.getOptions(JavaProject.java:1678)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.getSourceElementParser(IndexManager.java:226)
+	at org.eclipse.jdt.internal.core.search.indexing.AddFolderToIndex.execute(AddFolderToIndex.java:58)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:405)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.jdt.core.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 15 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-07-27 11:27:42.954
+!MESSAGE File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.jdt.core.prefs.
+!STACK 0
+java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.jdt.core.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.jdt.internal.core.JavaProject.getEclipsePreferences(JavaProject.java:1490)
+	at org.eclipse.jdt.internal.core.JavaProject.getOptions(JavaProject.java:1678)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.getSourceElementParser(IndexManager.java:226)
+	at org.eclipse.jdt.internal.core.search.indexing.AddFolderToIndex.execute(AddFolderToIndex.java:58)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:405)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2015-07-27 11:27:42.970
+!MESSAGE Exception loading preferences from: D:/architecture/com.ocean.base/base-tool/.settings/org.eclipse.jdt.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /base-tool/.settings/org.eclipse.jdt.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.jdt.internal.core.JavaProject.getEclipsePreferences(JavaProject.java:1490)
+	at org.eclipse.jdt.internal.core.JavaProject.getOptions(JavaProject.java:1678)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.getSourceElementParser(IndexManager.java:226)
+	at org.eclipse.jdt.internal.core.search.indexing.AddFolderToIndex.execute(AddFolderToIndex.java:58)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:405)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.core.resources 4 4 2015-07-27 11:27:48.461
+!MESSAGE Exception loading preferences from: /base-tool/.settings/org.eclipse.m2e.core.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.m2e.core.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.m2e.core.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 45 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-07-27 11:27:48.462
+!MESSAGE File not found: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.m2e.core.prefs.
+!STACK 0
+java.io.FileNotFoundException: D:\architecture\com.ocean.base\base-tool\.settings\org.eclipse.m2e.core.prefs (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2015-07-27 11:27:48.463
+!MESSAGE Exception loading preferences from: D:/architecture/com.ocean.base/base-tool/.settings/org.eclipse.m2e.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /base-tool/.settings/org.eclipse.m2e.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-07-27 11:27:56.663
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 11:30:54.527
+!MESSAGE Failed to read Maven project: 2 problems were encountered while building the effective model for tlp-base:base-tool:0.0.1-SNAPSHOT
+[WARNING] 'parent.relativePath' points at framework-base:com.ocean.base instead of tlp-base:com.ocean.base, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM: Could not find artifact tlp-base:com.ocean.base:pom:0.0.1-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+ for project tlp-base:base-tool:0.0.1-SNAPSHOT at D:\architecture\framework-base\base-tool\pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 11:31:01.448
+!MESSAGE Failed to read Maven project: 2 problems were encountered while building the effective model for tlp-base:base-tool:0.0.1-SNAPSHOT
+[WARNING] 'parent.relativePath' points at framework-base:com.ocean.base instead of tlp-base:com.ocean.base, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM: Could not find artifact tlp-base:com.ocean.base:pom:0.0.1-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+ for project tlp-base:base-tool:0.0.1-SNAPSHOT at D:\architecture\framework-base\base-tool\pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 11:31:01.449
+!MESSAGE Unable to read maven project. Dependencies not updated.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 11:31:02.907
+!MESSAGE Failed to read Maven project: 2 problems were encountered while building the effective model for tlp-base:base-tool:0.0.1-SNAPSHOT
+[WARNING] 'parent.relativePath' points at framework-base:com.ocean.base instead of tlp-base:com.ocean.base, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM: Could not find artifact tlp-base:com.ocean.base:pom:0.0.1-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+ for project tlp-base:base-tool:0.0.1-SNAPSHOT at D:\architecture\framework-base\base-tool\pom.xml
+!SESSION 2015-07-27 11:44:22.966 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-07-27 11:44:37.846
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-07-27 11:47:05.642
+!MESSAGE Failed to add resource to index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to add resource to index
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:81)
+	at org.eclipse.egit.ui.internal.actions.AddToIndexActionHandler$1.run(AddToIndexActionHandler.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:212)
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:78)
+	... 2 more
+Caused by: java.io.IOException: File not found: D:\architecture\framework-base\base-tool\pom.xml.
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:380)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:509)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:184)
+	... 3 more
+Caused by: org.eclipse.core.runtime.CoreException: File not found: D:\architecture\framework-base\base-tool\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:378)
+	... 5 more
+Caused by: java.io.FileNotFoundException: D:\architecture\framework-base\base-tool\pom.xml (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 8 more
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2015-07-27 11:47:05.644
+!MESSAGE Failed to add resource to index
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:212)
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:78)
+	at org.eclipse.egit.ui.internal.actions.AddToIndexActionHandler$1.run(AddToIndexActionHandler.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: File not found: D:\architecture\framework-base\base-tool\pom.xml.
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:380)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:509)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:184)
+	... 3 more
+Caused by: org.eclipse.core.runtime.CoreException: File not found: D:\architecture\framework-base\base-tool\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:378)
+	... 5 more
+Caused by: java.io.FileNotFoundException: D:\architecture\framework-base\base-tool\pom.xml (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 8 more
+
+!ENTRY org.eclipse.ui.views.properties.tabbed 4 4 2015-07-27 11:47:22.018
+!MESSAGE Contributor org.eclipse.ui.navigator.ProjectExplorer cannot be created.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.ui.navigator.resources" was unable to instantiate class "org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetTitleProvider".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.TabbedPropertyRegistry.<init>(TabbedPropertyRegistry.java:129)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.TabbedPropertyRegistryFactory.createRegistry(TabbedPropertyRegistryFactory.java:74)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.initContributor(TabbedPropertySheetPage.java:406)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.<init>(TabbedPropertySheetPage.java:295)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.<init>(TabbedPropertySheetPage.java:274)
+	at org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetAdapterFactory.getAdapter(TabbedPropertySheetAdapterFactory.java:38)
+	at org.eclipse.core.internal.adapter.AdapterFactoryProxy.getAdapter(AdapterFactoryProxy.java:82)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:295)
+	at org.eclipse.ui.part.WorkbenchPart.getAdapter(WorkbenchPart.java:155)
+	at org.eclipse.ui.navigator.CommonNavigator.getAdapter(CommonNavigator.java:453)
+	at org.eclipse.ui.internal.views.ViewsPlugin.getAdapter(ViewsPlugin.java:103)
+	at org.eclipse.ui.views.properties.PropertySheet.doCreatePage(PropertySheet.java:207)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768)
+	at org.eclipse.ui.views.properties.PropertySheet.partActivated(PropertySheet.java:325)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:959)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:506)
+	at org.eclipse.ui.views.properties.PropertySheet.createPartControl(PropertySheet.java:157)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:69)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:135)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$16.widgetSelected(PerspectiveSwitcher.java:622)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetTitleProvider.<init>(TabbedPropertySheetTitleProvider.java:56)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at java.lang.Class.newInstance(Class.java:438)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 133 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2015-07-27 11:47:22.019
+!MESSAGE Plug-in "org.eclipse.ui.navigator.resources" was unable to instantiate class "org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetTitleProvider".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetTitleProvider.<init>(TabbedPropertySheetTitleProvider.java:56)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at java.lang.Class.newInstance(Class.java:438)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.TabbedPropertyRegistry.<init>(TabbedPropertyRegistry.java:129)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.TabbedPropertyRegistryFactory.createRegistry(TabbedPropertyRegistryFactory.java:74)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.initContributor(TabbedPropertySheetPage.java:406)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.<init>(TabbedPropertySheetPage.java:295)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.<init>(TabbedPropertySheetPage.java:274)
+	at org.eclipse.ui.internal.navigator.resources.workbench.TabbedPropertySheetAdapterFactory.getAdapter(TabbedPropertySheetAdapterFactory.java:38)
+	at org.eclipse.core.internal.adapter.AdapterFactoryProxy.getAdapter(AdapterFactoryProxy.java:82)
+	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:295)
+	at org.eclipse.ui.part.WorkbenchPart.getAdapter(WorkbenchPart.java:155)
+	at org.eclipse.ui.navigator.CommonNavigator.getAdapter(CommonNavigator.java:453)
+	at org.eclipse.ui.internal.views.ViewsPlugin.getAdapter(ViewsPlugin.java:103)
+	at org.eclipse.ui.views.properties.PropertySheet.doCreatePage(PropertySheet.java:207)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768)
+	at org.eclipse.ui.views.properties.PropertySheet.partActivated(PropertySheet.java:325)
+	at org.eclipse.ui.part.PageBookView.showBootstrapPart(PageBookView.java:959)
+	at org.eclipse.ui.part.PageBookView.createPartControl(PageBookView.java:506)
+	at org.eclipse.ui.views.properties.PropertySheet.createPartControl(PropertySheet.java:157)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:69)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:135)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher$16.widgetSelected(PerspectiveSwitcher.java:622)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-07-27 13:18:39.132
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.isClass(SourceType.java:592)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:126)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:543)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:562)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:519)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:527)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProjectChildren(AbstractAnnotationModelProvider.java:501)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProject(AbstractAnnotationModelProvider.java:492)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostChange(AbstractAnnotationModelProvider.java:457)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:448)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1519)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1495)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-07-27 13:18:39.139
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-07-27 13:18:41.895
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:201)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:543)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:562)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:519)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:527)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProjectChildren(AbstractAnnotationModelProvider.java:501)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProject(AbstractAnnotationModelProvider.java:492)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostChange(AbstractAnnotationModelProvider.java:457)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:448)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1519)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1495)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-07-27 13:18:41.896
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-07-27 13:18:42.141
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:201)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processChangedCompilationUnit(WebAnnotationReader.java:270)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:553)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:466)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-07-27 13:18:42.141
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVc_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVc]]] does not exist
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:38:41.029
+!MESSAGE Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:38:41.034
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:38:41.036
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:39:22.108
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:39:22.112
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:39:22.116
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:41:21.645
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:41:21.649
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:41:21.652
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:08.077
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:08.080
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:08.082
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 13:43:19.886
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:25.462
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:25.465
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:25.467
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:35.981
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:35.984
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 13:43:35.988
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:29.840
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:29.843
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:29.845
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:36.605
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:36.609
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:02:36.612
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:00.809
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:00.813
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:00.815
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:09.215
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:09.218
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:09.221
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:37.344
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:37.347
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:37.351
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:58.902
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:58.906
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:08:58.909
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:13:47.444
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:13:47.447
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:13:47.449
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:01.253
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:01.255
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:01.258
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:14.136
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:14.139
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:14.142
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:21.649
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:21.652
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:21.655
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:52.634
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:52.636
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:14:52.639
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:17:45.384
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:17:45.386
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:17:45.388
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:20:23.136
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:20:23.142
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-27 14:20:23.144
+!MESSAGE Failure to transfer org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins:maven-war-plugin/maven-metadata.xml from/to central (http://repo.maven.apache.org/maven2): repo.maven.apache.org
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 14:44:47.293
+!MESSAGE Unable to configure base-web-springMVc
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 14:49:26.106
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 14:55:00.606
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.core.resources 2 2 2015-07-27 14:58:19.458
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-07-27 14:58:19.458
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 15:33:38.364
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-07-27 15:34:25.638
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVC_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVC]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_base_2D_web_2D_springMVC_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVC]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:201)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:543)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:562)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:519)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:527)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProjectChildren(AbstractAnnotationModelProvider.java:501)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProject(AbstractAnnotationModelProvider.java:492)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostChange(AbstractAnnotationModelProvider.java:457)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:448)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1519)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1495)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-07-27 15:34:25.642
+!MESSAGE [Working copy] __2F_base_2D_web_2D_springMVC_2F_src_2F_main_2F_webapp_2F_index_2E_jsp.java [in <default> [in src/main/java [in base-web-springMVC]]] does not exist
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 15:34:42.472
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 15:35:36.794
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 15:40:10.059
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 16:00:49.324
+!MESSAGE Unable to configure base-web-springMVC
+!SESSION 2015-07-27 16:01:08.495 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-07-27 16:01:27.387
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 16:31:29.431
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 17:18:13.811
+!MESSAGE Unable to configure base-web-springMVC
+
+!ENTRY org.eclipse.ui 4 4 2015-07-27 17:20:58.121
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@16e84d93)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@55708d47)}
+!SESSION 2015-07-27 17:23:36.415 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-07-27 17:24:27.633
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2015-07-27 17:25:24.425
+!MESSAGE can not calculate a model ID without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not calculate a model ID without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.calculateId(FileBufferModelManager.java:485)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._getModelFor(ModelManagerImpl.java:614)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1442)
+	at org.eclipse.m2e.core.ui.internal.editing.PomEdits.performOnDOMDocument(PomEdits.java:439)
+	at org.eclipse.m2e.editor.pom.OverviewPage$17.run(OverviewPage.java:1128)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-07-27 17:25:24.440
+!MESSAGE Failed to populate overview panel
