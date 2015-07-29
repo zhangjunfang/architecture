@@ -9,6 +9,7 @@
 	<name>base-web-springMVC Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
+		<servlet.version>3.1.0</servlet.version>
 		<!-- spring版本号 -->
 		<spring.version>4.1.7.RELEASE</spring.version>
 		<!--javassist -->
@@ -30,10 +31,7 @@
 		<slf4j.version>1.6.6</slf4j.version>
 		<log4j.version>1.2.9</log4j.version>
 	</properties>
-
 	<dependencies>
-		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-commons-annotations</artifactId> 
-			<version>4.0.5.Final</version> </dependency> -->
 		<dependency>
 			<groupId>dom4j</groupId>
 			<artifactId>dom4j</artifactId>
@@ -140,7 +138,7 @@
 			<artifactId>spring-websocket</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!--注意 需要添加被依赖工程的war文件 或者是 -->
+		<!--注意 需要添加被依赖工程的war文件 -->
 		<dependency>
 			<groupId>com.ocean.base</groupId>
 			<artifactId>base-web</artifactId>
@@ -151,8 +149,8 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>compile</scope>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -170,6 +168,9 @@
 					<!-- 被依赖工程的WEB-INF目录下，没有web.xml（有也没用，最终会被覆盖）。默认情况下，packaging类型为war的项目，如果没有web.xml，则构建会失败，因此需要在pom里做一个配置 -->
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<dependentWarIncludes>**/IncludeME,**/images,**/com,**/WEB-INF/lib/*</dependentWarIncludes>
+					<dependentWarExcludes>
+						<!-- */web.xml,WEB-INF/lib/*,/sql-map-config.xml,/jdbc.properties,/META-INF/* -->
+					</dependentWarExcludes>
 					<useCache>true</useCache>
 					<resourceEncoding>UTF-8</resourceEncoding>
 					<webResources>
@@ -177,10 +178,6 @@
 							是否过滤文件，也就是是否启动auto-config的功能 <filtering>true</filtering> 目标路径 <targetPath>WEB-INF</targetPath> 
 							</resource> -->
 					</webResources>
-					<dependentWarExcludes>
-						<!-- */web.xml,WEB-INF/lib/*,/sql-map-config.xml,/jdbc.properties,/META-INF/* -->
-					</dependentWarExcludes>
-					<packagingExcludes>WEB-INF/web.xml</packagingExcludes>
 					<overlays>
 						<!--The <overlay> element can have the following child elements: 1.id 
 							- the id of the overlay. If none is provided, the WAR Plugin will generate 
@@ -200,19 +197,31 @@
 							<!-- 添加需要打成war 项目的groupId和artifactId -->
 							<groupId>com.ocean.base</groupId>
 							<artifactId>base-web</artifactId>
-							<includes></includes>
+							<includes>
+								<include>WEB-INF/classes/*.htm*</include>
+								<!-- <include>WEB-INF/classes/aa.properties</include> -->
+							</includes>
 							<!-- <excludes> <exclude>WEB-INF/classes/images/sampleimage-dependency.jpg</exclude> 
 								</excludes> -->
+							<excludes>
+								<!-- <exclude>WEB-INF/classes/aa.properties</exclude> -->
+								<!-- <exclude>WEB-INF/classes/*.htm*</exclude> -->
+							</excludes>
 						</overlay>
-						<!-- <overlay>
-							empty groupId/artifactId represents the current build
-							添加需要打成war 项目的groupId和artifactId
-							空 代表当前项目war
-						</overlay> -->
+						<!-- <overlay> empty groupId/artifactId represents the current build 
+							添加需要打成war 项目的groupId和artifactId 空 代表当前项目war </overlay> -->
 					</overlays>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 		</plugins>
-
 	</build>
 </project>
