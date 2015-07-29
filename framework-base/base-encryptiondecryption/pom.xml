@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>framework-base</groupId>
-    <artifactId>com.ocean.base</artifactId>
+    <groupId>com.ocean.base</groupId>
+    <artifactId>framework-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>base-encryptiondecryption</artifactId>
