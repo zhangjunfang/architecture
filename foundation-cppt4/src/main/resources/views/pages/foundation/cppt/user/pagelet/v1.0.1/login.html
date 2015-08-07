@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>用户登录</title>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/head.html')
+	<style>
+	body {
+		background-color: #F5F5F5;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+	#loginFrm {
+		background-color: #FFFFFF;
+		border: 1px solid #E5E5E5;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+		margin: 0 auto 20px;
+		max-width: 350px;
+		padding: 19px 29px 29px;
+	}
+	#alert_info {
+		max-width: 350px;
+		margin: 0 auto 20px;
+	}
+	</style>
+</head>
+<body>
+	<section class='container'>
+		<div id='alert_info' class='alert alert-warning'>
+			<button type='button' class='close' data-dismiss='alert'>&times;</button>
+			<strong>提示：</strong><span id='alert_msg'>请按要求输入正确的格式内容。</span>
+		</div>
+		<form id='loginFrm' role='form' onsubmit='return false;' data-url='login.do'>
+			<h3>后台登陆</h3>
+			<div class='form-group'>
+				<input id='loginFrm_UserName' name='user_name' type='text' class='form-control' placeholder='用户名' value='admin'>
+			</div>
+			<div class='form-group'>
+				<input id='loginFrm_UserPass' name='password' type='password' class='form-control' placeholder='密码' value=''>
+			</div>
+			<div class='checkbox'>
+				<label>
+					<input type='checkbox'> 记住我
+				</label>
+			</div>
+			<button id='btn_login' type='button' class='btn btn-primary'>登陆</button>
+		</form>
+	</section>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/js.html')
+	<script type='text/javascript'>
+	var validate = function(){
+		#*if('' === $('#loginFrm_UserName').val().trim()){
+			alert('用户名不能为空！');
+			return;
+		}
+		if('' === $('#loginFrm_UserPass').val().trim()){
+			alert('密码不能为空！');
+			return;
+		}*#
+		return $('#loginFrm').serializeObjectForm();
+	};
+
+	$('#btn_login').click(function(){
+		var result = validate();
+		if(!result) return;
+		$ .ajax({
+			url: 'login.do',
+			type: 'POST',
+			dataType: 'json',
+			data: result
+		}).done(function (data) {
+			var msg = data.msg;
+			if(msg.success){
+				location.href = '${virtualPath}manage/index';
+				return;
+			}
+			alert(msg.msg);
+		});
+	});
+	</script>
+</body>
+</html>

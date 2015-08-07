@@ -1,25 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.xcysoft</groupId>
+	<groupId>com.transilink</groupId>
 	<artifactId>framework-config</artifactId>
-	<version>1.0.40</version>
+	<version>1.0.43</version>
 	<packaging>pom</packaging>
-	<name>xcysoft :: framework :: config</name>
-
-	<distributionManagement>
-		<repository>
-			<id>repo1.xcysoft.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.xcysoft.com</url>
-		</repository>
-	</distributionManagement>
-
-	<repositories>
-		<repository>
-			<id>repo1.xcysoft.com</id>
-			<url>http://localhost:8082/nexus/content/repositories/repo1.xcysoft.com</url>
-		</repository>
-	</repositories>
+	<name>transilink :: framework :: config</name>
 
 	<!--版本定义 -->
 	<properties>
@@ -27,15 +13,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.6</jdk.version>
 		<!--核心类 -->
-		<xcysoft.framework.version>1.0.40</xcysoft.framework.version>
+		<transilink.framework.version>1.0.1</transilink.framework.version>
 		<!--spring -->
-		<spring.version>3.2.5.RELEASE</spring.version>
+		<spring.version>3.2.14.RELEASE</spring.version>
 		<!--hibernate -->
 		<hibernate.version>3.6.0.Final</hibernate.version>
 		<javassist.version>3.1</javassist.version>
 		<cglib.version>2.2</cglib.version>
 		<!-- restlet -->
 		<restlet.version>1.1.10</restlet.version>
+		<!-- <restlet.version>2.3.1</restlet.version> -->
 		<restlet-servlet.version>1.1.10</restlet-servlet.version>
 		<restlet-noelios.version>1.1.10</restlet-noelios.version>
 		<restlet-noelios.spring.version>1.1.9</restlet-noelios.spring.version>
@@ -86,9 +73,9 @@
 		<dependencies>
 			<!-- 核心依赖 begin -->
 			<dependency>
-				<groupId>com.xcysoft</groupId>
+				<groupId>com.transilink</groupId>
 				<artifactId>framework-core</artifactId>
-				<version>${xcysoft.framework.version}</version>
+				<version>${transilink.framework.version}</version>
 			</dependency>
 			<!-- 核心依赖 end -->
 			<!-- httpclient -->
@@ -532,3 +519,4 @@
 		</pluginManagement>
 	</build>
 </project>
+

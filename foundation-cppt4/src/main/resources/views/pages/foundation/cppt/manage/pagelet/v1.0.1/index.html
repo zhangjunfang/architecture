@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>后台管理 | 产品平台</title>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/head.html')
+<link rel='stylesheet' type='text/css' href='${virtualPath}styles/css/foundation/cppt/manage/v1.0.1/index.css' media='screen' />
+<style>
+	#innerPage {
+		border: 0;
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	#parse('foundation/cppt/manage/pagelet/v1.0.1/top.banner.html')
+	<header id='header'></header>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-12 col-md-2' id='sideNav'>
+				#parse('foundation/cppt/manage/pagelet/v1.0.1/side.nav.html')
+			</div>
+			<div class='col-sm-12 col-md-10'>
+				<iframe id='innerPage' src='' scrolling='no'></iframe>
+			</div>
+		</div>
+	</div>
+	#parse('foundation/cppt/site/pagelet/v1.0.1/js.html')
+<script type='text/javascript' src='${cdn}backbone/1.0.0/backbone.min.js?v1.0.0'></script>
+<script>
+(function($){
+	var ifr_innerPage = $('#innerPage');
+	var Router = Backbone.Router.extend({
+		routes: {
+			'': '_showDefPage',
+			'page/*path': '_showPage'
+		},
+		initialize: function() {
+			//console.log('initialize');
+		},
+		_showDefPage: function(){
+			ifr_innerPage.attr('src', 'welcome');
+		},
+		_showPage: function(url){
+			ifr_innerPage.attr('src', url);
+		}
+	});
+	new Router();
+	Backbone.history.start();
+})($);
+
+function resizeInnerPage(obj){
+	document.getElementById('innerPage').height = obj.height();
+}
+</script>
+</body>
+</html>

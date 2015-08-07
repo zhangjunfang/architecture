@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#666;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+
+}
+div,form,img,ol,ul,li,dl,dt,p,dd{margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+
+a{ text-decoration:none; color:#666;}
+a:hover{ color:#FF0000;}
+h1,h2,h3{ font-size:14px; margin:0px; padding:0px;}
+.left{ float:left; }
+.right{ float:right;}
+
+/*欢迎页面*/
+.wel-main {
+	background-image: url(../images/mainbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 100%;
+	width: 100%;
+	min-height:616px;
+}
+.wel-menu {
+	width: 800px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.wel-anleft {
+	background-image: url(../images/btnleft.png);
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 7px;
+}
+.wel-anright {
+	background-image: url(../images/btnright.png);
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 7px;
+}
+.wel-menu li {
+	float: left;
+}
+.wel-anconbg {
+	background-image: url(../images/btncon.jpg);
+	background-repeat: repeat-x;
+	height: 36px;
+	line-height:36px;
+}
+.wel-lijt {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top:10px;
+}
+.wel-moint {
+	width: 254px;
+	background:#FEF7CD;
+	border:1px solid #ECB514;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.wel-mointit {
+	background-color: #FCF2AD;
+	line-height: 30px;
+	height: 30px;
+	border-bottom:1px solid #ECB514;
+}
+.wel-intcon {
+	width: 234px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.wel-intconpara {
+	line-height: 26px;
+}
+.wel-mointit img {
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-right: 5px;
+}

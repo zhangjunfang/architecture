@@ -1,0 +1,24 @@
+<table id='table1' data-olx-type='olx.grid' class='table table-bordered table-hover table-condensed table-striped' data-url='/user/list' data-current='1' data-pagesize='20' data-count='561'>
+	<thead>
+		<tr>
+			<th class='ta'><input type='checkbox' title='全选/取消'></th>
+			<th>用户名</th>
+			<th>真实姓名</th>
+			<th>性别</th>
+			<th>创建时间</th>
+			<th>创建人</th>
+			<th>状态</th>
+		</tr>
+	</thead>
+	<tbody>
+		#foreach($!user in $!pageView.records)<tr>
+			<td class='ta'><input type='checkbox' value='$!user.ID'></td>
+			<td>$!user.USER_NAME</td>
+			<td>$!user.REAL_NAME</td>
+			<td>#parseSex($!user.SEX)</td>
+			<td>$!user.CREATE_TIME</td>
+			<td></td>
+			<td></td>
+		</tr>#end
+	</tbody>
+</table>

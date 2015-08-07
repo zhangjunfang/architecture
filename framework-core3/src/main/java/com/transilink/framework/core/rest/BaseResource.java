@@ -41,7 +41,6 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
  * @author ocean(zhangjufang0505@163.com)
  *
  */
-@SuppressWarnings("all")
 public class BaseResource extends Resource implements InitializingBean,
 		BaseResourceHandler, LogEnabled {
 
@@ -51,9 +50,9 @@ public class BaseResource extends Resource implements InitializingBean,
 	private Map<String, String> params = new HashMap<String, String>();
 
 	/* 获取系统上下文路径 */
-	private String contextPath;
+	//private String contextPath;
 
-	private org.apache.velocity.context.Context transilinkViewContext = this
+	private org.apache.velocity.context.Context transilinkViewContext = BaseResource
 			.getVelocityContext();
 
 	private static VelocityContext getVelocityContext() {
@@ -85,12 +84,10 @@ public class BaseResource extends Resource implements InitializingBean,
 
 	public BaseResource() {
 		super();
-		log.getLogger(getClass());
 	}
 
 	public BaseResource(Context context, Request request, Response response) {
 		super(context, request, response);
-		log.getLogger(getClass());
 		this.getVariants().add(new Variant(MediaType.ALL));
 		String callMethod = request.getMethod().getName();
 		log.info("method[" + callMethod + "] call!");
@@ -222,7 +219,7 @@ public class BaseResource extends Resource implements InitializingBean,
 				selectedRepresentation = getResponse().getEntity();
 			} else {
 				if (variants.size() == 1) {
-					callMethod();
+					this.callMethod();
 					selectedRepresentation = getResponse().getEntity();
 				} else {
 					final ReferenceList variantRefs = new ReferenceList();
@@ -309,6 +306,7 @@ public class BaseResource extends Resource implements InitializingBean,
 	 *
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	private void callMethod() {
 		try {
 			String methodName = String.valueOf(getRequest().getAttributes()
