@@ -1,0 +1,46 @@
+<table class="standard_table th-bg standard_table_tt">
+  <tbody>
+   <tr>
+    <th class="th-1"><input  title="全选/不选" type="checkbox"  class="check_box"  onclick="selectAll(this)"></th>
+    <th class="th-3">功能名称</th>
+    <th class="th-5">描述</th>
+    <th class="th-6">URL</th>
+    <th class="th-8">创建日期</th>
+    <!-- th class="th-9">操作</th-->
+   </tr>
+  </tbody>
+</table>
+<table class="standard_table standard_table_con">
+  <tbody>
+    #foreach($!resource in $!pageView.records)
+   <tr>
+    <td class="td-1"><input type="checkbox" name="resourceids" value="$!resource.ID" class="check_box"></td>
+    <td class="td-3">$!resource.NAME</td>
+    <td class="td-5">$!resource.MEMO</td>
+    <td class="td-6">$!resource.URL</td>
+    <td class="td-8">$!dateTool.format(${date_format_short}, $!{resource.CREATE_DATETIME})</td>
+    <!-- td class="td-9"><a href="#">编辑</a></td-->
+   </tr>
+   #end
+  </tbody>
+</table>
+<table class="page-list">
+<tr>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="fenye_table">
+
+
+ <td style="width:10px;"></td>
+<!--  	#parse($paging)-->
+<!--    #paging($pageView)-->
+
+  <tr>
+    <td style="width:10px;"></td>
+   	#parse($paging)
+    #paging($pageView)
+  </tr>
+</table></td>
+</tr>
+</table>
+	</td>
+  </tr>
+</table>

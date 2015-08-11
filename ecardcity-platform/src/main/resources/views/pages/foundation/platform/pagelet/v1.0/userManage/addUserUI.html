@@ -1,0 +1,90 @@
+	<form id="dataDatail"  >
+		<div style="width: 100%; height: 230px; overflow: auto">
+			<table border="0" cellspacing="0" cellpadding="0" class="ld-slitab">
+				<tr>
+					<td><font color="red">*</font>用户名：</td>
+					<td><input id="empCode" name="empCode"
+						type="text" /></input>
+						 <input id="customerunitcode"name="customerunitcode" type="hidden" value="$!{customerunitcode}"/>
+					</td>
+					<td><font color="red">*</font>角色组别：</td>
+					<td><!-- <select id="roletype" name="roletype" onchange="loadRoleorGroup(this,'roleid');">
+						     <option value="-1">--选择--</option>   
+						        <option value="0">角色</option>   
+						        <option value="1">角色组</option>   
+							</select> -->
+							 <select name="roleid" id="roleid">  
+							    <option value="-1">--选择--</option>   
+						 #foreach($!item in $!pageView.items)
+					        <option value="$!item.ID">$!item.GROUPNAME</option>   
+					     #end 
+						      </select>
+					</td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>用户密码：</td>
+					<td><input id="empPwd" name="empPwd"
+						type="text" /></input>
+					</td>
+					<td><font color="red">*</font>重复密码：</td>
+					<td><input id="empPwd2" name="empPwd2"
+						type="text" /></input>
+					</td>
+				</tr>
+				<tr>
+					<td>姓名：</td>
+					<td> <input id="name" name="name" type="text" /></input>
+					</td>
+					<td>性别：</td>
+					<td><select id="sex" name="sex">
+							<option value="1">男</option>
+							<option value="0">女</option>
+							<option value="2">其他</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td>联系方式：</td>
+					<td><input id="telephone" name=telephone type="text" /></input>
+					</td>
+					<td>证件类型：</td>
+					<td><select id="certificateid" name="certificateid">
+							<option value="1">身份证</option>
+							<option value="0">学生证</option>
+							<option value="2">其他</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td>证件号码：</td>
+					<td><input id="idcardno" name="idcardno" type="text" /></input>
+					</td>
+					<td>电子邮件：</td>
+					<td><input id="email" name="email" type="text" /></input>
+					</td>
+				</tr>
+				<tr>
+				    <td>启用状态：</td>
+					<td><input id="empstate" name="empstate" type="checkbox" checked="checked"/><label>启用</label>
+					</td>
+					<td>登陆限制类型：</td>
+					<td colspan="3">
+					<select id="loglimit" name="loglimit">
+							#foreach($!LoginlimitType in $!loginlimitlist)
+						        <option value="$!LoginlimitType.getTypeid()">$!LoginlimitType.getTypename()</option>   
+						     #end 
+					</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div
+			style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px;background-color:#F8F9F9">
+			<a href="javascript:addUser();" class="ld-btn ld-lanse"><img
+				src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存</a>
+			<a href="#" class="ld-btn ld-lanse" style="margin-right: 5px" onclick="javascript:art.dialog({id:'adduserid'}).close();"><img
+				src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />取消</a>
+		</div>
+	</form>
+	
+	

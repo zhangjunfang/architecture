@@ -1,0 +1,75 @@
+<form id="dataDatail">
+<input id="deptids" name="deptids" type="text" style="display: none"  />
+<div  class="ui-dialog-add" style="width:660px;">
+	
+	<div class="ui-dialog-content">
+		<ul>
+			<li class="ui-dialoguser-li01"><span>*</span>登录账号：</li>
+			<li class="ui-dialoguser-li02"><input name="accountName" type="text" id="userId"  class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01"><span>*</span>姓名：</li>
+			<li class="ui-dialoguser-li02"><input name="userName" id="userName" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01 cl">性别：</li>
+			<li class="ui-dialoguser-li02"><select name="sex" class="ui-dialoguser-sel">
+			  <option value="1">男</option>
+			  <option value="0">女</option>
+			</select></li>
+				<li class="ui-dialoguser-li01"><span>*</span>登录密码：</li>
+			<li class="ui-dialoguser-li02"><input name="password" id="password"  type="password"  class="ui-dialoguser-inp" value="$!user.password" /></li>
+			<li class="ui-dialoguser-li01 cl">证件类型：</li>
+			<li class="ui-dialoguser-li02">
+				<select id="certificateType" name="certificateType" style="width:154px;">
+				      <option value="0">身份证</option>
+				      <option value="1">学生证</option>
+				      <option value="2">其他</option>
+				</select>
+			</li>
+			<li class="ui-dialoguser-li01"><span>*</span>证件号码：</li>
+			<li class="ui-dialoguser-li02"><input name="certificateCode" id="certificateCode" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01 cl">手机号：</li>
+			<li class="ui-dialoguser-li02"><input name="mobile" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01">邮件地址：</li>
+			<li class="ui-dialoguser-li02"><input name="email" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01 cl">民族：</li>
+			<li class="ui-dialoguser-li02"><input name="nation" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);'/></li>
+			<li class="ui-dialoguser-li01">生日：</li>
+			<li class="ui-dialoguser-li02"><input name="birthday1" type="text" class="ui-dialoguser-inp" onfocus="WdatePicker({skin:'whyGreen'})"/></li>
+			<li class="ui-dialoguser-li01 cl">开通日期：</li>
+			<li class="ui-dialoguser-li02"><input name="openDate1" id="openDate" type="text" class="ui-dialoguser-inp" onfocus="var leavedate=$dp.$('invaildDate');WdatePicker({onpicked:function(){leavedate.focus();},skin:'whyGreen'})"/></li>
+			<li class="ui-dialoguser-li01">失效日期：</li>
+			<li class="ui-dialoguser-li02"><input name="invaildDate1" id="invaildDate" type="text" class="ui-dialoguser-inp" onfocus="WdatePicker({skin:'whyGreen',minDate:'#F{$dp.$D(\'openDate\')}'})"/></li>
+			<li class="ui-dialoguser-li01 cl">用户类型：</li>
+			<li class="ui-dialoguser-li02"><input name="userType" type="text" class="ui-dialoguser-inp" onblur='this.value=$.trim(this.value);' /></li>
+			<li class="ui-dialoguser-li01">用户状态：</li>
+			<li class="ui-dialoguser-li02">
+			<select name="status" style="width:154px;">
+				<option value="1">启用</option>
+				<option value="0">禁用</option>
+			</select>
+			</li>
+		</ul>
+		
+		</div>
+		<div class="ui-dialog-addusertit" style="background-color: #F7FAFC;height:30px;line-height:30px;">
+			<span class="ui-dialog-title" style="font-size:12px;">选择用户部门</span>
+		</div>
+		<div>
+			#parse("foundation/privilege/user/pagelet/v1.0/departmentUI.html")
+		</div>
+	<div class="cl"></div>
+	<div class="ui-dialog-buttonpane" style="height:30px;">
+		<div class="sub-btn-frame">
+			<a class="sub-btn sub-btn-over" href="#">
+			<span onclick="addUser()">保 存</span>
+			</a>
+		</div>
+	
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="#">
+		<span onclick="art.dialog({id:'adduserid'}).close();">取 消</span>
+		
+		</a>
+		</div>
+	</div>
+	</div>
+	</form>
+	

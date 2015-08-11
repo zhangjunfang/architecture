@@ -1,0 +1,51 @@
+ <table width="100%" border="0" cellspacing="0" cellpadding="0" class="list_table">
+  		<tbody>
+  <tr class="list_table_title">
+    <td style="width:5%; text-align:center"><input type="checkbox"   class="check_box" onclick="selectAll(this)" /></td>
+<!--    <td style="width:10%">序号</td>-->
+    <td style="width:10%">名称</td>
+    <td style="width:10%">状态</td>
+    <td style="width:10%">创建日期</td>
+    <td style="width:10%">备注</td>
+    <td style="width:15%">操作</td>
+  </tr>
+ 	</tbody>
+</table>
+<table class="standard_table standard_table_con">
+	<tbody> 
+  #foreach($!role in $!pageView.records)
+  <tr style="background:#f8fbfe;">
+    <td style="text-align:center;text-indent:0"><input name="roleids" type="checkbox" value="$!role.ID" class="check_box" /></td>
+    <td>$!role.NAME</td>
+    <td>
+   	#if($role.STATUS == 'disabled')
+    	禁用
+   	#else 
+    	启动
+    #end 
+    <td>$!dateTool.format(${date_format_short}, $!{role.CREATE_DATETIME})</td>
+    <td>$!role.memo</td>
+    <td><a href="#" onclick="openDistributionUI('$!role.ID')">分配资源</a>
+    <a href="#" onclick="openDepartmentAuthorizeUI('$!role.ID')">部门授权</a></td>
+  </tr>
+#end
+	</tbody>
+</table>
+<table class="page-list">
+	<tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="fenye_table">
+			<td style="width: 10px;"></td>
+			<tr>
+				<td style="width: 10px;"></td>
+				#parse($paging)
+                #paging($pageView)
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>

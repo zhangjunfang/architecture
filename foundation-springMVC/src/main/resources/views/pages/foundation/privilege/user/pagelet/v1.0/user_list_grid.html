@@ -1,0 +1,62 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list_table">
+<tbody>
+  <tr class="list_table_title">
+    <td style="width:5%; text-align:center"><input type="checkbox" onclick="selectAll(this)" /></td>
+<!--    <td style="width:10%">序号</td>-->
+    <td style="width:15%">账号</td>
+    <td style="width:10%">姓名</td>
+    <td style="width:10%">手机号</td>
+    <td style="width:10%">邮件地址</td>
+    <td style="width:10%">用户状态</td>
+    <td style="width:15%">创建日期</td>
+    <td style="width:15%">操作</td>
+  </tr>
+  	</tbody>
+</table>
+<table class="standard_table standard_table_con">
+	<tbody>
+  #foreach($!user in $!pageView.records)
+  <tr style="background:#f8fbfe;">
+    <td style="text-align:center;text-indent:0">
+    	<input name="userids" type="checkbox" value="$!user.ID" class="check_box" />
+    </td>
+<!--    <td>$!role.id</td>-->
+    <td>$!user.ACCOUNTNAME</td>
+    <td>$!user.USERNAME</td>
+    <td>$!user.MOBILE</td>
+    <td>$!user.EMAIL</td>
+    <td>
+    	#if($user.STATUS == '1')
+    		启用
+	   	#else 
+	    	禁用
+	    #end 
+    </td>
+    <td>$!dateTool.format(${date_format_short}, $!{user.CREATE_DATE})</td>
+    <td><a href="javascript:void(0);" onclick="openDistributionUI('$!user.ID')">分配角色</a></td>
+  </tr>
+#end
+	</tbody>
+</table>
+
+
+<table class="page-list">
+	<tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="fenye_table">
+			<td style="width: 10px;"></td>
+			<tr>
+				<td style="width: 10px;"></td>
+				#parse($paging)
+                #paging($pageView)
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+
+

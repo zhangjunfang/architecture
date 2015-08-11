@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/css/style.css"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css"
+	href="${_project.envRoot}/styles/vender/ztree/css/zTreeStyle/zTreeStyle.css">
+<title>无标题文档</title>
+<style>
+.xubox_main {
+	border: 3px solid #bfd6ec;
+}
+
+.xubox_page {
+	width: 100%
+}
+
+.fore input {
+	height: 19px;
+}
+
+.fore select {
+	height: 23px;
+	width: 100%;
+}
+
+.fore table.hx td:nth-child(3) {
+	text-align: right;
+	padding-left: 10px
+}
+
+.fore table.hx {
+	font-weight: bold;
+}
+
+textarea {
+	font-size: 12px;
+	height: 60px;
+}
+
+.ztree {
+	font-weight: normal;
+}
+			.ztree{
+				background: none repeat scroll 0 0 #F0F6E4;
+				border: 1px solid #DDDDDD;
+				height: 160px;
+				overflow-x: auto;
+				overflow-y: scroll;
+				width: 100%;
+			}
+	    </style>
+</head>
+<body class="fore">
+	<div class="ld-asideaa btngroup topWz">
+		<div class="dqwz">
+			当前位置：首页 > 系统运营管理 > <a href="javascript:location.reload()"
+				class="blue">客户管理与授权</a>
+		</div>
+	</div>
+	<div class="con">
+
+		<div class="ld-container ld-con">
+			<div class="ld-asideaa btngroup">
+				<h2>基本参数</h2>
+			</div>
+			<div class="ld-aside" style="border-top: none; padding: 10px;">
+				功能描述：</div>
+			<div class="ld-aside">
+				<table border="0" cellspacing="0" cellpadding="0" class="ld-slitab">
+					<tr>
+						<td style="text-align: right;"><strong>客户代码：</strong></td>
+						<td><input name="" type="text" /></td>
+					</tr>
+					<tr>
+						<td style="text-align: right;"><strong>客户名称：</strong></td>
+						<td><input name="" type="text" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#" class="ld-btn ld-molan"><img
+								src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/search.png" />搜索</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ld-aside btngroup">
+				<a href="javascript:showAddDlg();" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />新建</a><a
+					href="javascript:showEditDlg();" class="ld-btn ld-juse "><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/bj.png" />编辑</a><a
+					href="javascript:optDel()" class="ld-btn ld-huise"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/del.png" />删除</a><a
+					href="javascript:showPermitDlg()" class="ld-btn ld-huise"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/del.png" />授权</a><!-- a
+					href="#" class="ld-btn ld-huise"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/del.png" />菜单设置</a-->
+			</div>
+			<div class="ld-aside" style="border: 0;">
+				#parse('views/pages/foundation/legelPerson/pagelet/v1.0/manageAndPermitUI_Grid.html')
+			</div>
+			<div class="ld-aside">
+				<ul class="page naleft">
+					<li style="padding-left: 5px; padding-right: 5px;">数据：4条</li>
+					<li>第</li>
+					<li><input name="" type="text" class="pageinp" /></li>
+					<li>页</li>
+					<li><a href="#" class="pagebtn">转</a></li>
+				</ul>
+				<ul class="page naright">
+
+					<li><a href="#" class="pagebtn">首页</a></li>
+					<li><a href="#" class="pagebtn"><img
+							src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/jtleft.jpg" />
+					</a></li>
+					<li><a href="#" class="pagebtn"><img
+							src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/jdright.jpg" />
+					</a></li>
+					<li><a href="#" class="pagebtn">尾页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="frmAdd" style="display: none">
+		<form id="addFrm">
+			<div style="width: 100%; height: 260px; overflow: auto">
+				<table border="0" cellspacing="0" cellpadding="0"
+					class="ld-slitab hx">
+					<tr>
+						<td><label for='addFrm_CustomerUnitCode'>客户代码：</label></td>
+						<td><input type="text" id="addFrm_CustomerUnitCode"
+							name="CustomerUnitCode" readonly />
+						</td>
+						<td><label for='addFrm_CustomerName'>客户名称：</label></td>
+						<td><input type="text" id="addFrm_CustomerName"
+							name='CustomerName' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_LinkMan'>联系人：</label></td>
+						<td><input type="text" id="addFrm_LinkMan" name='LinkMan' />
+						</td>
+						<td><label for='addFrm_Telephone'>联系电话：</label></td>
+						<td><input type="text" id="addFrm_Telephone" name='Telephone' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_Email'>电子邮箱：</label></td>
+						<td><input type="text" id="addFrm_Email" name='Email' />
+						</td>
+						<td><label for='addFrm_Address'>客户地址：</label></td>
+						<td><input type="text" id="addFrm_Address" name='Address' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_BankCode'>开户银行：</label></td>
+						<td><select id="addFrm_BankCode" name='BankCode'>
+								#foreach($!record in $!banks.records)
+								<option value='$!record.ID'>$!record.BANKNAME</option> #end
+						</select>
+						</td>
+						<td><label for='addFrm_BankCardNo'>银行帐号：</label></td>
+						<td><input type="text" id="addFrm_BankCardNo"
+							name='BankCardNo' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_Status'>启用状态：</label></td>
+						<td><input type="radio" name='Status' value='2' />已授权 <input
+							type="radio" name='Status' value='1' />未授权 <input type="radio"
+							name='Status' value='0' />禁用</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_Remark'>备注信息：</label></td>
+						<td colspan="3"><textarea id="addFrm_Remark" name="Remark"
+								style="width: 100%"></textarea>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div
+				style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px; background-color: #F8F9F9">
+				<a href="javascript:add()" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存</a>
+				<a href="javascript:resAdd()" class="ld-btn ld-lanse"
+					style="margin-right: 5px"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />重置</a>
+			</div>
+		</form>
+	</div>
+	<div id="frmEdit" style="display: none">
+		<form id="editFrm">
+			<div style="width: 100%; height: 260px; overflow: auto">
+				<table border="0" cellspacing="0" cellpadding="0"
+					class="ld-slitab hx">
+					<tr>
+						<td><label for='editFrm_CustomerUnitCode'>客户代码：</label></td>
+						<td><input type="text" id="editFrm_CustomerUnitCode"
+							name="CustomerUnitCode" readonly />
+						</td>
+						<td><label for='editFrm_CustomerName'>客户名称：</label></td>
+						<td><input type="text" id="editFrm_CustomerName"
+							name='CustomerName' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='editFrm_LinkMan'>联系人：</label></td>
+						<td><input type="text" id="editFrm_LinkMan" name='LinkMan' />
+						</td>
+						<td><label for='editFrm_Telephone'>联系电话：</label></td>
+						<td><input type="text" id="editFrm_Telephone"
+							name='Telephone' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='editFrm_Email'>电子邮箱：</label></td>
+						<td><input type="text" id="editFrm_Email" name='Email' />
+						</td>
+						<td><label for='editFrm_Address'>客户地址：</label></td>
+						<td><input type="text" id="editFrm_Address" name='Address' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='editFrm_BankCode'>开户银行：</label></td>
+						<td><select id="editFrm_BankCode" name='BankCode'>
+								#foreach($!record in $!banks.records)
+								<option value='$!record.ID'>$!record.BANKNAME</option> #end
+						</select>
+						</td>
+						<td><label for='editFrm_BankCardNo'>银行帐号：</label></td>
+						<td><input type="text" id="editFrm_BankCardNo"
+							name='BankCardNo' />
+						</td>
+					</tr>
+					<tr>
+						<td><label for='editFrm_Status'>启用状态：</label></td>
+						<td><input type="radio" name='Status' value='2' />已授权 <input
+							type="radio" name='Status' value='1' />未授权 <input type="radio"
+							name='Status' value='0' />禁用</td>
+					</tr>
+					<tr>
+						<td><label for='editFrm_Remark'>备注信息：</label></td>
+						<td colspan="3"><textarea id="editFrm_Remark" name="Remark"
+								style="width: 100%"></textarea>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div
+				style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px; background-color: #F8F9F9">
+				<a href="javascript:edit()" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存</a>
+				<a href="javascript:resEdit()" class="ld-btn ld-lanse"
+					style="margin-right: 5px"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />重置</a>
+			</div>
+		</form>
+	</div>
+	<div id="frmPermit" style="display: none">
+		<form id="permitFrm">
+			<div style="width: 100%; height: 160px; overflow: auto">
+				<table border="0" cellspacing="0" cellpadding="0"
+					class="ld-slitab hx">
+					<tr>
+						<td><label for='permitFrm_AppPackage'>选择应用包：</label></td>
+						<td><select id="permitFrm_AppPackage" name='AppId'>
+							<optgroup label="基础应用包">
+								#foreach($!record in $!appPackage.records)
+								#if("0" == $!record.getString('apptype'))
+								<option value="$!record.getString('appid')">$!record.getString('appname')</option> #end #end
+							</optgroup>
+							<optgroup label='自定义应用包'>
+								#foreach($!record in $!appPackage.records)
+								#if("1" == $!record.getString('apptype'))
+								<option value="$!record.getString('appid')">$!record.getString('appname')</option> #end #end
+							</optgroup>
+						</select>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div
+				style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px; background-color: #F8F9F9">
+				<a href="javascript:permitNext()" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />下一步</a>
+				<a href="javascript:resEdit()" class="ld-btn ld-lanse"
+					style="margin-right: 5px"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />重置</a>
+			</div>
+		</form>
+	</div>
+	<div id="frmPermit2" style="display: none">
+		<form id="permitFrm2">
+			<div style="width: 100%; height: 260px; overflow: auto">
+				<table border="0" cellspacing="0" cellpadding="0"
+					class="ld-slitab hx">
+					<tr>
+						<td><label for='permitFrm2_CustomerUnitCode'>授权到期时间：</label></td>
+						<td><input class="Wdate" type="text" onClick="WdatePicker()"></td>
+					</tr>
+					<tr>
+						<td>应用包树：</td>
+						<td><div id="menuTree" class='ztree'></div></td>
+					</tr>
+				</table>
+			</div>
+			<div
+				style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px; background-color: #F8F9F9">
+				<a href="javascript:permitNext()" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />完成</a>
+				<a href="javascript:resEdit()" class="ld-btn ld-lanse"
+					style="margin-right: 5px"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />关闭</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/jquery/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/underscore/underscore.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/jquery/ext.form-min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/layer/layer.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/ztree/js/jquery.ztree.core-3.5.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/ztree/js/jquery.ztree.excheck-3.5.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/My97DatePicker/4.72/WdatePicker.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/scripts/foundation/legelPerson/pagelet/v1.0/manageAndPermitUI.js"></script>
+</body>
+</html>

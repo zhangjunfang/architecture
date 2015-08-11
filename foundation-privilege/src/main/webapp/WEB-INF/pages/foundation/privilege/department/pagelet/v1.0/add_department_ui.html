@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>添加部门信息</title>
+<link href="../../../styles/css/privilege/v1.0/css/rolestyle.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+addDepartmentUIAndAssignment();
+</script>
+</head>
+<body>
+	<form id="dataDatail" >
+		<div class="ui-dialog">
+			<div class="cl"></div>
+			<div  class="ui-dialog-content" >
+			   <ul id="errorlist"></ul>
+				<ul>
+					<li class="ui-dialog-li01"><span style="color:red;">*</span>部门名称：</li>
+					<li class="ui-dialog-li02"><input name="name" id="addName"  type="text"  />
+					</li>
+					<li class="ui-dialog-li01 cl">部门编码：</li>
+					<li class="ui-dialog-li02"><input name="departCode"
+						type="text"  /></li>
+					<li class="ui-dialog-li01 cl">部门简称：</li>
+					<li class="ui-dialog-li02"><input name="simpName" type="text" />
+					</li>
+					<li class="ui-dialog-li01 cl" id="addParent" >上级部门：</li>
+					<li class="ui-dialog-li02"  id="addParentView"><input name="parentId"
+						type="hidden" readonly="readonly" value="" id="addDepartment" /><input type="text" readonly="readonly" id="parentIdName" />
+					</li>
+					<li class="ui-dialog-li01 cl">部门状态：</li>
+					<li class="ui-dialog-li02"><select class="ui-dialog-sel"
+						name="status">
+							<option value="1">启用</option>
+							<option value="2">注销</option>
+							<option value="3">停用</option>
+					</select>
+					</li>
+					<li class="ui-dialog-li01 cl">部门描述：</li>
+					<li class="ui-dialog-li02"><textarea name="memo" cols="6"
+							style="width: 156px" rows=""></textarea>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-dialog-buttonpane">
+				<div class="sub-btn-frame" align="left">
+					<a class="sub-btn sub-btn-over" href="javascript:addDepartment();">
+						<span>保 存</span> </a>
+				</div>
+				<div class="sub-btn-frame">
+					<input type="button" value="取消" class="sure_btn"
+						onclick="art.dialog( {
+												id : 'adddepartmentid'
+												}).close();" />
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加功能</title>
+<link href="${ctx}/styles/css/privilege/v1.0/css/rolestyle.css" type="text/css" rel="stylesheet"/>
+
+</head>
+
+<body>
+ <form id="dataDatail">
+ <input type="hidden" name="parentid" id="parentid"></input>
+<div class="ui-dialog">
+	<div class="cl"></div>
+	<div class="ui-dialog-content">
+		<ul>
+			<li class="ui-dialog-li01 cl"><font color="red">*</font>功能名称：</li>
+			<li class="ui-dialog-li02"><input id="name" name="name" type="text" /></li>
+			<li class="ui-dialog-li01 cl">URL：</li>
+			<li class="ui-dialog-li02"><input id="url" name="url" type="text" /></li>
+			<li class="ui-dialog-li01 cl">功能状态：</li>
+			<li class="ui-dialog-li02"><select class="ui-dialog-sel" id="status" name="status">
+			  <option value="1">启用</option>
+			  <option value="2">注销</option>
+			  <option value="3">停用</option>
+			</select></li>
+			<li class="ui-dialog-li01 cl">描述：</li>
+			<li class="ui-dialog-li02"><input id="memo" name="memo" type="text" /></li>
+
+		</ul>
+	</div>
+	<div class="ui-dialog-buttonpane">
+		<div class="sub-btn-frame">
+			<a class="sub-btn sub-btn-over" href="javascript:saveResource();">
+			<span>保 存</span>
+			</a>
+		</div>
+
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="javascript:void(0);">
+		<span onclick="art.dialog({id:'addresourceid'}).close();">取 消</span>
+		</a>
+		</div>
+	</div>
+</div>
+ </form>
+</body>
+</html>

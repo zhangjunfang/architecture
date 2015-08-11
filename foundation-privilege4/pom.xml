@@ -1,0 +1,215 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.newcapec</groupId>
+		  <artifactId>cn.newcapec.config</artifactId>
+		  <version>1.0.0-RELEASE</version>
+    </parent>
+    <groupId>cn.newcapec.foundation</groupId>
+    <artifactId>cn.newcapec.foundation.privilege</artifactId>
+    <packaging>war</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>foundation :: privilege</name>
+    <url>http://maven.apache.org</url>
+    
+     <distributionManagement>
+            <repository>
+                <id>releases</id>
+                <name>privilege</name>
+                <url>http://192.168.0.65/nexus/content/repositories/releases</url>
+            </repository>
+            <snapshotRepository>
+                <id>snapshots</id>
+                <name>privilege</name>
+                <url>http://192.168.0.65/nexus/content/repositories/snapshots</url>
+            </snapshotRepository>
+        </distributionManagement>
+	    <!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找.如有Nexus私服, 取消注释并指向正确的服务器地址 -->
+	    <repositories>
+		    <repository>
+		    <id>maven-newcapec</id>
+		    <name>maven-newcapec</name>
+		      <url>http://192.168.0.65/nexus/content/groups/newcapec/</url>
+		    </repository>
+	    </repositories>
+
+    <dependencies>
+   		<dependency>
+			<groupId>cn.newcapec.framework</groupId>
+			<artifactId>cn.newcapec.framework.core</artifactId>
+		   <version>1.1.0-RELEASE</version>
+		</dependency>
+  	
+	 	<dependency>
+		 <groupId>cn.newcapec.framework.plugins</groupId>
+   		 <artifactId>cn.newcapec.framework.plugins.cache</artifactId>
+		</dependency>
+       
+       <dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.20</version>
+		</dependency>
+	
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
+        </dependency>
+        <!--spring begin-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+              <optional>true</optional>
+        </dependency>
+        <!--spring end-->
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
+                <!-- Log -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl104-over-slf4j</artifactId>
+           <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+           <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+             <optional>true</optional>
+        </dependency>
+        <!-- log basic end-->
+        <dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		  <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+     </dependency>
+    </dependencies>
+
+  <build>
+     <outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
+    <plugins>
+     <plugin>  
+        <groupId>org.mortbay.jetty</groupId>  
+        <artifactId>maven-jetty-plugin</artifactId>  
+        <version>6.1.26</version>  
+        <configuration>               
+            <scanIntervalSeconds>0</scanIntervalSeconds>  
+             <contextPath>/</contextPath>      
+            <connectors>  
+                <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">  
+                    <port>8000</port>  
+                </connector>  
+            </connectors>
+           <webDefaultXml>webdefault.xml</webDefaultXml>
+           <reload>manual</reload>
+        </configuration>  
+    </plugin>  
+    
+	  <plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat6-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<path>/</path>
+					<port>8080</port>
+					<uriEncoding>UTF-8</uriEncoding>
+				</configuration>
+		</plugin>  
+    
+    
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+    </plugin>
+    		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<id>passport-server-jar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>classes</classifier>
+							<jarName>${project.artifactId}</jarName>
+							<includes>
+								<include>**/cn/**</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+</plugins>
+  </build>
+</project>

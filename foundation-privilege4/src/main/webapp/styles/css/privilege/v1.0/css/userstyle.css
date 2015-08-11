@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#333;
+	
+}
+select, input, button, button img, textarea, label, img {
+    margin: 0;
+    vertical-align: middle;
+}
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+h1,h2,h3{ font-size:14px; margin:0px; padding:0px;}
+a{text-decoration:none; color:#666;}
+a:hover { color:#fe0000;}
+.border{ border:#BFD6EC 1px solid;}
+.left{
+	float:left;
+}
+.right{ float:right;}
+.cl{ clear:both;}
+
+
+.ui-dialog {
+	width: 286px;
+	margin:10px auto;
+	border:1px solid #BFD6EC;
+}
+.ui-dialogshanchu {
+	width: 386px;
+	margin:10px auto;
+	border:1px solid #BFD6EC;
+}
+
+.ui-dialog-titlebar {
+	background-color: #D6EAFF;
+	line-height: 30px;
+	height: 30px;
+}
+.ui-dialog-title {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 20px;
+	float: left;
+}
+.ui-dialog-close {
+	float: right;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+.ui-dialog-content {
+	padding:0 10px 10px 10px;
+	overflow: hidden;
+	width:617px;
+}
+.ui-dialog-content ul {
+	margin: 0px;
+	padding: 0px;
+}
+.ui-dialog-content li {
+	float: left;
+}
+.ui-dialog-li01 {
+	width: 82px;
+	text-align:right;
+    margin-top:10px;
+
+}
+/*角色添加*/
+.ui-dialog-li02 {
+	width: 160px;
+	text-align:right;
+	margin-top:10px;
+	text-align:left;
+
+}
+/*角色添加结束*/
+.ui-dialog-sel {
+	width: 156px;
+	height:22px;
+	float: left;
+}
+.ui-dialog-buttonpane {
+	height: 30px;
+	border-top:1px solid #BFD6EC;
+	text-align: right;
+}
+/**/
+.sub-btn-frame, .sub-btn, .sub-btn span {
+    -moz-box-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sub-btn, .sub-btn span {
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+.sub-btn-frame {
+	margin-right: 8px;
+	padding-right: 1px;
+	margin-top: 3px;
+}
+.sub-btn-frame a{
+color:#27558E;
+}
+.sub-btn-frame a:hover{
+color:#FF3300;
+}
+.sub-btn-frame .sub-btn {
+    margin-right: -1px;
+}
+.sub-btn-over {
+    border: 0 none;
+    color: #000000;
+    height: 24px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+	background-position: 100% -24px;
+}
+.sub-btn-over span {
+    line-height: 15px;
+    margin-right: 3px;
+    padding: 4px 9px 5px 12px;
+}
+
+.sub-btn-over span {
+    background-position: -288px 0;
+}
+.sub-btn-over:hover{
+    background-position: 100% -216px;
+}
+.sub-btn-over:hover span{
+    background-position: -288px -192px;
+}
+
+.sub-btn, .sub-btn span{
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+}
+.add_check {
+	float: left;
+	margin-top: 5px;
+	margin-top: 2px\9;
+}
+.add_lable {
+	float: left;
+}
+
+/*分配角色*/
+.ui-dialog-add {
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+}
+.sub-btn-frame img {
+	float:left;
+}
+.ui-dialog-assignedper {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border-bottom:1px solid #BFD6EC;
+	margin-bottom:10px;
+	background-color: #F7FAFC;
+	;
+}
+.ui-dialog-assignedpertitle {
+	padding-left: 20px;
+	margin-top:3px;
+	float:left;
+}
+.userinp {
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-top:3px;
+	float:left;
+	border:1px solid #B0C6E3;
+	width:170px;
+	height:20px;
+	line-height:20px;
+}
+/*列表*/
+.dome_list {
+	height: 100%;
+	width: 100%;
+}
+.dome_list ul {
+	margin: 0px;
+	padding: 0px;
+}
+.dome_list li {
+	float: left;
+	overflow:hidden;
+}
+.litit {
+	background-color: #EDF4FD;
+	border-top:1px solid #DCDCDC;
+	border-bottom:1px solid #DCDCDC;
+	height:26px;
+	line-height:26px;
+	font-weight:bold;
+}
+.liper-01{ width:4%;}
+.liper-03{ width:10%;}
+.liper-04{ width:6%;}
+.liper-05{ width:42%;}
+/*.liper-ass-05{ width:36%;}*/
+
+
+
+.lititcon {
+	border-bottom:1px solid #DCDCDC;
+	height:26px;
+	line-height:26px;
+}
+.list-inp {
+	
+	margin-left:3px;
+}.list_page {
+	line-height: 30px;
+	text-align: center;
+}
+.ui-adddialog {
+	float: left;
+	padding-top: 10px;
+}
+/*添加用户信息*/
+.ui-dialog-addusertit {
+	background-color: #F7FAFC;
+	border-bottom:1px solid #BAD3EB;
+	height:30px;
+	line-height:30px;
+}
+.sub-btn-return{
+ float:right;
+}
+.ui-dialoguser-li01 {
+	width: 82px;
+	text-align:right;
+		margin-top:10px;
+
+}
+.ui-dialoguser-li02 {
+	width: 200px;
+	text-align:right;
+	margin-top:10px;
+	text-align:left;
+
+}
+.ui-dialoguser-roledis {
+	width: 100%;
+	text-align:right;
+	margin-top:10px;
+	text-align:left;
+
+}
+.ui-dialoguser-li01 span {
+	color: #FF0000;
+	padding-right: 6px;
+}
+.ui-dialoguser-inp{
+width: 150px;
+
+}
+.ui-dialoguser-sel {
+	width: 156px;
+	height:22px;
+	float: left;
+}
+.ui-dialoguser-rolechoose{
+float:left;
+width:720px;}
+.adduser-role {
+	float: left;
+	width:82px;
+	text-align:right;
+}
+.adduser-check {
+	float: left;
+}
+.adduser-span {
+	float: left;
+	margin-right:6px;
+}
+.ui-dialoguser-rolespan {
+	padding-left: 44px;
+}
+
+/*分配资源*/
+.ui-dialogresources {
+	width: 617px;
+	margin:10px auto;
+	/*border:1px solid #BFD6EC;*/
+}
+.resources_lable {
+	float: left;
+	line-height:30px;
+
+}
+.resources_span {
+	float: left;
+	font-weight: bold;
+}
+.allresources{  margin-right:5px; margin-top:8px;!important }
+.allresources-div {
+	width: 100%;
+	margin-top: 5px;
+}
+.allresources-divsec {
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 488px;
+}
+.resources_span_sec {
+	float: left;
+	margin-right: 10px;
+}

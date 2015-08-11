@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="component.context"
+		class="org.springframework.beans.factory.config.PropertyPathFactoryBean" />
+
+	<bean id="exceptionStatusService"
+		class="cn.newcapec.framework.core.exception.ExceptionStatusService">
+	</bean>
+	<bean id="component" class="org.restlet.ext.spring.SpringComponent">
+		<property name="defaultTarget" ref="application" />
+	</bean>
+	<bean id="application" class="cn.newcapec.framework.core.rest.BaseApplication">
+		<constructor-arg ref="component.context" />
+		<property name="root" ref="restRoute" />
+		<property name="statusService" ref="exceptionStatusService" />
+	</bean>
+	<bean id="restRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">
+			<map>
+				<!-- 权限接口 -->
+ 				<entry key="/privilegeProxyService" value-ref="privilegeRoute" ></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>  

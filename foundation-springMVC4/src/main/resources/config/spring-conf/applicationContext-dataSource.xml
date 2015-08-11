@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd">
+	<!-- 属性文件读入 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:config/jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="bizDatasourceOracle" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass">
+			<value>${biz.jdbc.driver.class.name}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${biz.jdbc.url}</value>
+		</property>
+		<property name="user">
+			<value>${biz.jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${biz.jdbc.password}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>3</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>10</value>
+		</property>
+		<property name="initialPoolSize">
+			<value>2</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>60</value>
+		</property>
+		<property name="acquireIncrement" value="2"></property>
+		<property name="idleConnectionTestPeriod" value="1800"></property>
+		<property name="breakAfterAcquireFailure" value="true"></property>
+		<property name="testConnectionOnCheckout" value="false"></property>
+	</bean>
+
+
+</beans>

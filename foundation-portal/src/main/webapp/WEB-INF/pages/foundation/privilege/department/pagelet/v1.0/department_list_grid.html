@@ -1,0 +1,50 @@
+<table class="standard_table th-bg standard_table_tt">
+	<tbody>
+		<tr>
+			<th class="th-2"><input title="全选/不选" type="checkbox" class="check_box" onclick="selectAll(this)"></th>
+			<th class="th-3">部门编号</th>
+			<th class="th-4">部门名称</th>
+			<th class="th-5">部门简称</th>
+			<th class="th-6">部门状态</th>
+			<th class="th-7">部门描述</th>
+		</tr>
+	</tbody>
+</table>
+<table class="standard_table standard_table_con">
+		#foreach($!department in $!pageView.records)
+		<tr>
+			<td class="td-2"><input type="checkbox" name="checkbox"  value="$!department.ID" class="check_box"/></td>
+			<td class="td-3">$!department.DEPART_CODE</td>
+			<td class="td-4">$!department.NAME</td>
+			<td class="td-5">$!department.SIMPNAME</td>
+			<td class="td-6">
+			#if( $!department.STATUS=='1' ) 
+			       启用 
+			#end 
+			#if($!department.STATUS=='2' ) 
+			      注销 
+			#end 
+			#if( $!department.STATUS=='3' ) 
+			       停用
+			#end
+			</td>
+			<td class="td-7">$!department.MEMO</td>
+		</tr>
+		#end
+</table>
+<table class="page-list">
+	<tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="fenye_table">
+			<tr>
+			<td style="width: 10px;"></td></tr>
+			<tr>
+				<td style="width: 10px;"></td>
+				#parse($paging)
+                #paging($pageView)
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href="${_project.envRoot}/styles/css/foundation/platform/app/v1.0/css/style.css"
+	rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="ld-asideaa btngroup topWz">
+		<div class="dqwz">
+			当前位置：首页&gt; 平台管理 &gt; <a href="javascript:location.reload()"
+				class="blue">应用注册</a>
+		</div>
+	</div>
+	<div class="con">
+		<div class="ld-container ld-con">
+			<div class="ld-aside">
+				<table border="0" cellspacing="0" cellpadding="0" class="ld-slitab">
+					<tr>
+						<td style="text-align: right;">
+							<form id="stuform" method="post" enctype="multipart/form-data"
+								id="file_ocean" action="${_project.envRoot}/app/uploadFile">
+								选择注册文件： <input type="file" name="file" id="file" /><input
+									type="submit" value="提交" />
+							</form></td>
+					</tr>
+				</table>
+			</div>
+			<div class="ld-aside btngroup">已注册应用查看</div>
+			<div class="ld-aside" style="border: 0;">
+				<table border="0" cellpadding="0" cellspacing="0"
+					class="ld-table ld-tableie">
+					<thead>
+						<tr>
+							<th>应用包名称</th>
+							<th>版本号</th>
+							<th>应用范围</th>
+							<th>应用说明</th>
+							<th>授权信息</th>
+							<th>上传时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						#parse("foundation/platform/pagelet/v1.0/paltformManger/app_list_grid.html")
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

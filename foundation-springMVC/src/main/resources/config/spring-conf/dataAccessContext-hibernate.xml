@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- 使Spring关注Annotation -->
+    <context:annotation-config />
+    
+    
+	<!-- 核心类扫描 -->
+	<context:component-scan base-package="cn.newcapec.framework" />
+	<!-- 权限扫描 -->	
+	<context:component-scan base-package="cn.newcapec.foundation.privilege" />
+	<!-- 门户restlet类扫描 -->
+  	<context:component-scan base-package="cn.newcapec.foundation.portal">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Component" />
+	</context:component-scan>
+    
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    
+    
+    <bean id="parentDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="maxPoolSize" value="${c3p0.pool.maxsize}" />
+        <property name="minPoolSize" value="${c3p0.pool.minsize}" />
+        <property name="acquireIncrement" value="${c3p0.pool.increment}" />
+        <property name="initialPoolSize" value="${c3p0.pool.inisize}" />
+    </bean>
+
+    <bean id="dataSource" parent="parentDataSource">
+        <property name="driverClass">
+            <value>${biz.jdbc.mysql.driver.class.name}</value>
+        </property>
+        <property name="jdbcUrl">
+            <value>${biz.jdbc.mysql.url}</value>
+        </property>
+        <property name="user">
+            <value>${biz.jdbc.mysql.username}</value>
+        </property>
+        <property name="password">
+            <value>${biz.jdbc.mysql.password}</value>
+        </property>
+    </bean>
+
+	
+	<!--Hibernate SessionFatory 配置-->
+	<bean id="sessionFactory" class="cn.newcapec.framework.core.dao.hibernate.SessionFactoryAutoDialectBean" lazy-init="false">
+		<property name="dataSource" ref="bizDatasourceOracle"/>
+	 	 <property name="packagesToScan">
+			   	  <list>
+			   	    <value>cn.newcapec.foundation.privilege.model</value>
+			   	    <value>cn.newcapec.framework.log.model</value>
+			   	    <value>cn.newcapec.foundation.portal.model</value>
+			     </list> 
+     	 </property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="javax.persistence.validation.mode">none</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.connection.release_mode">after_statement</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!--使用基于注解方式配置事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+</beans>

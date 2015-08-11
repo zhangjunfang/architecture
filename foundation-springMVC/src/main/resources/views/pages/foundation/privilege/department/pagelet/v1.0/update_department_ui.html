@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="${_project.envRoot}/styles/css/privilege/v1.0/css/rolestyle.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+updateDepartmentUIAndData_show_hide();
+</script>
+<title>修改部门信息</title>
+</head>
+<body>
+	<form id="dataDatail"  onsubmit="return validate_form(this)" >
+		<div class="ui-dialog">
+			<div class="cl"></div>
+			<div  class="ui-dialog-content" >
+				<ul>
+					<li class="ui-dialog-li01 cl"><span style="color:red;">*</span>部门名称：
+					<input name="id" type="hidden" value="$department.id" /></li>
+					<li class="ui-dialog-li02"><input name="name" type="text"
+						value="$!department.name"   id="updateName"/>
+					</li>
+					<li class="ui-dialog-li01 cl">部门编码：</li>
+					<li class="ui-dialog-li02"><input name="departCode"
+						type="text" value="$!department.departCode"  />
+					</li>
+					<li class="ui-dialog-li01 cl">部门简称：</li>
+					<li class="ui-dialog-li02"><input name="simpName" type="text"
+						value="$!department.simpName"  />
+					</li>
+					
+					<li class="ui-dialog-li01 cl" id="parentDepartmentSign">上级部门：</li>
+					<li class="ui-dialog-li02" id="parentDepartmentContent" >
+					<input name="parentId" id="parentId"
+						type="hidden" value="$!department.parentId" />
+					<input name="isParent" id="isParent"
+						type="hidden" value="$!department.isParent" />
+					<input name="" id="parentName" type="text" value="" readonly="readonly" />	
+					</li>
+					<li class="ui-dialog-li01 cl">部门状态：</li>
+					<li class="ui-dialog-li02">
+					<select class="ui-dialog-sel" name="status">
+					 	#if( $!department.status=='1' )
+							<option value="1" selected="selected">启用</option>
+							<option value="2">注销</option>
+							<option value="3">停用</option> #end #if($!department.status=='2' )
+							<option value="1">启用</option>
+							<option value="2" selected="selected">注销</option>
+							<option value="3">停用</option> #end #if( $!department.status=='3'
+							)
+							<option value="1">启用</option>
+							<option value="2">注销</option>
+							<option value="3" selected="selected">停用</option> #end
+					</select>
+					</li>
+					<li class="ui-dialog-li01 cl">部门描述：</li>
+					<li class="ui-dialog-li02">
+					<textarea name="memo" cols="6" style="width:156px" rows="" >$!department.memo</textarea>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-dialog-buttonpane">
+				<div class="sub-btn-frame">
+						<a class="sub-btn sub-btn-over" href="javascript:updateDepartment();">
+						<span>保 存</span> </a>
+				</div>
+				<div class="sub-btn-frame">
+					<input name="" type="button" value="取消" class="sure_btn"
+						onclick="art.dialog( {
+												id : 'updatedepartmentid'
+												}).close();" />
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

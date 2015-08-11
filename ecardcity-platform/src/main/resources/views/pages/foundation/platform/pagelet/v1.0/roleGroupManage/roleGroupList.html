@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>user</title>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery.form.min.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-form.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/foundation/platform/v1.0/roleGroup.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/pages/common/common.js"></script>
+<link
+	href="${_project.envRoot}/styles/css/foundation/menuMang/v1.0/css/style.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="${_project.envRoot}/styles/css/foundation/menuMang/v1.0/css/l-style.css"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css"
+	href="${_project.envRoot}/styles/vender/ztree/css/zTreeStyle/zTreeStyle.css"
+	type="text/css"/>
+	<style>
+.ld-aside-div {
+	border-top: none;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 0;
+}
+
+.ld-aside-tab {
+	border: 0;
+	padding: 10px;
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<div class="ld-asideaa btngroup topWz">
+		<div class="dqwz">
+			当前位置：首页 > 用户管理 > <a href="javascript:location.reload()"
+				class="blue">角色组管理</a>
+		</div>
+	</div>
+	<div class="con">
+		<div class="sidebar" style="width: 620px;">
+		    <div class="ld-aside btngroup">
+				<a href="javascript:addRoleGroupUI();" class="ld-btn ld-lanse" ><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />新建</a>
+			</div>
+			<div id="pageInfo" class="ld-aside ld-aside-div" style="border:0;">
+				#parse("foundation/platform/pagelet/v1.0/roleGroupManage/roleGroupList_grid.html")
+			</div>						
+			<div class="" id="addpageInfo" style="display: none;left: 630px;position: absolute;top: 0;width: 480px;">
+				#parse("foundation/platform/pagelet/v1.0/roleGroupManage/addRoleGroupUI.html")
+			</div>
+			<div class="" id="editpageInfo" style="display: none;left: 630px;position: absolute;top: 0;width: 480px;">
+				#parse("foundation/platform/pagelet/v1.0/roleGroupManage/editRoleGroupUI.html")
+			</div>
+	    </div>
+	</div>
+</body>
+</html>

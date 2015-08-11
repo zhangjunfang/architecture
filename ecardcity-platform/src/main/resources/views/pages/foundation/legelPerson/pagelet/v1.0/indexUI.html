@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/css/style.css"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css"
+	href="${_project.envRoot}/styles/vender/ztree/css/zTreeStyle/zTreeStyle.css">
+<title>无标题文档</title>
+<style>
+.xubox_main {
+	border: 3px solid #bfd6ec;
+}
+
+.xubox_page {
+	width: 100%
+}
+
+.fore input {
+	height: 19px;
+}
+
+.fore select {
+	height: 23px;
+	width: 100%;
+}
+
+.fore table.hx td:nth-child(3) {
+	text-align: right;
+	padding-left: 10px
+}
+
+.fore table.hx {
+	font-weight: bold;
+}
+
+textarea {
+	font-size: 12px;
+	height: 60px;
+}
+
+.ztree {
+	font-weight: normal;
+}
+
+.ztree {
+	background: none repeat scroll 0 0 #F0F6E4;
+	border: 1px solid #DDDDDD;
+	height: 160px;
+	overflow-x: auto;
+	overflow-y: scroll;
+	width: 100%;
+}
+</style>
+</head>
+<body class="fore">
+	<div class="ld-asideaa btngroup topWz">
+		<div class="dqwz">
+			当前位置：首页 > 系统运营管理 > <a href="javascript:location.reload()"
+				class="blue">应用业务授权委托</a>
+		</div>
+	</div>
+	<div class="con">
+
+		<div class="ld-container ld-con">
+			<div class="ld-asideaa btngroup">
+				<h2>基本参数</h2>
+			</div>
+			<div class="ld-aside" style="border-top: none; padding: 10px;">
+				功能描述：</div>
+			<div class="ld-aside">
+				<table border="0" cellspacing="0" cellpadding="0" class="ld-slitab">
+					<tr>
+						<td style="text-align: right;"><strong>申请方客户代码：</strong></td>
+						<td><input name="" type="text" /></td>
+						<td style="text-align: right; padding-left: 10px"><strong>被委托方客户代码：</strong>
+						</td>
+						<td><input name="" type="text" /></td>
+					</tr>
+					<tr>
+						<td style="text-align: right;"><strong>申请方客户名称：</strong></td>
+						<td><input name="" type="text" /></td>
+						<td style="text-align: right; padding-left: 10px"><strong>被委托方客户名称：</strong>
+						</td>
+						<td><input name="" type="text" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#" class="ld-btn ld-molan"><img
+								src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/search.png" />搜索</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ld-aside btngroup">
+				<a href="javascript:showAddDlg();" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />新建</a><a
+					href="javascript:showEditDlg();" class="ld-btn ld-juse "><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/bj.png" />编辑</a><a
+					href="javascript:optDel()" class="ld-btn ld-huise"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/del.png" />删除</a><a
+					href="#" class="ld-btn ld-huise"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/del.png" />查看</a>
+			</div>
+			<div class="ld-aside" style="border: 0;">
+				<table border="0" cellpadding="0" cellspacing="0"
+					class="ld-table ld-tableie">
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" /></th>
+							<th>申请方客户信息</th>
+							<th>被委托方客户信息</th>
+							<th>申请人信息</th>
+							<th>办理信息</th>
+							<th>禁用</th>
+						</tr>
+					</thead>
+					<tbody>
+						#foreach($!record in $!pageView.records)
+						<tr>
+							<td><input name="" type="checkbox" value="" />
+							</td>
+							<td>客户代码：$!record.CUSTOMERUNITCODE<br />
+								客户名称：$!record.CUSTOMERNAME</td>
+							<td>客户代码：0860000002<br /> 客户名称：申请公司2</td>
+							<td>姓名：超人<br /> 联系方式：13800000001</td>
+							<td>操作员：超人<br /> 设置时间：2014-01-01 11:11:11</td>
+							<td>否</td>
+						</tr>
+						#end
+					</tbody>
+				</table>
+			</div>
+			<div class="ld-aside">
+				<ul class="page naleft">
+					<li style="padding-left: 5px; padding-right: 5px;">数据：4条</li>
+					<li>第</li>
+					<li><input name="" type="text" class="pageinp" /></li>
+					<li>页</li>
+					<li><a href="#" class="pagebtn">转</a></li>
+				</ul>
+				<ul class="page naright">
+
+					<li><a href="#" class="pagebtn">首页</a></li>
+					<li><a href="#" class="pagebtn"><img
+							src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/jtleft.jpg" />
+					</a></li>
+					<li><a href="#" class="pagebtn"><img
+							src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/jdright.jpg" />
+					</a></li>
+					<li><a href="#" class="pagebtn">尾页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="frmAdd" style="display: none">
+		<form id="addFrm">
+			<div style="width: 100%; height: 260px; overflow: auto">
+				<table border="0" cellspacing="0" cellpadding="0"
+					class="ld-slitab hx">
+					<tr>
+						<td><label for='addFrm_wtsqkh'>委托申请客户：</label></td>
+						<td><select style="width:200px" id="addFrm_wtsqkh">
+							<option value="">请选择</option>
+						#foreach($!record in $!pageView.records)
+							<option value='$!record.CUSTOMERUNITCODE'>$!record.CUSTOMERNAME</option>
+						#end
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for='addFrm_bwtkh'>被委托客户：</label></td>
+						<td><select style="width:200px" id="addFrm_bwtkh">
+						#foreach($!record in $!pageView.records)
+							<option value='$!record.CUSTOMERUNITCODE'>$!record.CUSTOMERNAME</option>
+						#end
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><div id="menuTree" class='ztree'></div></td>
+					</tr>
+				</table>
+			</div>
+			<div
+				style="width: 100%; border-top: 1px solid #dddddd; text-align: right; padding-top: 5px; background-color: #F8F9F9">
+				<a href="javascript:add()" class="ld-btn ld-lanse"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存</a>
+				<a href="javascript:resAdd()" class="ld-btn ld-lanse"
+					style="margin-right: 5px"><img
+					src="${_project.envRoot}/styles/css/foundation/legelPerson/v1.0/images/new.png" />取消</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/jquery/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/underscore/underscore.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/jquery/ext.form-min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/layer/layer.min.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/ztree/js/jquery.ztree.core-3.5.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/styles/vender/ztree/js/jquery.ztree.excheck-3.5.js"></script>
+	<script type="text/javascript"
+		src="${_project.envRoot}/scripts/foundation/legelPerson/pagelet/v1.0/indexUI.js"></script>
+</body>
+</html>

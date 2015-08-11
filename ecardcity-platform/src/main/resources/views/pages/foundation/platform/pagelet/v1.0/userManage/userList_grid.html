@@ -1,0 +1,60 @@
+<table border="0" cellpadding="0" cellspacing="0"
+	class="ld-table ld-tableie">
+	<thead>
+		<tr>
+		<!-- <th class="th-1"><input title="全选/不选" type="checkbox"
+				class="check_box" onclick="selectAll(this)"></th> -->
+			<th >用户名</th>
+			<th >姓名</th>
+			<th >性别</th>
+			<th >账号状态</th>
+			<th>邮箱</th>
+			<th>电话号码</th>
+			<th>创建时间</th>
+			<th >操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		#foreach($!stu in $!pageView.records)
+		<tr>
+		<!-- 	<td class="td-1"><input type="checkbox" name="menuids"
+				value="$!stu.ID" class="check_box"></td> -->
+			<td >$!stu.EMPCODE</td>
+			<td >$!stu.NAME</td>
+			 <td >
+				 #if($!stu.SEX=='1') 
+				   男
+	             #else 
+		                         女
+	             #end
+			</td >
+			 <td >
+		    	#if($!stu.EMPSTATE == '1')
+		    		启用
+			   	#else 
+			    	禁用
+			    #end 
+		    </td>
+			<td>$!stu.EMAIL</td>
+			<td >$!stu.TELEPHONE</td>
+			<td >$!dateTool.format(${date_format_short}, $!{stu.OPDT})</td>
+			<td>
+			<a  href="#" id="editUser" onclick="updateUserUI('$!stu.ID')">修 改</a>&nbsp;&nbsp;
+			<a  href="#" id="deleteUser" onclick="deleteUser('$!stu.ID')">删  除</a>
+			</td>
+		</tr>
+		#end
+	</tbody>
+</table>
+
+<table class="ld-table ld-tableie" >
+	<tr>
+		<td>
+			<table>
+				<tr>
+				<td>#parse($paging) #paging($pageView)</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

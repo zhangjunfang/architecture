@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>部门</title>
+<link href="../../../styles/css/privilege/v1.0/css/rolestyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<script type="text/javascript">
+function selectA(obj,id){
+	if(obj.checked){
+		$("."+id).attr("checked",true);
+	}else{
+		$("."+id).attr("checked",false);
+	}
+}
+
+function selectP(obj){
+	if(!$(".P_"+obj).attr("checked")){
+		$(".P_"+obj).attr("checked",true);
+	}
+}
+ 
+</script>
+<body>
+<div class="ui-dialogresources">
+	<input  type="hidden" name="roleid" id="roleid" value="$!roleid" />
+	<div class="cl"></div>
+	<div class="ui-dialog-content">
+		#foreach($!department in $department.items)
+		<div class="allresources-div">
+		<input name="$!departments.ID" type="checkbox" id="rootDept" value="$!departments.ID"  class="allresources left P_$!department.ID" onclick="selectA(this,'$!department.ID')"/><span class="resources_span">$!department.NAME</span>
+		</div>
+		<div class="cl"></div>
+			<div class="allresources-divsec">
+			#foreach($!departments in $departments.items)
+				#if($department.ID==$departments.PARENT_ID) 
+							<input name="$!departments.ID" type="checkbox"  onclick="selectP('$!department.ID');" 
+								#foreach($!departmenteds in $departmented)
+								  	#if($departments.ID == $departmenteds.ID)  checked #end
+								#end
+								 value="$!departments.ID"  class="allresources left $!department.ID checkValue"/><span class="resources_span_sec">$!departments.NAME</span>
+								 
+				#end
+			#end
+		</div>
+		<div class="cl"></div>
+		#end
+		<div class="cl"></div>
+	</div>
+</div>
+</body>
+</html>

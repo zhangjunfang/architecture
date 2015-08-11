@@ -1,11 +1,14 @@
 package com.transilink.framework.core.rest;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
+
+import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.exception.ExceptionUtils;
@@ -40,10 +43,11 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
  * @author ocean(zhangjufang0505@163.com)
  *
  */
-public class BaseResource extends ServerResource implements InitializingBean,BaseResourceHandler, LogEnabled  {
+public class BaseResource extends ServerResource implements InitializingBean,
+		BaseResourceHandler, LogEnabled {
 
 	// JSON参数实体
-	private net.sf.json.JSONObject jsonObject = new net.sf.json.JSONObject();
+	private JSONObject jsonObject = new JSONObject();
 	// 接受参数实体
 	private Map<String, String> params = new HashMap<String, String>();
 
@@ -114,14 +118,13 @@ public class BaseResource extends ServerResource implements InitializingBean,Bas
 	/**
 	 * 初始化
 	 */
+	@Override
 	public void init(Context context, Request request, Response response) {
 		beforeHandle(context, request, response);
 		super.init(context, request, response);
 		this.getVariants().add(new Variant(MediaType.ALL));
 		String callMethod = request.getMethod().getName();
-
 		log.info("method[" + callMethod + "] call!");
-
 		afterHandle(context, request, response);
 	}
 
@@ -170,41 +173,11 @@ public class BaseResource extends ServerResource implements InitializingBean,Bas
 	public final boolean allowDelete() {
 		return canDelete;
 	}
-	
+
 	@Override
 	public Representation doHandle() throws ResourceException {
 		this.callMethod();
 		return super.doHandle();
-	}
-	/**
-	 * <p>
-	 * Title: storeRepresentation
-	 * </p>
-	 * <p>
-	 * Description: 重写put请求
-	 * </p>
-	 */
-	public final void storeRepresentation(Representation entity)
-			throws ResourceException {
-
-		callMethod();
-	}
-
-	/**
-	 * <p>
-	 * Title: acceptRepresentation
-	 * </p>
-	 * <p>
-	 * Description: 重写post请求
-	 * </p>
-	 */
-	public final void acceptRepresentation(Representation entity)
-			throws ResourceException {
-		callMethod();
-	}
-
-	public final void removeRepresentations() throws ResourceException {
-		callMethod();
 	}
 
 	/**
@@ -222,8 +195,7 @@ public class BaseResource extends ServerResource implements InitializingBean,Bas
 			}
 
 			try {
-				java.lang.reflect.Method callMethod = getClass().getMethod(
-						methodName,
+				Method callMethod = getClass().getMethod(methodName,
 						new Class[] { BaseRequest.class, BaseResponse.class });
 				if (callMethod == null) {
 					throw new SysException("未找到对应的方法[" + methodName + "]！");
@@ -235,11 +207,13 @@ public class BaseResource extends ServerResource implements InitializingBean,Bas
 				if (baseRequest.getJSONObject() != null) {
 					jsonObject = net.sf.json.JSONObject.fromObject(baseRequest
 							.getJSONObject().toString());
-					ServerCall httpCall = ((HttpRequest) this.getRequest()).getHttpCall();
-					HttpServletRequest httpServletRequest = ((ServletCall) httpCall).getRequest();
+					ServerCall httpCall = ((HttpRequest) this.getRequest())
+							.getHttpCall();
+					HttpServletRequest httpServletRequest = ((ServletCall) httpCall)
+							.getRequest();
 					httpServletRequest.setCharacterEncoding("utf-8");
-					//params = 
-					Map<String, String[]>	map=	httpServletRequest.getParameterMap();
+					Map<String, String[]> map = httpServletRequest
+							.getParameterMap();
 					for (String key : map.keySet()) {
 						params.put(key, Arrays.deepToString(map.get(key)));
 					}

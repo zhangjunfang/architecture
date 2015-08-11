@@ -1,0 +1,24 @@
+#foreach($!customApp in $!app)
+<tr>
+	<td>$!customApp.appid
+	</td>
+	<td>$!customApp.appname
+	</td>
+	<td>
+		#foreach($!module in $!moduleList)
+		  #if($!customApp.appid ==$!module.moduleid)
+             $!module.modulename <br/>
+          #end
+		#end
+	</td>
+	<td>$!customApp.appdescription
+	</td>
+	<td>
+			$!dateTool.format("yyyy-MM-dd",$!customApp.applimitdate)
+	</td>
+	<td>$!customApp.applimitnum
+	</td>
+	<td><div align="center"><span><a href="javascript:editCusApp('$!customApp.id')" class="blue">编辑</a></span>&nbsp;&nbsp;&nbsp;<span><a href='${_project.envRoot}/app/customAppDelete?id=$!customApp.id' class="blue">删除</a></span></div>
+	</td>
+</tr>
+#end

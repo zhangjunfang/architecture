@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+ <tlib-version>1.0</tlib-version>
+ <jsp-version>1.2</jsp-version>
+ <short-name>portal</short-name>
+ <uri>http://www.newcapec.net/jsp/portal</uri>
+ <tag>
+        <name>paging</name>
+        <tag-class>cn.newcapec.foundation.portal.tag.PagingTag</tag-class>
+        <body-content>empty</body-content>
+        <description>分页</description>
+        <attribute>
+            <name>pageView</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>分页对象pageView</description>
+        </attribute>
+    </tag> 	
+</taglib>

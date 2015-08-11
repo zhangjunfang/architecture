@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改角色</title>
+<link href="${_project.envRoot}/styles/css/privilege/v1.0/css/rolestyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<form id="dataDatail">
+<div class="ui-dialog">
+	<div class="cl"></div>
+	<div class="ui-dialog-content">
+		<ul>
+			<input type="hidden" name="id" value="$!role.id" />
+		
+			<li class="ui-dialog-li01"><span style="color:red;">*</span>角色名称：</li>
+			<li class="ui-dialog-li02"><input style="width:156px" id="roleName" name="roleName" type="text" value="$!role.roleName" /></li>
+			<li class="ui-dialog-li01">角色状态：</li>
+			<li class="ui-dialog-li02"><select class="ui-dialog-sel" name="status">
+			 	#if($role.status == 'disabled')
+			    	禁用
+			   	#else 
+			    	启动
+			    #end 
+			  <option value="disabled"  #if($role.status == 'disabled') selected #end>停用</option>
+			  <option value="normal"  #if($role.status == 'normal') selected #end>启用</option>
+			</select></li>
+			<li class="ui-dialog-li01">备注：</li>
+			<li class="ui-dialog-li02">
+			<textarea name="memo" cols="6" style="width:156px" rows="" >$!role.memo</textarea>
+			</li>
+		</ul>
+	</div>
+	<div class="ui-dialog-buttonpane">
+		<div class="sub-btn-frame">
+			<a class="sub-btn sub-btn-over" href="#">
+			<span onclick="addRole('updateroleid')">修改</span>
+			</a>
+		</div>
+	
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="#">
+		<span onclick="art.dialog({id:'updateroleid'}).close();">取消</span>
+		</a>
+		</div>
+	</div>
+</div>
+</form>
+</body>
+</html>

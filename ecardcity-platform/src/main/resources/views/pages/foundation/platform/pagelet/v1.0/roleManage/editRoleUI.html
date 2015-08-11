@@ -1,0 +1,50 @@
+<form id="editdataDatail"  >
+	<div class="ld-aside" style="padding: 10px;">
+			 <div class="ld-aside btngroup">
+				<a href="javascript:editRole();"
+						class="ld-btn ld-lanse"><img
+						src="/controller/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存设置</a>
+					&nbsp;&nbsp;
+					<a href="javascript:void(0);" onclick="javascript:art.dialog({id:'updateuserid'}).close();"
+						class="ld-btn ld-lanse"><img
+						src="/controller/styles/css/foundation/legelPerson/v1.0/images/new.png" />取 消</a>
+				</div>
+				<div >
+				<ul>
+					<li class="ui-dialog-li01"><font color="red">*</font>角色名称：
+					<input id="roleName" name="roleName" value="$!role.roleName"
+						type="text" />
+					<input id="id" name="id" value="$!role.id" type="hidden" />
+					<input id="customerunitcode"name="customerunitcode" type="hidden" value="$!role.customerunitcode"/></li>
+					<li class="ui-dialog-li01 cl">启用状态：
+					<input id="rolestate1" name="rolestate1" type="checkbox" #if($!role.rolestate =='1') checked="checked" #end/><label>启用</label>
+						</li> 	
+					<li class="ui-dialog-li01 cl">授权菜单： 
+					<!-- <select id="loglimit" name="loglimit">
+						#foreach($!item in $!loginlimitlist)
+							#if ($!user.loglimit ==$!item.getTypeid())
+					        <option value="$!item.getTypeid()" selected="selected">$!item.getTypename()</option>  
+					    	#else 
+				    	    <option value="$!item.getTypeid()">$!item.getTypename()</option>  
+						     #end 
+					     #end 
+					</select> -->
+						<!-- 还应该隐藏个 应用包编号 -->
+							<div id="menuTree2" class='ztree'></div>
+			       </li>			
+				</ul>
+		   </div>
+		<!--    <div>
+		   <ul>
+			<li class="ui-dialog-li01 cl">用户列表：
+					   #foreach($!item in $!userpage.items)
+					    <label>$!item.getName()</label>&nbsp;&nbsp;
+					     #end
+			       </li>
+			 </ul>
+			</div> -->
+		</div>
+	
+	</form>
+	
+	

@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#666;
+	background-color: #F7F7F7;
+background-image: url(../images/bbg.jpg);
+}
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+h1,h2,h3{ font-size:14px; margin:0px; padding:0px;}
+a{text-decoration:none; color:#666;}
+a:hover { color:#fe0000;}
+.left{ float:left; }
+.right{ float:right;}
+.cl{ clear:both;}
+
+
+/*登录页面*/
+
+.login {
+	background-image: url(../images/bbg.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position: center center;
+	position: absolute;
+}
+
+.log_login{
+	width: 980px;
+	height: 60px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	line-height: 60px;
+	}
+.lot{
+	width: 512px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.lgnwk {
+	background-image: url(../images/login_con.png);
+	background-repeat: repeat-y;
+	width: 512px;
+	background-position: top;
+	padding: 0px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+.gspan {
+	height: 34px;
+	width: 500px;
+	line-height: 34px;
+	padding-top: 15px;
+}
+.gspangty {
+	font-size: 14px;
+	width: 140px;
+	float: left;
+	text-align: left;
+	padding-left: 20px;
+	color: #2672B7;
+}
+.gspan label {
+	color: #999999;
+	padding-left: 10px;
+}
+
+.cdxzinp {
+	width: 252px;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	overflow:hidden;
+	line-height: 30px;
+}
+.yzm {
+	width: 100px;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	overflow:hidden;
+	line-height: 30px;
+}
+.loginan {
+	height: 32px;
+	width: 182px;
+	line-height: 32px;
+	margin-left: 160px;
+	padding-top: 15px;
+}
+
+.gspan img {
+	float: left;
+	padding-left: 5px;
+}
+
+.hyz {
+	font-size: 14px;
+	color: #049DF3;
+	text-decoration: underline;
+	padding-left: 6px;
+}
+.btnbg {
+	margin-top: 15px;
+	margin-left: 180px;
+	padding-bottom: 10px;
+}
+.btn {
+	width: 84px;
+	background-image: url(../images/button.png);
+	height: 36px;
+	border:0px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	margin-left: 10px;
+}
+.btn:hover {
+
+	background-image: url(../images/buttonhov.png);
+
+}
+.logintop {
+	background-image: url(../images/logintopbg.jpg);
+	background-repeat: repeat-x;
+	height: 60px;
+}
+.loginlogo {
+	float: left;
+}
+.login-li {
+	float: right;
+}
+.loginlogo img {
+	vertical-align: middle;
+	padding-top: 10px;
+}
+.syslogo {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 100px;
+}
+.footer {
+	background-color: #FFFFFF;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	width: 100%;
+	bottom:0;
+}

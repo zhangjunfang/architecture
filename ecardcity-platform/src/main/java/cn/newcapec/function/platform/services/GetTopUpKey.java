@@ -1,0 +1,193 @@
+
+package cn.newcapec.function.platform.services;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for anonymous complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType>
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="VerifyServiceURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="VerifyID" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="VerifyCode" type="{http://tempuri.org/}StringBuilder" minOccurs="0"/>
+ *         &lt;element name="sCardSnr" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="cardMac" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="key" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "verifyServiceURL",
+    "verifyID",
+    "verifyCode",
+    "sCardSnr",
+    "cardMac",
+    "key"
+})
+@XmlRootElement(name = "GetTopUpKey")
+public class GetTopUpKey {
+
+    @XmlElement(name = "VerifyServiceURL")
+    protected String verifyServiceURL;
+    @XmlElement(name = "VerifyID")
+    protected int verifyID;
+    @XmlElement(name = "VerifyCode")
+    protected StringBuilder verifyCode;
+    protected String sCardSnr;
+    protected String cardMac;
+    protected String key;
+
+    /**
+     * Gets the value of the verifyServiceURL property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVerifyServiceURL() {
+        return verifyServiceURL;
+    }
+
+    /**
+     * Sets the value of the verifyServiceURL property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVerifyServiceURL(String value) {
+        this.verifyServiceURL = value;
+    }
+
+    /**
+     * Gets the value of the verifyID property.
+     * 
+     */
+    public int getVerifyID() {
+        return verifyID;
+    }
+
+    /**
+     * Sets the value of the verifyID property.
+     * 
+     */
+    public void setVerifyID(int value) {
+        this.verifyID = value;
+    }
+
+    /**
+     * Gets the value of the verifyCode property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link StringBuilder }
+     *     
+     */
+    public StringBuilder getVerifyCode() {
+        return verifyCode;
+    }
+
+    /**
+     * Sets the value of the verifyCode property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link StringBuilder }
+     *     
+     */
+    public void setVerifyCode(StringBuilder value) {
+        this.verifyCode = value;
+    }
+
+    /**
+     * Gets the value of the sCardSnr property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSCardSnr() {
+        return sCardSnr;
+    }
+
+    /**
+     * Sets the value of the sCardSnr property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSCardSnr(String value) {
+        this.sCardSnr = value;
+    }
+
+    /**
+     * Gets the value of the cardMac property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCardMac() {
+        return cardMac;
+    }
+
+    /**
+     * Sets the value of the cardMac property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCardMac(String value) {
+        this.cardMac = value;
+    }
+
+    /**
+     * Gets the value of the key property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getKey() {
+        return key;
+    }
+
+    /**
+     * Sets the value of the key property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setKey(String value) {
+        this.key = value;
+    }
+
+}

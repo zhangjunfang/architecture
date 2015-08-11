@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>权限列表</title>
+<link href="../../../styles/css/privilege/v1.0/css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="../../../scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../../scripts/lib/jquery/js/jquery-form.js"></script>
+<script type="text/javascript" src="../../../scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript" src="../../../scripts/foundation/privilege/v1.0/privilege.js"></script>
+<script type="text/javascript" src="../../../scripts/foundation/privilege/v1.0/role.js"></script>
+<script type="text/javascript" src="../../../scripts/foundation/common/common.js"></script>
+</head>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="700">
+  <tr>
+      <div class="current-address">当前位置：<a href="#">首页</a><img src="../../../styles/css/portal/office/images/arrowbg.png"/><a href="#">$!menuName</a><img src="../../../styles/css/portal/office/images/arrowbg.png"/></div>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="main_con">
+  <tr>
+    <td valign="top" class="border_B0C6E3_left">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="m_tabel1">
+  <tr> 
+    <td>
+	 <ul class="three_btn">
+	 <div class="sub-nav sub-nav-top">
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over txt-b" href="#"  id="addRoleUI" onclick="addRoleUI()">
+		<span><img src="../../../styles/css/privilege/v1.0/images/zengjia_ico.png"/> 添 加</span>
+		</a>
+		</div>
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="#" id="editRole" class="modify_btn" onclick="editRoleUI()">
+		<span><img src="../../../styles/css/privilege/v1.0/images/xiugai_ico.png"/>修 改</span>
+		</a>
+		</div>
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="#" id="deleteRole" onclick="deleteById()">
+		<span><img src="../../../styles/css/privilege/v1.0/images/shanchu_ico.png"/>删 除</span>
+		</a>
+		</div>
+	</div>
+	 </ul></td>
+  </tr>
+  <tr>
+  <td style="border-top:1px solid #BAD3EB;height:50px; background:#fff; padding-left:12px;">
+  <div class="form_item">
+    <ul>
+	 <li>
+	 <label>角色名称：</label><input name="rolename" id="rolename" type="text" class="text_input"/>
+	 &nbsp;&nbsp; <div class="sub-btn-frame">
+<a class="sub-btn sub-btn-over" href="#">
+<span onclick="reloadRoleList();"><img src="../../../styles/css/privilege/v1.0/images/search_ico.png"/>查 询</span>
+</a>
+</div>
+</li>
+<li></li>
+	</ul>
+  </div>  </td>
+  </tr>
+</table>
+     <div class="fen_geRg" id="pageInfo">
+  	     #parse("foundation/privilege/role/pagelet/v1.0/role_list_grid.html")
+     </div>
+</body>
+</html>

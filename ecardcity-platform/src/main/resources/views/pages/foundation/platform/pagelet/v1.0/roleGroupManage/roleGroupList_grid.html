@@ -1,0 +1,46 @@
+<table border="0" cellpadding="0" cellspacing="0"
+	class="ld-table ld-aside-tab">
+	<thead>
+		<tr>
+			<!-- <th><input title="全选/不选" type="checkbox"
+				onclick="selectAll(this)"></th> -->
+			<th >角色组</th>
+			<th >人数</th>
+			<th >状态</th>
+			<th >操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- <td><input type="checkbox" name="menuids"
+				value="$!stu.ID" class="check_box"></td>  -->
+		#foreach($!stu in $!pageView.records)
+		<tr>
+			<td >$!stu.GROUPNAME</td>
+			<td >$!stu.EMPNUM</td>
+			 <td >
+		    	#if($!stu.GROUPSTATE== '1')
+		    		启用
+			   	#else 
+			    	禁用
+			    #end 
+		    </td>
+			<td >
+			<a href="#" id="editRoleGroup" onclick="editRoleGroupUI('$!stu.ID')">编辑</a>
+			<a href="#" id="deleteRoleGroup" onclick="deleteById('$!stu.ID')">删除</a>
+			</td>
+		</tr>
+		#end
+	</tbody>
+</table>
+
+<table class="ld-table ld-tableie" >
+	<tr>
+		<td>
+			<table>
+				<tr>
+				<td>#parse($paging) #paging($pageView)</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

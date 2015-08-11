@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href="${_project.envRoot}/styles/css/foundation/platform/login/v1.0/css/login.css"
+	rel="stylesheet" type="text/css" />
+	<object id="SafeAuthCtrl" width=0% height=0%
+		type="application/x-newcapecsafeauthctrl"></object>
+<title>登录界面</title>
+</head>
+<body>
+	<div class="login">
+		<div class="logintop">
+			<div class="log_login">
+				<div class="loginlogo">
+					<img
+						src="${_project.envRoot}/styles/css/foundation/platform/login/v1.0/images/login-logo.png" />
+				</div>
+				<div class="login-li">
+					<a href="#">$!msg.msg|合作单位</a> ｜ <a href="#">合作单位</a> ｜ <a href="#">合作单位</a>
+				</div>
+			</div>
+		</div>
+		<div class="syslogo">
+			<img
+				src="${_project.envRoot}/styles/css/foundation/platform/login/v1.0/images/syslogo.png" />
+		</div>
+		<div class="lot">
+			<img
+				src="${_project.envRoot}/styles/css/foundation/platform/login/v1.0/images/login_t.png" />
+		</div>
+		<div class="lgnwk">
+			<form action="${_project.envRoot}/login/login" method="post"
+				enctype="application/x-www-form-urlencoded">
+				<div class="gspan">
+					<span class="gspangty">客户代码</span> <input name="customId"
+						class="cdxzinp left" type="text" value="08600000001" /><label>U盾识别</label>
+				</div>
+				<div class="gspan">
+					<span class="gspangty">用 户 名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <input
+						name="name" class="cdxzinp left" type="text" value="admin" />
+				</div>
+				<div class="gspan">
+					<span class="gspangty">密&nbsp;&nbsp;&nbsp;&nbsp;
+						码&nbsp;&nbsp;</span> <input name="pwd" class="cdxzinp left" type="text"
+						value="admin" />
+				</div>
+				<div class="gspan">
+					<span class="gspangty">验 证
+						码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <input
+						name="code" class="yzm left" type="text" value="$!validateCode" /><a
+						href="javascript:changeImg();"><img id="img1"
+						src="${_project.envRoot}/login/img" title='换一张' /><span
+						class="hyz">换一张</span> </a>
+				</div>
+				<div class="btnbg">
+					<input type="submit" class="btn" value="登 录" /><input type="reset"
+						class="btn" value="取 消" />
+				</div>
+			</form>
+		</div>
+		<div class="lot">
+			<img
+				src="${_project.envRoot}/styles/css/foundation/platform/login/v1.0/images/login_b.png" />
+		</div>
+		<div class="footer">版权信息 授权信息 开发商支持信息</div>
+	</div>
+	<script defer="defer">
+		function changeImg() {
+			document.getElementById('img1').src = '${_project.envRoot}/login/img?t='
+					+ new Date();
+		}
+	</script>
+	<script defer="defer">
+		function SafeAuth_GetUKeyList() {
+			var wmp;
+			wmp = document.getElementById("SafeAuthCtrl");//引号中的"SafeAuthCtrl" 即是定义的对象ID
+			var strRet = wmp.SafeAuth_GetUKeyList();
+			var strArr = strRet.split('|');
+			var iRet = strArr[0];
+			if (iRet != "0") {//失败
+				return iRet;
+			} else {//成功
+				num = strArr[1];
+				num = parseInt(num) + 10000; //加10000 防止是0
+				return num;
+			}
+		};
+		function SafeAuth_GetUkeySN() {
+			var wmp;
+			var sn = "";
+			wmp = document.getElementById("SafeAuthCtrl");
+			sn = wmp.SafeAuth_GetUkeySN();
+
+			return sn;
+		};
+		function SafeAuth_Signature(custCode, nSigHashType) {
+			var wmp;
+			wmp = document.getElementById("SafeAuthCtrl");
+			var strRet = "";
+			strRet = wmp.SafeAuth_Signature(custCode, nSigHashType); //szSigData,nSigHashType
+			return strRet;
+		};
+		function SafeAuth_ExportUKeyCert(ContainerName, bIsSignatureCert) {
+			var wmp;
+			wmp = document.getElementById("SafeAuthCtrl");
+			var strRet = "";
+			strRet = wmp.SafeAuth_ExportUKeyCert(ContainerName,
+					bIsSignatureCert);
+			return strRet;
+		};
+		function SafeAuth_GetInstalled() {
+			try {
+				var plugin;
+				plugin = document.getElementById("SafeAuthCtrl");
+				var ret = plugin.SafeAuth_EnumCSP();
+				return true;
+			} catch (e) {
+				return false;
+			}
+		};
+
+		(function($window, undefined) {
+			var wmp = document.getElementById("SafeAuthCtrl");
+			$window.onload = function() {
+				//console.log(wmp)
+			}
+		}(window));
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="privilegeRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">
+			<map>
+				<!--用户资源  -->
+				<entry key="/user/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="userResource" />
+					</bean>
+				</entry>
+
+				<!--角色授权  -->
+				<entry key="/userRole/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="userRoleResource" />
+					</bean>
+				</entry>
+
+				<!--授权资源  -->
+				<entry key="/resource/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="resourceResource" />
+					</bean>
+				</entry>
+
+				<!--菜单资源  -->
+				<entry key="/menu/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="menuResource" />
+					</bean>
+				</entry>
+
+				<!--授权类型资源  -->
+				<entry key="/resourcetype/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="resourcetypeResource" />
+					</bean>
+				</entry>
+
+				<!--角色资源  -->
+				<entry key="/role/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="roleResource" />
+					</bean>
+				</entry>
+
+				<!--部门资源  -->
+				<entry key="/department/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="departmentResource" />
+					</bean>
+				</entry>
+
+				<!--框架资源  -->
+				<entry key="/control/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="welcomeResource" />
+					</bean>
+			  </entry>
+                <!--office模式资源  -->
+                <entry key="/office/{method}">
+                    <bean class="org.restlet.ext.spring.SpringFinder">
+                        <lookup-method name="createResource" bean="officeResource" />
+                    </bean>
+                </entry>
+
+                <!--传统模式资源  -->
+                <entry key="/tradition/{method}">
+                    <bean class="org.restlet.ext.spring.SpringFinder">
+                        <lookup-method name="createResource" bean="traditionResource" />
+                    </bean>
+                </entry>
+
+                <!--window8资源  -->
+                <entry key="/win8/{method}">
+                    <bean class="org.restlet.ext.spring.SpringFinder">
+                        <lookup-method name="createResource" bean="win8Resource" />
+                    </bean>
+                </entry>
+			</map>
+		</property>
+	</bean>
+</beans>

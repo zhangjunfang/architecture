@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="${ctx}/styles/css/privilege/v1.0/css/loginstyle.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript"
+	src="${ctx}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript">
+	function createNewImg() {
+
+		document.getElementById("captchaImg").src = "/validatecode/code.jpeg";
+	}
+
+	window.onload = function() {
+		createNewImg();
+	}
+</script>
+<title>用户登录</title>
+</head>
+<body>
+	<form action="${ctx}/restful/privilegeProxyService/user/login"
+		method="post">
+		<div class="log_logo">
+			<div class="logo">
+				<img src="${ctx}/styles/css/privilege/v1.0/images/logo.png" />
+			</div>
+		</div>
+		<div class="log">
+			<div class="login">
+				<div class="lot">
+
+					<div class="lgnnipt">
+						<div class="gspan">
+							<span class="gspangty">用户名：</span> <input name="name" id="name"
+								class="cdxzinp left" type="text" value="admin" />
+						</div>
+
+						<div class="gspan">
+							<span class="gspangty">密&nbsp;&nbsp; &nbsp;码：</span> <input
+								name="password" id="password" class="cdxzinp left" type="text"
+								value="admin" />
+						</div>
+						<div class="yzmtit">
+							<div>
+								<span class="gspangty">验证码：</span> <input name="validateCode"
+									class="" type="text" />
+							</div>
+							<div>
+								<a href="javascript:createNewImg()"> <img id="captchaImg" />
+									看不清?换一张
+								</a>
+							</div>
+							<input type="submit" align="right" value="登录" />
+							<!--</div-->
+							<!--				  <img src="${ctx}/styles/css/privilege/v1.0/images/yzm.jpg" /></div>-->
+							<!--			 <div class="loginan"><a href="#" class="loinr left"  id="comments">登 录</a><a href="" class="loinr right">重 置</a></div>-->
+							<!--</div>-->
+						</div>
+						<!--			<div class="error"  id ="error">错误信息</div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="foot">新开普电子股份有限公司 版权所有 &nbsp;&nbsp;
+			Copyright@2013-2010 Newcapec Corporation,All Rights Reserved</div>
+	</form>
+</body>
+</html>

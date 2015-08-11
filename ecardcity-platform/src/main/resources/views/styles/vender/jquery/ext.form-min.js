@@ -1,0 +1,1 @@
+$.fn.serializeObjectForm=function(){var d=this.serializeArray();var c=_.pluck(d,"name");var b=_.pluck(d,"value");var a=_.object(c,b);return a};

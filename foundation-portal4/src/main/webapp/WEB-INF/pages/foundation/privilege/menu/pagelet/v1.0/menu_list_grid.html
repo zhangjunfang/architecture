@@ -1,0 +1,50 @@
+<table class="standard_table th-bg standard_table_tt">
+  <tbody>
+   <tr>
+    <th class="th-1"><input  title="全选/不选"  type="checkbox"   class="check_box" onclick="selectAll(this)"></th>
+    <th class="th-3">菜单名称</th>
+    <th class="th-4">排序</th>
+    <th class="th-5">图标</th>
+    <th class="th-6">URL</th>
+    <th class="th-7">创建人</th>
+    <th class="th-8">创建日期</th>
+    <!-- th class="th-9">操作</th-->
+   </tr>
+  </tbody>
+</table>
+<table class="standard_table standard_table_con">
+  <tbody>
+    #foreach($!menu in $!pageView.records)
+   <tr>
+    <td class="td-1"><input type="checkbox" name="menuids" value="$!menu.ID" class="check_box" isParent="$!menu.isParent"></td>
+    <td class="td-3">$!menu.NAME</td>
+    <td class="td-4">$!menu.SORTBY</td>
+    <td class="td-5">$!menu.ICON</td>
+    <td class="td-6">$!menu.URL</td>
+    <td class="td-7">$!menu.CREATE_USER</td>
+    <td class="td-8">$!dateTool.format(${date_format_short}, $!{menu.CREATE_DATETIME})</td>
+    <!-- td class="td-9"><a href="#">编辑</a></td-->
+   </tr>
+   #end
+  </tbody>
+</table>
+<table class="page-list">
+<tr>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="fenye_table">
+
+
+ <td style="width:10px;"></td>
+<!--  	#parse($paging)-->
+<!--    #paging($pageView)-->
+
+  <tr>
+    <td style="width:10px;"></td>
+   	#parse($paging)
+    #paging($pageView)
+  </tr>
+</table></td>
+</tr>
+</table>
+	</td>
+  </tr>
+</table>

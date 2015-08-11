@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登陆页面</title>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery.form.min.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/jquery/js/jquery-form.js"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript"
+	src="${_project.envRoot}/scripts/foundation/platform/v1.0/homepage.js"></script>
+</head>
+<body>
+	<form id="dataDatail">
+		<table width="100%" border="0" cellspacing="0" height="100%"
+			cellpadding="0" class="main_con">
+			<tr>
+				<td valign="top" class="border_B0C6E3_left">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0"
+						class="m_tabel1">
+						<tr>
+							<td class="form-list">
+								<div class="form_item">
+									<ul>
+										<li><label>客户名：</label><input id="customername"
+											name="customername" type="text" class="text_input" />
+											&nbsp;&nbsp;<label onclick="authUK()">U盾识别</label> <input
+											id="customerunitcode" name="customerunitcode" type="hidden" />
+										</li>
+										<li><label>用户名：</label><input id="empCode" name="empCode"
+											type="text" class="text_input" value="admin" />
+											&nbsp;&nbsp;</li>
+										<li><label>密码：</label><input id="empPwd" name="empPwd"
+											type="password" class="text_input" value="admin" /> &nbsp;&nbsp;
+										</li>
+									</ul>
+								</div></td>
+						</tr>
+					</table>
+					<div class="sub-btn-frame">
+						<input name="login" type="button" class="text_input" value="登陆"
+							onclick="userLogin()" />&nbsp;&nbsp;
+					</div></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

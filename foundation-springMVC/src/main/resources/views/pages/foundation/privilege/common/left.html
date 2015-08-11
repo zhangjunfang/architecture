@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一卡通自助查询管理系统</title>
+<script type="text/javascript" src="../../../scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	//幻灯片元素与类“menu_body”段与类“menu_head”时点击
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+
+});
+</script>
+<link href="../../../styles/css/privilege/v1.0/frame/frame.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body class="left_body">
+<div class="accordion_menu" >
+
+		<div id="firstpane" class="menu_list" >
+			<p class="menu_head current"><a href="#"><img src="../../../styles/css/privilege/v1.0/images/menu_person.png" border="0" />权限模块管理</a></p>
+			<div class="menu_body">
+				<a href="main1.html" target="rightmain" title="操作员管理">操作员管理</a>
+				<a href="main2.html" target="rightmain"  title="部门管理">部门管理</a>
+				<a href="main3.html" target="rightmain"  title="资源管理">资源管理</a>
+				<a href="/restful/privilegeProxyService/role/roleListUI" target="rightmain" title="角色管理">角色管理</a>
+				<a href="main5.html" target="rightmain" title="授权管理">授权管理</a>
+				<a href="main6.html" target="rightmain" title="日志管理">日志管理</a>
+			</div>
+			
+			<p class="menu_head"><a href="#"><img src="../../../styles/css/privilege/v1.0/images/menu_total.png" border="0" />扩展菜单</a></p>
+			<div class="menu_body">
+				<a href="#" target="_blank" title="资源管理">资源管理</a>
+				<a href="#" target="_blank" title="角色管理">角色管理</a>
+				<a href="#" target="_blank" title="授权管理">授权管理</a>
+			</div>
+			
+			<p class="menu_head"><a href="#"><img src="../../../styles/css/privilege/v1.0/images/menu_clock.png" border="0" />其它菜单</a></p>
+			<div class="menu_body">
+				<a href="#" target="_blank" title="操作员管理">操作员管理</a>
+				<a href="#" target="_blank" title="部门管理">部门管理</a>
+				<a href="#" target="_blank" title="资源管理">资源管理</a>
+				<a href="#" target="_blank" title="角色管理">角色管理</a>
+			</div>
+		</div><!--firstpane end-->
+	
+	</div><!--demo end-->
+   
+</body>
+</html>

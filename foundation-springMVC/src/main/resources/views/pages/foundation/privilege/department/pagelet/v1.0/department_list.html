@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>部门列表</title>
+<!-- <link href="../../../scripts/lib/fancybox/style/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" /> -->
+<link href="${_project.envRoot}/styles/css/privilege/v1.0/css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/foundation/privilege/v1.0/department.js"></script>
+<link rel="stylesheet" href="${_project.envRoot}/scripts/lib/ztree/css/zTreeStyle/zTreeStyle.css" type="text/css"/>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/ztree/js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/foundation/privilege/v1.0/privilege.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/function/common/common.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-form.js"></script>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/art/jquery.artDialog.source.js?skin=default"></script>
+<script type="text/javascript">
+	function filter(treeId, parentNode, childNodes) {
+	
+		childNodes = childNodes.data;
+		if (!childNodes)
+			return null;
+		for ( var i = 0, l = childNodes.length; i < l; i++) {
+			childNodes[i].name = childNodes[i].name.replace(/\.n/g, '.');
+		}
+		return childNodes;
+	}
+	function beforeClick(treeId, treeNode) {
+		$("#addDepartmentUI").val(treeNode.id);
+		$("#addDepartmentNameUI").val(treeNode.name);
+		$("#addDepartmentIsParentUI").val(treeNode.isParent);
+		if(null!=treeNode.getParentNode()){
+			$("#parentDepartmentIsParentUI").val(treeNode.getParentNode().isParent);
+		}
+		dynamicLoadDepartmentList(treeId, treeNode);
+	}
+	function beforeAsync(treeId, treeNode) {
+		return true;
+	}
+	function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus,
+			errorThrown) {
+	}
+	function onAsyncSuccess(event, treeId, treeNode, msg) {
+		//根据当前节点的ID加载右侧列表的数据
+		//console.log(arguments);
+	}
+	var setting = {
+		async : {
+			enable : true,
+			url : "${_project.ctx}/restful/privilegeProxyService/department/departmentTree",
+			autoParam : [ "id", "name", "pId" ],
+			otherParam : {
+				"otherParam" : "zTreeAsyncTest"
+			},
+			dataFilter : filter
+		},
+		callback : {
+			beforeClick : beforeClick,
+			beforeAsync : beforeAsync,
+			onAsyncError : onAsyncError,
+			onAsyncSuccess : onAsyncSuccess
+		}
+	};
+
+	var init = {
+		departmentTree : function() {
+			 jQuery.fn.zTree.init($("#departmentTree"), setting);
+		}
+	}
+	$(document).ready(function() {
+		init.departmentTree();
+	});
+//-->
+</script>
+</head>
+<body>
+<!--判断当前节点是否是父节点  -->
+<input type="hidden"  value="" id="addDepartmentIsParentUI"/>
+<input type="hidden"  value="" id="parentDepartmentIsParentUI"/>
+<!-- 父页面向子页面传递数据【父部门名称以及对用的ID】 -->
+<input type="hidden"  value="" id="addDepartmentUI"/>
+<input type="hidden"  value="" id="addDepartmentNameUI"/>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%"
+		height="680">
+		<tbody>
+		<tr>
+			<td align="left" valign="top">
+             <div class="current-address">当前位置：<a href="#">首页</a><img src="${_project.envRoot}/styles/css/portal/office/images/arrowbg.png"/><a href="#">部门管理</a><img src="${_project.envRoot}/styles/css/portal/office/images/arrowbg.png"/></div>
+				<table width="100%" border="0" height="100%" cellspacing="0" cellpadding="0"
+					class="main_con">
+					<tbody>
+					<tr>
+						<td width="210" valign="top">
+
+							#parse("foundation/privilege/department/pagelet/v1.0/department_tree.html")
+						</td>
+						<td valign="top" class="border_B0C6E3_left">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0"
+								class="m_tabel1">
+								<tbody>
+								<tr>
+									<td>
+										<ul class="three_btn">
+										 	 <div class="sub-nav sub-nav-top">
+													<div class="sub-btn-frame">
+													<a class="sub-btn sub-btn-over txt-b" href="#" id="addDepartmentUI" onclick="addDepartmentUI()">
+													<span><img src="${_project.envRoot}/styles/css/privilege/v1.0/images/zengjia_ico.png"/> 添 加</span>
+													</a>
+													</div>
+													<div class="sub-btn-frame">
+													<a class="sub-btn sub-btn-over" href="#" id="editDepartment"  class="modify_btn" onclick="editDepartmentUI()">
+													<span><img src="${_project.envRoot}/styles/css/privilege/v1.0/images/xiugai_ico.png"/>修 改</span>
+													</a>
+													</div>
+													<div class="sub-btn-frame">
+													<a class="sub-btn sub-btn-over" href="#" id="deleteDepartment" onclick="deleteDepartmentById()">
+													<span><img src="${_project.envRoot}/styles/css/privilege/v1.0/images/shanchu_ico.png"/>删 除</span>
+													</a>
+													</div>
+												</div>
+										</ul></td>
+								</tr>
+								<tr>
+									<td class="form-list">
+										<div class="form_item">
+											<ul>
+												<li><label>部门名称：</label><input name="name" id="oceanDepartmentId"
+													type="text" class="text_input" /> 部门状态： <select
+													name="status" id="oceanStatus">
+														<option value="">---请选择---</option>
+														<option value="1">启用</option>
+														<option value="2">注销</option>
+														<option value="3">停用</option>
+												</select>
+											
+													 &nbsp;&nbsp; <div class="sub-btn-frame">
+														<a class="sub-btn sub-btn-over" href="#">
+														<span onclick="javascript:reloadDepartmentList()"><img src="${_project.envRoot}/styles/css/privilege/v1.0/images/search_ico.png"/>查 询</span>
+														</a>
+														</div>
+															</li>
+											</ul>
+											<div class="fen_geRg" id="pageInfo">
+												#parse("foundation/privilege/department/pagelet/v1.0/department_list_grid.html")
+											</div>
+
+										</div>
+									</td>
+								</tr></tbody>
+							</table></td>
+					</tr>
+					</tbody>
+				</table>
+				</td>
+				</tr>
+				</tbody>
+				</table>
+</body>
+
+</html>

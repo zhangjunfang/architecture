@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新开普产品平台</title>
+<link href="../../../styles/css/portal/win8/frame/frame.css" type="text/css" rel="stylesheet"/>
+<link href="../../../styles/css/portal/win8/css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="../../../styles/css/portal/win8/frame/js/jquery.js"></script>
+<script type="text/javascript" src="../../../styles/css/portal/win8/frame/js/first_menu.js"></script>
+<script type="text/javascript">
+
+
+function logout(){
+	if (!confirm('您确认要退出吗？')) {
+		return false;
+	}
+	window.location.href="/restful/privilegeProxyService/user/logonOut"
+}
+
+
+function reinitIframe(){
+var iframe = document.getElementById("frame_content");
+try{
+var bHeight = iframe.contentWindow.document.body.scrollHeight;
+var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+var height = Math.max(bHeight, dHeight);
+iframe.height = height;
+}catch (ex){}
+}
+window.setInterval("reinitIframe()", 200);
+</script>
+</head>
+<body>
+<div id="header">
+   <div class="logo">
+   <div id="menu">
+	<div class="bound">
+		<li class="solutions"><a href="index.html" class=""></a></li>
+	</div>
+</div>
+<div id="menu-popup" style="top: -1000px; left: 182px; ">
+	<div class="popup solutions" style="display: none; ">
+		<div class="menu_content">
+		<div>
+           <ul>
+
+		   </ul>
+
+		</div>
+		</div>
+	</div>
+</div>
+   </div>
+   <!-- 顶部主导航 -->
+<div id="navigation">
+  <div id="smoothmenu1" class="ddsmoothmenu">
+     <ul>
+    <li><a href="#">基础信息管理</a>
+	      <ul>
+        #foreach($!menu in $rootMenu)
+
+			<li><a href="${ctx}/$!menu.URL" target="frame_content">$!menu.NAME
+<!--				#if ($!menu.isParent == "true")-->
+					<img class="rightarrowclass" src="${ctx}/styles/css/portal/win8/frame/images/nav_arrow.png" border="0"  />
+<!--				#end-->
+				</a>
+			<ul>
+				#foreach($!menu2 in $noRootMenu)
+					#if($menu2.parent_id==$menu.id)
+						<li><a href="$!menu2.URL" target="frame_content">$!menu2.NAME</a></li>
+					#end
+				#end
+			</ul>
+			</li>
+			#end
+      </ul>
+    </li>
+    <li><a target="_blank" href="#">系统设置</a>
+	 <ul>
+        <li><a href="main2.html" target="frame_content">修改密码</a></li>
+        <li><a href="${ctx}/restful/privilegeProxyService/control/SysSwitch" target="frame_content">设置皮肤</a></li>
+      </ul>
+	</li>
+  </ul>
+   <br style="clear: left" />
+  </div>
+</div>
+<!--nav结束-->
+
+ <script type="text/javascript" src="${ctx}/styles/css/portal/win8/frame/js/jquery.min2.js"></script>
+<script type="text/javascript" src="${ctx}/styles/css/portal/win8/frame/js/ddsmoothmenu.js"></script>
+<script type="text/javascript">
+ddsmoothmenu.init({
+mainmenuid: "smoothmenu1", //menu DIV id
+orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+classname: 'ddsmoothmenu', //class added to menu's outer DIV
+//customtheme: ["#1c5a80", "#18374a"],
+contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+			<div class="tab1">
+			  <div id="con_one_1">
+				 <ul>
+				   <li><a href="${ctx}/restful/privilegeProxyService/user/userListUI" target="frame_content" title="人员管理"><img src="${ctx}/styles/css/portal/win8/frame/images/n1.png" border="0"/>人员管理</a></li>
+				   <li><a href="${ctx}/restful/privilegeProxyService/department/departmentListUI" target="frame_content"  title="部门管理"><img src="${ctx}/styles/css/portal/win8/frame/images/n2.png" border="0"/><span>部门管理</span></a></li>
+				   <li><a href="${ctx}/restful/privilegeProxyService/menu/menuListUI" target="frame_content"  title="菜单管理"><img src="${ctx}/styles/css/portal/win8/frame/images/n3.png" border="0"/><span>菜单管理</span></a></li>
+				   <li><a href="${ctx}/restful/privilegeProxyService/role/roleListUI" target="frame_content" title="角色管理"><img src="${ctx}/styles/css/portal/win8/frame/images/n4.png" border="0"/><span>角色管理</span></a></li>
+				 </ul>
+			  </div>
+			</div>
+	<div class="home_btn"><a href="${ctx}/restful/portalProxyService/win8/index"></a></div>
+    <div class="pws_btn"><a href="#"></a></div>
+	<div class="quit_btn"><a href="#" onclick="logout();"></a></div>
+</div>
+<div id="main-content">
+<div class="iframe-div"><iframe width="100%" height="100%" src="${ctx}/restful/privilegeProxyService/control/welcome" frameborder="0"  scrolling="no"  id="frame_content" name="frame_content"></iframe></div>
+
+</div>
+<div id="footer">
+<span>版权所有：郑州新开普电子股份有限公司</span>
+
+</div>
+</body>
+</html>

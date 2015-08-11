@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="org.restlet.data.Protocol"/>
 <fullyQualifiedTypeName name="org.apache.velocity.context.Context"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.web.client.AsyncRestTemplate"/>
@@ -37,4 +36,17 @@
 <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="AAAA"/>
 <fullyQualifiedTypeName name="org.springframework.context.SmartLifecycle"/>
+<fullyQualifiedTypeName name="com.transilink.framework.core.biz.BaseService"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.support.OpenSessionInViewFilter"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.SpringSessionContext"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.LocalSessionFactoryBean"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="org.restlet.data.Method"/>
+<fullyQualifiedTypeName name="org.restlet.resource.Get"/>
 </qualifiedTypeNameHistroy>

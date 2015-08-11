@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title>新开普产品平台</title>
+<link href="${_project.envRoot}/styles/css/portal/tradition/frame/frame.css" type="text/css" rel="stylesheet"/>
+<link href="${_project.envRoot}/styles/css/portal/tradition/css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="${_project.envRoot}/scripts/lib/jquery/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	//幻灯片元素与类“menu-body”段与类“menu-head”时点击
+	$("#firstpane .menu-body:eq(0)").show();
+	$("#firstpane p.menu-head").click(function(){
+		$(this).addClass("current").next("div.menu-body").slideToggle(300).siblings("div.menu-body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+
+});
+
+function logout(){
+	if (!confirm('您确认要退出吗？')) {
+		return false;
+	}
+	window.parent.location="${_project.ctx}/restful/privilegeProxyService/user/logonOut"
+}
+
+function reinitIframe(){
+var iframe = document.getElementById("frame_content");
+try{
+var bHeight = iframe.contentWindow.document.body.scrollHeight;
+var dHeight = iframe.contentWindow.document.documentElement.scrollHeight-200;
+var height = Math.max(bHeight, dHeight);
+iframe.height = height;
+}catch (ex){}
+}
+window.setInterval("reinitIframe()", 200);
+</script>
+</head>
+<body>
+<div id="header">
+  <div class="logo"></div>
+  <div class="header-menu">
+     <ul>
+	  <li><a href="${_project.ctx}/restful/privilegeProxyService/control/welcome" target="frame_content"><img src="${_project.envRoot}/styles/css/portal/office/frame/images/home.png" border="0"/><span>返回首页</span></a></li>
+	  <li><a href="${_project.ctx}/restful/privilegeProxyService/control/commonFunction"  target="frame_content"><img src="${_project.envRoot}/styles/css/portal/office/frame/images/syzn_t.png" border="0"/><span>常用功能</span></a></li>
+	  <li><a href="${_project.ctx}/restful/privilegeProxyService/control/SysSwitch" target="frame_content"><img src="${_project.envRoot}/styles/css/portal/office/frame/images/ywjs_t.png" border="0"/><span>皮肤设置</span></a></li>
+	  <li><a href="#" onclick="logout();" ><img src="${_project.envRoot}/styles/css/portal/office/frame/images/aqtc_t.png" border="0"/><span>安全退出</span></a></li>
+	 </ul>
+  </div>
+</div>
+<div id="main-content">
+	<div id="left-side">
+     <div id="navbar">
+		<div id="firstpane" class="menu-list">
+			#foreach($!menu in $rootMenu)
+
+			<p class="menu-head"><a href="#"><img src="$!menu.icon" border="0" />$!menu.name</a></p>
+			<div class="menu-body">
+				#foreach($!menu2 in $noRootMenu)
+					#if($menu2.parentId==$menu.id)
+						<a href="${_project.ctx}$!menu2.url" target="frame_content" title="$!menu2.name">$!menu2.name</a>
+					#end
+				#end
+			</div>
+			#end
+		</div>
+	  </div>
+    </div>
+	<div id="main">
+	  <div class="iframe-div"><iframe width="100%" height="100%" frameborder="0" src="${_project.ctx}/restful/privilegeProxyService/control/welcome"  scrolling="no" id="frame_content" name="frame_content"></iframe></div>
+<!--	  <div class="iframe-div"><iframe width="100%" height="100%" frameborder="0" src="main1.html"  scrolling="no" id="frame_content" name="frame_content"></iframe></div>
+-->	</div>
+</div>
+<div id="footer">
+ <span>版权所有：郑州新开普电子股份有限公司</span>
+</div>
+</body>
+</html>

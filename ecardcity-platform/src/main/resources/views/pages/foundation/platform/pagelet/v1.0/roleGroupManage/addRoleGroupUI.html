@@ -1,0 +1,32 @@
+	<form id="adddataDatail"  >
+	
+	<div class="ld-aside" style="padding: 10px;">
+				 <div class="ld-aside btngroup">
+				<a href="javascript:addRoleGroup();"
+						class="ld-btn ld-lanse"><img
+						src="/controller/styles/css/foundation/legelPerson/v1.0/images/new.png" />保存设置</a>
+					&nbsp;&nbsp;
+					<a href="javascript:void(0);" onclick="javascript:art.dialog({id:'adduserid'}).close();"
+						class="ld-btn ld-lanse"><img
+						src="/controller/styles/css/foundation/legelPerson/v1.0/images/new.png" />取 消</a>
+				</div>
+				<div >
+				<ul>
+					<li class="ui-dialog-li01"><font color="red">*</font>角色组名称：
+					<input id="groupname" name="groupname"
+						type="text" />
+				    <input id="customerunitcode"name="customerunitcode" type="hidden" value="$!{customerunitcode}"/></li>
+					<li class="ui-dialog-li01 cl">启用状态：
+					<input id="groupstate" name="groupstate" type="checkbox" checked="checked"/><label>启用</label>
+							</li> 	
+					<li class="ui-dialog-li01 cl">关联角色： 
+				    #foreach($!item in $!page.items)
+					     <input id="$!item.ID" name="roles" type="checkbox" value="$!item.ID"/><label>$!item.ROLENAME</label>
+					#end 
+			       </li>				
+				</ul>
+			  </div>
+	</div>
+</form>
+	
+	

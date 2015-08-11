@@ -1,0 +1,171 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#666;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+
+}
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+h1,h2,h3{ font-size:14px; margin:0px; padding:0px;}
+.left{ float:left; }
+.right{ float:right;}
+
+/*登录页面*/
+.logo {
+	margin-top: 20px;
+	margin-left: auto;
+	width: 980px;
+	margin-right: auto;
+}
+.log {
+	background-image: url(../images/loginbodybg.jpg);
+	background-repeat: repeat-x;
+	height: 448px;
+	width: 100%;
+}
+
+.login {
+	background-image: url(../images/loginbg.jpg);
+	background-repeat: no-repeat;
+	height: 448px;
+	width: 100%;
+}
+
+.log_logo{
+	height:84px;
+	width:100%;
+	overflow: hidden;
+	background-image: url(../images/logtitbg.jpg);
+	background-repeat: repeat-x;
+	
+	}	
+.lot{
+	width: 357px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(../images/formbg.png);
+	background-repeat: no-repeat;
+	height: 395px;
+	right:250px;
+	top:134px;
+	position: absolute;
+}
+.lgnnipt {
+	width: 280px;
+	margin-top: 70px;
+	margin-left: 20px;
+}
+.gspan {
+	height: 34px;
+	width: 274px;
+	line-height: 34px;
+	margin-left: 20px;
+	border:1px solid #dddddd;
+	margin-top: 20px;
+}
+
+.gspangty {
+	font-size: 14px;
+	width: 60px;
+	float: left;
+	text-align: right;
+}
+.cdxzinp {
+	width: 198px;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	overflow:hidden;
+	line-height: 30px;
+	border:0;
+}
+.yzmtitfj{ width:178px;height: 34px; line-height: 34px;border:1px solid #dddddd;}
+.yzmtit{
+	height: 34px;
+	width: 274px;
+	line-height: 34px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.yzm {
+	width: 112px;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	overflow:hidden;
+	line-height: 30px;
+	border:0;
+}
+.loginan {
+	height: 32px;
+	width: 240px;
+	line-height: 32px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.gspan img {
+	float: left;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+.loinr {
+	line-height: 33px;
+	background-image: url(../images/butbg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 33px;
+	width: 96px;
+}
+.loginan a {
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 33px;
+	background-image: url(../images/butbg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 33px;
+	width: 96px;
+	
+}
+.loginan a:hover {
+		font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 33px;
+	background-image: url(../images/butbghover.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 33px;
+	width: 96px;
+	
+}
+.error {
+	width: 280px;
+	margin-top: 30px;
+	margin-left: auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+	margin-right: auto;
+	text-align: center;
+}
+.foot {
+	line-height: 56px;
+	text-align: center;
+	height: 56px;
+	margin-top: 20px;
+}

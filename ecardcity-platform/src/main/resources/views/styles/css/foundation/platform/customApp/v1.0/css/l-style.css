@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.sidebar {
+	width: 431px;
+	position: absolute;
+	left: 0px;
+	top:0;
+	/*border-right:1px solid #BFD6EC;*/
+	bottom: 0px;
+}
+.ld-container{
+	padding:10px;
+	left: 432px;
+	width: 300px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	overflow:auto;
+}
+.ld-container2{
+	padding:10px;
+	left: 752px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	overflow:auto;
+}

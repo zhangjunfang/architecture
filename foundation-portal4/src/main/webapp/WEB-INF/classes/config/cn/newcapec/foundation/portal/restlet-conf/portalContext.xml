@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="portalRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">
+			<map>
+				<!--office模式资源  -->
+				<entry key="/office/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="officeResource" />
+					</bean>
+				</entry>
+
+				<!--传统模式资源  -->
+				<entry key="/tradition/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="traditionResource" />
+					</bean>
+				</entry>
+
+				<!--window8资源  -->
+				<entry key="/win8/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="win8Resource" />
+					</bean>
+				</entry>
+				<entry key="/student/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="studentResource" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>  

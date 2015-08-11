@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分配角色</title>
+<link href="../../../styles/css/privilege/v1.0/css/userstyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="ui-dialogresources">
+	<input type="hidden" name="userid" id="userid" value="$!userid" />
+	<div class="cl"></div>
+	<div><input type="checkbox" onclick="selectAllRole(this);" />全选/取消</div>
+
+	<div class="ui-dialog-content">
+		<div class="allresources-div"">
+		#foreach($!role in $roles.items)<label class="resources_lable">
+		<input name="$!role.ID" type="checkbox"  
+								#foreach($!role2 in $hasRoles.items)
+								  	#if($role.ID == $role2.ROLE_ID)  checked #end
+								#end
+								 value="$!role.ID"  class="allresources left"/><span class="resources_span_sec">$!role.NAME</span></label>
+		
+		#end
+		</div>
+	</div>
+
+	<div class="ui-dialog-buttonpane">
+		<div class="sub-btn-frame">
+			<a class="sub-btn sub-btn-over" href="#">
+			<span onclick="submitCheckbox();">确 定</span>
+			</a>
+		</div>
+		<div class="sub-btn-frame">
+		<a class="sub-btn sub-btn-over" href="#">
+		<span onclick="art.dialog({id:'distributionRoleid'}).close();">取 消</span>
+		</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

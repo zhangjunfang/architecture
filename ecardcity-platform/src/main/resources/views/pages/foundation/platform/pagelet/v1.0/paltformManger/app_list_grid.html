@@ -1,0 +1,82 @@
+#* 快速查询通道  【返回list集合中存放mode对象】 *#
+#foreach($!businessAppredit in $!businessAppreditList)
+<tr>
+	<td>$!businessAppredit.appname</td>
+	<td>$!businessAppredit.appver</td>
+	<td>
+		#foreach($!module in $!moduleList)
+		  #if($!businessAppredit.appid ==$!module.moduleid)
+             $!module.modulename <br/>
+          #end
+		#end
+	</td>
+	<td>$!businessAppredit.appdescription</td>
+	<td>
+	   允许最大接入数： $!businessAppredit.applimitnum <br/>
+	 授权截止日期：$!businessAppredit.applimitdate
+	</td>
+	<td>$!businessAppredit.opdt</td>
+</tr>
+#end
+#*快速查询通道  【返回list集合中存放Record对象】 *#
+#*
+#foreach($!businessAppredit in $!businessAppreditList)
+<tr>
+	<td>$!businessAppredit.getString("appname")</td>
+	<td>$!businessAppredit.getString("appver")</td>
+	<td>$!businessAppredit.getString("appdescription")</td>
+	<td>$!businessAppredit.getString("appdescription")</td>
+	<td>$!businessAppredit.getString("accreditedcode")</td>
+	<td>$!businessAppredit.getString("opdt")</td>
+</tr>
+#end
+*#
+#* 快速查询通道  【返回list集合中存放Record对象】 *#
+#*
+#foreach($!businessAppredit3 in $!businessAppreditList3.items)
+<tr>
+	<td><input name="" type="checkbox" value="" />
+	</td>
+	<td>$!businessAppredit3.getString("appname")</td>
+	<td>$!businessAppredit3.getString("appver")</td>
+	<td>$!businessAppredit3.getString("appdescription")</td>
+	<td>$!businessAppredit3.getString("appdescription")</td>
+	<td>$!businessAppredit3.getString("accreditedcode")</td>
+	<td></td>
+	<td>$!businessAppredit3.getString("opdt")</td>
+</tr>
+#end
+*#
+#*
+#foreach($!businessAppredit3 in $!businessAppreditList3.items)
+<tr>
+	<td><input name="" type="checkbox" value="" /></td>
+	<td>$!businessAppredit3.getString("appname")</td>
+	<td>$!businessAppredit3.getString("appver")</td>
+	<td>$!businessAppredit3.getString("appdescription")</td>
+	<td>$!businessAppredit3.getString("appdescription")</td>
+	<td>$!businessAppredit3.getString("accreditedcode")</td>
+	<td></td>
+	<td>$!businessAppredit3.getString("opdt")</td>
+</tr>
+#end
+*#
+#*
+<div class="ld-aside">
+	<table class="page-list">
+		<tr>
+			<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0"
+					class="fenye_table">
+					<tr>
+						<td style="width: 10px;"></td>
+					</tr>
+					<tr>
+						<td style="width: 10px;"></td> #parse($paging) #paging($pageView)
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+*#

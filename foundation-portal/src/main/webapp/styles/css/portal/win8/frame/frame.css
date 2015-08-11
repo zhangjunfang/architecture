@@ -1,0 +1,427 @@
+@charset "utf-8";
+/*css_reset_start */
+*{
+margin:0;
+padding:0;
+}
+body, div,p, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea {
+margin:0;
+padding:0;
+font-style: normal;
+font:12px/22px Arial, Helvetica, sans-serif;
+}
+ol, ul ,li{list-style: none;}
+img {border: 0; vertical-align:baseline;}
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none; color:#666;}
+a:hover {color:#fe0000;}
+ul, ol {
+    list-style: none outside none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+select, input, button, button img, textarea, label, img {
+    margin: 0;
+    vertical-align: middle;
+}
+select{
+height:22px;
+color:#333;
+}
+/*css_reset_end */
+
+/*frame_start*/
+#header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:90px;
+	background:#1a283e url(images/topbodybg.jpg) repeat-x left 0;
+}
+#main-content{
+	position:absolute;
+	top:89px;
+	right:0;
+	bottom:23px;
+	left:0;
+	overflow:auto;
+	width:100%;
+	_height:100%;
+	background:#fff;
+
+}
+#footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100px;
+	color:#999;
+	height:23px;
+    background:url(images/footer_bg.png) repeat-x;
+	text-align:right;
+	line-height:23px;
+
+}
+#footer span{
+margin-right:5px;
+font-size:12px;
+}
+/*current_address_start*/
+.current-address{
+/*	background:url(../images/current_titlebg.jpg) repeat-x;
+*/
+background:#EEF7FF;
+height:28px;
+	border-bottom:1px solid #bfd6ec;
+	line-height: 28px;
+	text-indent:11px;
+	color:#666;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	min-width:900px;
+	width:100%;
+}
+.current-address a{
+color:#7e7e7e;
+text-decoration:none;
+}
+.current-address a:hover{
+color:#000;
+}
+.current-address span{
+display:inline-table;
+width:17px;
+height:28px;
+background:url(images/arrowbg.png) no-repeat center -1px;
+vertical-align:middle;
+margin:0 3px;
+}
+.current-address img{
+vertical-align:top;
+_vertical-align:middle;/*ie6*/
+*+vertical-align:middle;/*ie7*/
+margin:0 3px;
+}
+/*current_address_end*/
+/*frame_end*/
+
+/*header_start*/
+
+.logo{
+width:50px;
+height:30px;
+/*background:url(images/logo.png) no-repeat;
+*/
+position:relative;
+z-index:9999;
+}
+.logo a{
+display:block;
+width:194px;
+height:27px;
+cursor:pointer;
+}
+/*first_menu_start*/
+.bound{ width:50px;overflow:hidden;}
+a.expand { display:block; float:right; font-size:12px; height:18px; line-height:18px; vertical-align:middle; *width:90px; width:auto !important; }
+img.iconTick{ margin-left:5px; vertical-align: middle; }
+#menu{ height:30px;width:50px;}
+#menu li{ float:left;}
+#menu a{ width:50px;
+height:30px;
+margin-left:0px;
+background:url(images/logo_win8.jpg) no-repeat;
+}
+#menu li.solutions a{ width:50px; background-position:0px 0px; }
+#menu li.solutions a.hover{background:url(images/logo_over.png) no-repeat}
+#menu li.solutions a.active{background-position:0px 0px;}
+
+#menu-popup{ position:absolute; top:-1000px; }
+#menu-popup .popup { position:absolute; background-repeat:no-repeat; }
+#menu-popup div.title{ margin-bottom:8px;}
+#menu-popup div.title a { color:#B60005; font-size:14px; margin-bottom:5px; font-weight:bold;}
+#menu-popup .solutions {height:244px; background:url(images/first_menubg.png) no-repeat right -245px; padding-right:10px;left:-1px;top:0px;}
+#menu-popup .solutions .menu_content{height:239px; background:url(images/first_menubg.png) no-repeat left -1px; padding:20px 0px;}
+#menu-popup .solutions .menu_content div { padding:0 0px 0px 0px; width:250px;}
+#menu-popup .solutions .menu_content div ul li{
+float:left;
+width:101px;
+height:32px;
+margin-left:17px;
+margin-bottom:10px;
+}
+#menu-popup .solutions .menu_content div ul li a{
+width:101px;
+height:32px;
+background:url(images/first_menu_bg.png) no-repeat;
+}
+#menu-popup .solutions .menu_content div ul li a:hover{
+background:url(images/first_menu_overbg.png) no-repeat;
+}
+#menu-popup .solutions .menu_content div ul li a:{
+width:101px;
+height:32px;
+background:url(images/first_menu_bg.png) no-repeat;
+}
+*html #menu-popup .solutions .menu_content{background:url(images/ie6_first_menubg.png) no-repeat left 0;}
+*html #menu-popup .solutions { background:url(images/ie6_first_menubg.png) no-repeat right 0px;}
+*html #menu-popup .solutions { left:2px;}
+/*first_menu_end*/
+/*tab*/
+.header-menu{
+	overflow:hidden;
+	height:95px;
+	position:absolute;
+	top:0px;
+}
+.one-menu{
+	height:30px;
+	overflow:hidden;
+	font-size:12px;
+	margin-left:220px;
+
+}
+.one-menu ul{ height:30px;}
+.one-menu ul li a{color:#05406F;}
+.one-menu ul li a:hover{color:#0D67B2;}
+.one-menu ul li{
+	display:inline;
+	cursor:pointer;
+	width:102px;
+	text-align:center;
+	overflow:hidden;
+	float:left;
+	line-height:30px;
+	color:#05406F;
+}
+.one-menu ul li.hover {
+	cursor:pointer;
+	width:102px;
+	color:#025DA5;
+	text-align:center;
+	height:30px;
+	overflow:hidden;
+	float:left;
+	background-image: url(images/often_down.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.tab1{ overflow:hidden; width:100%;border-bottom:1px solid #bfd6ec;}
+.tab1 ul{
+margin:1px 0 0 5px;
+height:50px;
+}
+.tab1 ul li{
+float:left;
+margin:0 10px;
+text-align:center;
+padding-right:15px;
+background:url(images/menu_vline.png) no-repeat right center;
+}
+.tab1 ul li img{
+display:block;
+margin:0 auto;
+width:40px;
+height:35px;
+}
+.tab1 ul li a{
+display:block;
+padding:0 5px;
+
+}
+.tab1 ul li a:hover{
+color:#19283D;
+background:#fff1ba;
+}
+/*tab结束*/
+.quit_btn a{
+position:absolute;
+display:block;
+right:0px;
+top:0px;
+width:40px;
+height:30px;
+background:url(images/security_btn.png) no-repeat center;
+border-left:1px dotted #314867;
+}
+.quit_btn a:hover{
+background:#ff0000 url(images/security_btn_over.png) no-repeat center;
+}
+.pws_btn a{
+position:absolute;
+display:block;
+right:40px;
+top:0px;
+width:40px;
+height:30px;
+background:url(images/pws_btn.png) no-repeat center;
+border-left:1px dotted #314867;
+}
+.pws_btn a:hover{
+background:#388ce8 url(images/pws_btn_over.png) no-repeat center;
+}
+.home_btn a{
+position:absolute;
+display:block;
+right:80px;
+top:0px;
+width:40px;
+height:30px;
+background:url(images/home_btn.png) no-repeat center;
+border-left:1px dotted #314867;
+}
+.home_btn a:hover{
+background:#388ce8 url(images/home_btn_over.png) no-repeat center;
+}
+/*first_menu_start*/
+/* ----header---- */
+#navigation{ height:29px; width:950px; position:absolute; left:51px; top:0px; z-index:9996;}
+
+.ddsmoothmenu{ float:left; font-size:14px; color:#dbdbdb; width:800px; height:29px; line-height:15px;}
+
+.ddsmoothmenu ul{margin: 0;padding: 0;list-style-type: none;}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{position: relative;display: inline;float: left;}
+.ddsmoothmenu ul li.sel{background:url(images/navigation.jpg) no-repeat 50% 100%;}
+.ddsmoothmenu ul li.sel>a{ color:#ff6600;}
+
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{
+display: block;
+color: #AFC7EE;
+padding:0px 20px;
+text-decoration: none;
+line-height:29px;
+line-height:30px\9;                                                /* For IE8 */
+*line-height:30px;                                                 /* For IE7 */
+_line-height:30px;                                                 /* For IE6 */
+height:30px;
+}
+
+* html .ddsmoothmenu ul li a{ display: inline-block;}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{}
+
+.ddsmoothmenu ul li a.selected,.ddsmoothmenu ul li a:hover{ background:#388CE8 url(images/nav_a_hover.jpg) repeat-x 0 0;color: white;}
+
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{position: absolute;left: 0;display: none;visibility: hidden;}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{display: list-item;float: none;}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{top: 0;}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{background:url(images/navigationbg.png) repeat 0 0;border-top-width: 0;color: #fff;font-size: 12px;font-weight: normal;margin: 0;padding:0px 14px;width: 104px;}
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a.selected{
+background:url(images/navigationbg_sel.png) repeat 0 0;
+}
+.ddsmoothmenu ul li ul li a:hover{
+background:url(images/navigationbg_sel.png) repeat 0 0;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+
+/* -- 橙条 -- */
+#hr{ height:2px; background:#f60; clear:both; font-size:0;}
+
+/*--子导航--*/
+.subnav {padding: 14px 0; height: 23px;overflow: hidden;}
+.subnav ul {float: right;margin-top: 5px; display:none; line-height:15px;}
+.subnav li {display: inline;padding-left: 15px;}
+.subnav li.lj { width:5px; padding-left:15px; border-right:1px solid #dbdbdb; margin-right:-2px;}
+.subnav .selected a {color: #f60;}
+
+
+/*first_menu_end*/
+/*header_end*/
+
+/*navbar_start*/
+
+#navbar-body{
+background:#E4EFF9;
+margin:0;
+padding:0;
+  }
+#navbar{width:216px;}
+#navbar .menu-head{
+height:35px;
+line-height:35px;
+cursor:pointer;
+position:relative;
+border-bottom:1px solid #84A7C3;
+background:#c8e4fc url(images/navbar_title_bg.jpg) center left no-repeat;
+}
+#navbar .menu-head a{
+width:216px;
+height:35px;
+display:block;
+color:#333;
+text-decoration:none;
+font-size:14px;
+text-indent:11px;
+}
+#navbar .menu-head a:hover{
+font-weight:bold;
+background:#c8e4fc url(images/navbar_title_bgover.jpg) center left no-repeat;
+}
+#navbar .menu-head a img{
+vertical-align:text-bottom;
+margin-right:5px;
+margin-top:5px;
+}
+#navbar .menu-list .current{
+background:url(images/navbar_title_bgover.jpg) center left no-repeat;
+font-weight:bold;
+}
+#navbar .menu-body{display:none;}
+#navbar .menu-body a{
+display:block;color:#333;
+text-indent:31px;font-size:12px;
+text-decoration:none;
+height:30px;line-height:30px;
+border-bottom:1px solid #CBD8E3;
+text-decoration:none;
+}
+#navbar .menu-body a:hover{
+color:#000;
+font-weight:bold;
+text-decoration:none;
+background:#FFFCC5;
+}
+/*navbar_end*/
+/*main_content_start*/
+
+.iframe-div{
+width:100%;
+height:100%;
+}
+
+/*main_content_end*/
+

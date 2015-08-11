@@ -1,0 +1,39 @@
+<table border="0" cellpadding="0" cellspacing="0" id='table1'
+	class="ld-table ld-tableie">
+	<thead>
+		<tr>
+			<th><input type="checkbox" title="全选/取消" /></th>
+			<th>客户代码</th>
+			<th>客户名称</th>
+			<th>联络信息</th>
+			<th>银行注册信息</th>
+			<th>状态</th>
+		</tr>
+	</thead>
+	<tbody>
+		#foreach($!record in $!pageView.records)
+		<tr>
+			<td><input type="checkbox" value="$!record.ID"
+				data-object='{"CustomerUnitCode":"$!record.CUSTOMERUNITCODE",
+				"CustomerName":"$!record.CUSTOMERNAME",
+				"LinkMan":"$!record.LINKMAN",
+				"Telephone":"$!record.TELEPHONE",
+				"Email":"$!record.EMAIL",
+				"Address":"$!record.ADDRESS",
+				"BankCode":"$!record.BANKCODE",
+				"BankCardNo":"$!record.BANKCARDNO",
+				"Status":"$!record.STATUS",
+				"Remark":"$!record.REMARK"
+				}' />
+			</td>
+			<td>$!record.CUSTOMERUNITCODE</td>
+			<td>$!record.CUSTOMERNAME</td>
+			<td>联系人：$!record.LINKMAN<br /> 联系电话：$!record.TELEPHONE<br />
+				邮箱：$!record.EMAIL<br /> 客户地址：$!record.ADDRESS</td>
+			<td>开户银行：$!record.BANKNAME<br /> 银行帐号：$!record.BANKCARDNO</td>
+			<td>#if($!record.STATUS == 0)禁用 #elseif($!record.STATUS ==
+				1)未授权#elseif($!record.STATUS == 2)已授权#end</td>
+		</tr>
+		#end
+	</tbody>
+</table>

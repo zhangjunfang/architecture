@@ -1,6 +1,7 @@
 package com.transilink.framework.core.rest;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -14,6 +15,7 @@ import org.apache.velocity.tools.generic.DateTool;
 import org.restlet.Context;
 import org.restlet.data.Dimension;
 import org.restlet.data.MediaType;
+import org.restlet.data.Method;
 import org.restlet.data.ReferenceList;
 import org.restlet.data.Request;
 import org.restlet.data.Response;
@@ -43,7 +45,7 @@ import com.transilink.framework.core.utils.stringUtils.StringUtil;
  */
 public class BaseResource extends Resource implements InitializingBean,
 		BaseResourceHandler, LogEnabled {
-
+	
 	// JSON参数实体
 	private net.sf.json.JSONObject jsonObject = new net.sf.json.JSONObject();
 	// 接受参数实体
@@ -125,9 +127,8 @@ public class BaseResource extends Resource implements InitializingBean,
 		super.init(context, request, response);
 		this.getVariants().add(new Variant(MediaType.ALL));
 		String callMethod = request.getMethod().getName();
-
 		log.info("method[" + callMethod + "] call!");
-
+		
 		afterHandle(context, request, response);
 	}
 
@@ -140,9 +141,13 @@ public class BaseResource extends Resource implements InitializingBean,
 	 * </p>
 	 */
 	public void afterPropertiesSet() throws Exception {
+		Response  response=getResponse();
+		
+		Set<Method> set=new HashSet<Method>();
 		for (String method : ALLOWED_METHODS) {
 			if ("get".equals(method.toLowerCase())) {
 				this.canGet = true;
+				set.add(Method.GET);
 				continue;
 			}
 			if ("put".equals(method.toLowerCase())) {
@@ -151,12 +156,14 @@ public class BaseResource extends Resource implements InitializingBean,
 			}
 			if ("post".equals(method.toLowerCase())) {
 				this.canPost = true;
+				set.add(Method.POST);
 				continue;
 			}
 			if ("delete".equals(method.toLowerCase())) {
 				this.canDelete = false;
 			}
 		}
+		response.setAllowedMethods(set);
 		log.debug("support methods:get=" + this.canGet + ";put=" + this.canPut
 				+ ";post=" + this.canPost + ";delete=" + this.canDelete);
 	}
