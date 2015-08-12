@@ -25,6 +25,7 @@
   	<module>base-encryptiondecryption</module>
     <module>base-web</module>
     <module>framework-core-context</module>
+    <module>framework-core-single-table-orm</module>
   </modules>
   <artifactId>framework-base-config</artifactId>
 </project>
