@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439276509260_1" label="framework-base-config" name="framework-base-config">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/base-encryptiondecryption" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/base-web" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1428994220015_0" label="Window Working Set" name="Aggregate for window 1428994220015"/>
 </workingSetManager>

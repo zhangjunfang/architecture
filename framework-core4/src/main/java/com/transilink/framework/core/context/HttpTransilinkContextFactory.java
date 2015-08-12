@@ -22,7 +22,7 @@ public final class HttpTransilinkContextFactory {
 	 * @param servletrequest
 	 * @return
 	 */
-	public static final TransilinkContext getContext(
+	public static final Context getContext(
 			ServletRequest servletrequest) {
 		return getContext(servletrequest, true);
 	}
@@ -36,7 +36,7 @@ public final class HttpTransilinkContextFactory {
 	 * @return
 	 */
 
-	public static final TransilinkContext getContext(
+	public static final Context getContext(
 			ServletRequest servletrequest, boolean flag) {
 		HttpTransilinkContext httpTransilinkContext;
 		if (servletrequest != null) {

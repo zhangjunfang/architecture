@@ -5,7 +5,7 @@ package com.transilink.framework.core.context;
  * @author ocean(zhangjufang0505@163.com)
  *
  */
-public abstract class AbstractTransilinkContext extends TransilinkContext {
+public abstract class AbstractTransilinkContext extends Context {
 	public Object getAttribute(String s) {
 		Object obj;
 		if (((obj = getAttribute(1, s)) == null)

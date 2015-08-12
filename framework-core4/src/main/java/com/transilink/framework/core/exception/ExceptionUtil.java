@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 import org.apache.commons.lang.exception.ExceptionUtils;
 
-import com.transilink.framework.core.context.TransilinkContext;
+import com.transilink.framework.core.context.Context;
 import com.transilink.framework.core.i18n.LangUtil;
 import com.transilink.framework.core.logs.LogEnabled;
 import com.transilink.framework.core.utils.stringUtils.StringUtil;
@@ -86,19 +86,19 @@ public class ExceptionUtil implements LogEnabled {
 	}
 
 	public static void extractException(Throwable t) throws RuntimeException {
-		String lang = LangUtil.getLang(TransilinkContext.getContext());
+		String lang = LangUtil.getLang(Context.getContext());
 		extractException(t, lang);
 	}
 
 	public static void extractException(Throwable t, Object[] messageArgs)
 			throws RuntimeException {
-		String lang = LangUtil.getLang(TransilinkContext.getContext());
+		String lang = LangUtil.getLang(Context.getContext());
 		extractException(t, lang, messageArgs, null);
 	}
 
 	public static void extractException(Throwable t, Object[] args,
 			Object entityObject) {
-		String lang = LangUtil.getLang(TransilinkContext.getContext());
+		String lang = LangUtil.getLang(Context.getContext());
 		extractException(t, lang, args, entityObject);
 	}
 }
