@@ -24,7 +24,7 @@
   <modules>
   	<module>base-encryptiondecryption</module>
     <module>base-web</module>
-    <module>framework-core</module>
+    <module>framework-core-context</module>
   </modules>
   <artifactId>framework-base-config</artifactId>
 </project>
