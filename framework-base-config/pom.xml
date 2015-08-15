@@ -26,6 +26,9 @@
     <module>base-web</module>
     <module>framework-core-context</module>
     <module>framework-core-single-table-orm</module>
+    <module>framework-core-i18n</module>
+    <module>framework-core-spi</module>
+    <module>framework-core-simple-rpc</module>
   </modules>
   <artifactId>framework-base-config</artifactId>
 </project>
