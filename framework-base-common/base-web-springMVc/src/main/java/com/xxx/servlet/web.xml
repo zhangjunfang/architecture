@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<servlet>
+		<servlet-name>download</servlet-name>
+		<servlet-class>com.xxx.servlet.DownloadServlet</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>GBK</param-value>
+		</init-param>
+		<init-param>
+			<param-name>bufferSize</param-name>
+			<param-value>8192</param-value>
+		</init-param>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>*.csv</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>*.txt</url-pattern>
+	</servlet-mapping>
+</web-app>
