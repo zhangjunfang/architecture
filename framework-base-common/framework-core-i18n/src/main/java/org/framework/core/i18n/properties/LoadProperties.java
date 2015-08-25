@@ -39,7 +39,6 @@ public class LoadProperties implements Serializable {
 		try {
 			URI uri = Thread.currentThread().getContextClassLoader()
 					.getResource("").toURI();
-			System.err.println(uri);
 			Files.walkFileTree(Paths.get(uri), new SimpleFileVisitor<Path>() {
 				@Override
 				public FileVisitResult visitFile(Path file,

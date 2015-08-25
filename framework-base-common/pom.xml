@@ -24,11 +24,13 @@
   <modules>
   	<module>base-encryptiondecryption</module>
     <module>base-web</module>
-    <module>framework-core-context</module>
+    
     <module>framework-core-single-table-orm</module>
     <module>framework-core-i18n</module>
     <module>framework-core-spi</module>
     <module>framework-core-simple-rpc</module>
+    <module>framework-core-context</module>
+    <module>framewoke-core-compiler</module>
   </modules>
   <artifactId>framework-base-common</artifactId>
 </project>
