@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439276509260_1" label="framework-base-config" name="framework-base-config">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/base-encryptiondecryption" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/base-web" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439276509260_1" label="framework-base-config" name="framework-base-config"/>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439432890143_2" label="lts-parent" name="lts-parent">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-core" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-jobtracker" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-tasktracker" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-jobclient" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-mongo" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-mysql" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-api" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger-console" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger-mongo" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger-api" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger-mysql" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-example" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-mongo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-tasktracker" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-core" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-admin" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-mysql" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-spring" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-example" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-jobtracker" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-jobclient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-queue-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-logger-mysql" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439779041770_3" label="framework-base-common" name="framework-base-common">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework-core-single-table-orm" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework-core-spi" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework-core-i18n" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework-core-simple-rpc" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1440471624121_4" label="eyer" name="eyer">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-nio" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-rpc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-registry" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1428994220015_0" label="Window Working Set" name="Aggregate for window 1428994220015"/>
 </workingSetManager>
