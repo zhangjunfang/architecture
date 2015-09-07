@@ -26,9 +26,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework-core-simple-rpc" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1440471624121_4" label="eyer" name="eyer">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-nio" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-rpc" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-registry" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-nio" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1428994220015_0" label="Window Working Set" name="Aggregate for window 1428994220015"/>
 </workingSetManager>
