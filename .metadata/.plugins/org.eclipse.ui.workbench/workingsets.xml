@@ -30,5 +30,10 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-registry" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eyer-nio" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1441620026335_5" label="lts-startup" name="lts-startup">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-startup" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-startup-jobtracker" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lts-startup-admin" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1428994220015_0" label="Window Working Set" name="Aggregate for window 1428994220015"/>
 </workingSetManager>
