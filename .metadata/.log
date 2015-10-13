@@ -1144,3 +1144,6 @@ Caused by: java.io.InterruptedIOException: Read timed out after 30,000 ms
 
 !ENTRY org.eclipse.ui 4 4 2015-10-13 11:39:19.256
 !MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@192c9ae0)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@5620ce62)}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-10-13 12:59:57.732
+!MESSAGE The POM for com.whereta:javautils:jar:1.0.1 is missing, no dependency information available
