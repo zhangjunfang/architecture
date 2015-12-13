@@ -7,9 +7,7 @@
     <artifactId>framework-base-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.ocean.base</groupId>
   <artifactId>framewoke-core-compiler</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>framewoke-core-compiler</name>
   <url>http://maven.apache.org</url>
   <properties>

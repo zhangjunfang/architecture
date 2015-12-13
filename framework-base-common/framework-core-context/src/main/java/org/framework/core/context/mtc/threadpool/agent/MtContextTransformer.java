@@ -64,7 +64,6 @@ public class MtContextTransformer implements ClassFileTransformer {
                     }
                     if (TIMER_TASK_CLASS_FILE.equals(name)) {
                         logger.info("Transforming class " + className);
-                        // FIXME add code here
                         return null;
                     }
                 }
