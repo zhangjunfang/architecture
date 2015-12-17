@@ -78,4 +78,14 @@
 	<welcome-file-list>
 		<welcome-file>/index.html</welcome-file>
 	</welcome-file-list>
+	<!-- 因为这两个异常处理的维度是不一样的，简单说，spring的resolver是spring内部使用的，而web.xml里的是整个webapp共同使用的 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/pages/404.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/WEB-INF/view/exception.jsp</location>
+	</error-page>
 </web-app>

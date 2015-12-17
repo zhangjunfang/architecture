@@ -45,7 +45,17 @@
 		<property name="suffix" value=".jsp" />
 		<property name="order" value="2" />
 	</bean>
-
+	<!--定义异常处理页面 -->
+	<!-- 　上面的定义异常处理部分的解释为：只要发生了SQLException或者IOException异常，就会自动跳转到WEB-INF/view/outException.jsp页面。 -->
+	<bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.sql.SQLException">outException</prop>
+				<prop key="java.io.IOException">outException</prop>
+			</props>
+		</property>
+	</bean>
 	<!-- 上传文件拦截，设置最大上传文件大小 10M=10*1024*1024(B)=10485760 bytes -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
