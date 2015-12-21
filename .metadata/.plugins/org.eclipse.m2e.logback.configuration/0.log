@@ -21566,3 +21566,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact javax.servlet
 2015-12-21 23:24:57,434 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\hession-netty-tcp\src\main\resources
 2015-12-21 23:24:57,437 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
 2015-12-21 23:24:57,440 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\architecture\hession-netty-tcp\src\test\resources
+2015-12-21 23:28:21,673 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/help,null}

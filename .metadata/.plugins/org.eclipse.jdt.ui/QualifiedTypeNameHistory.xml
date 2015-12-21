@@ -12,4 +12,5 @@
 <fullyQualifiedTypeName name="org.springframework.ocean.remoting.hessian.Isay"/>
 <fullyQualifiedTypeName name="org.springframework.aop.framework.adapter.ThrowsAdviceInterceptor"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
 </qualifiedTypeNameHistroy>

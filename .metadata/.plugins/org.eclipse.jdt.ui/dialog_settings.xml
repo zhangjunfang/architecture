@@ -44,6 +44,8 @@
 	<section name="OverrideMethodDialog">
 		<item value="true" key="showtypes"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="JavaElementSearchActions">
