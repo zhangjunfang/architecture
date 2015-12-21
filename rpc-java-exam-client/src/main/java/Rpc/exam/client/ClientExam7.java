@@ -9,7 +9,7 @@ import com.ocean.rpc.client.RpcHttpClient;
 public class ClientExam7 {
 	public static void main(String[] args) throws IOException {
 		RpcHttpClient client = new RpcHttpClient();
-		client.useService("http://localhost:8084/examserver/Methods");
+		client.useService("http://localhost:8080/Methods");
 		IExam1 exam = client.useService(IExam1.class, "ex1");
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("January", "Jan");

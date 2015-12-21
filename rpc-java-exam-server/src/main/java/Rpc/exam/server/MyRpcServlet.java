@@ -2,7 +2,13 @@ package Rpc.exam.server;
 
 import com.ocean.rpc.common.RpcMethods;
 import com.ocean.rpc.server.RpcServlet;
-
+/**
+ * 
+ * @author： ocean
+ * 创建时间：2015年12月18日
+ * mail：zhangjunfang0505@163.com
+ * 描述：
+ */
 public class MyRpcServlet extends RpcServlet {
     /**
 	 * 

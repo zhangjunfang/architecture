@@ -9,7 +9,7 @@ public class ClientExam3 {
     @SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException {
         RpcHttpClient client = new RpcHttpClient();
-        client.useService("http://localhost:8084/examserver/Methods");
+        client.useService("http://localhost:8080/Methods");
         HashMap<String,String> map = new HashMap<>();
         map.put("January", "Jan");
         map.put("February", "Feb");

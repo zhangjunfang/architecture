@@ -8,7 +8,7 @@ import com.ocean.rpc.client.RpcHttpClient;
 public class ClientExam6 {
     public static void main(String[] args) throws IOException {
         RpcHttpClient client = new RpcHttpClient();
-        client.useService("http://localhost:8084/examserver/Methods");
+        client.useService("http://localhost:8080/Methods");
         IExam1 exam = client.useService(IExam1.class, "ex1");
         System.out.println(exam.sum(new int[] {1,2,3,4,5}));
         System.out.println(exam.sum(new short[] {6,7,8,9,10}));

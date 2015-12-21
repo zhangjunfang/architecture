@@ -11,7 +11,7 @@ public class ClientExam4 {
 	public static void main(String[] args) throws IOException {
         RpcClassManager.register(User.class, "User");
         RpcHttpClient client = new RpcHttpClient();
-        client.useService("http://localhost:8084/examserver/Methods");
+        client.useService("http://localhost:8080/Methods");
         List<User> userList = client.invoke("ex2_getUserList", List.class);
         for (User user : userList) {
             System.out.printf("name: %s, ", user.getName());

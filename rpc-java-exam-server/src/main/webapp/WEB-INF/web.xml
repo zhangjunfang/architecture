@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <servlet>
-        <servlet-name>HproseExamServlet</servlet-name>
-        <servlet-class>hprose.server.HproseServlet</servlet-class>
+        <servlet-name>RpcExamServlet</servlet-name>
+        <servlet-class>com.ocean.rpc.server.RpcServlet</servlet-class>
         <init-param>
             <param-name>class</param-name>
-            <param-value>hprose.exam.server.Exam2|hprose.exam.server.Exam1|ex2,hprose.exam.server.Exam1||ex1</param-value>
+            <param-value>Rpc.exam.server.Exam2|Rpc.exam.server.Exam1|ex2,Rpc.exam.server.Exam1||ex1</param-value>
         </init-param>
         <init-param>
             <param-name>mode</param-name>
@@ -17,28 +17,28 @@
         </init-param>
         <init-param>
             <param-name>type</param-name>
-            <param-value>hprose.exam.server.User|User</param-value>
+            <param-value>Rpc.exam.server.User|User</param-value>
         </init-param>
         </servlet>
     <servlet>
-        <servlet-name>MyHproseServlet2</servlet-name>
-        <servlet-class>hprose.exam.server.MyHproseServlet2</servlet-class>
+        <servlet-name>MyRpcServlet2</servlet-name>
+        <servlet-class>Rpc.exam.server.MyRpcServlet2</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>MyHproseServlet</servlet-name>
-        <servlet-class>hprose.exam.server.MyHproseServlet</servlet-class>
+        <servlet-name>MyRpcServlet</servlet-name>
+        <servlet-class>Rpc.exam.server.MyRpcServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HproseExamServlet</servlet-name>
+        <servlet-name>RpcExamServlet</servlet-name>
         <url-pattern>/Methods</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MyHproseServlet</servlet-name>
-        <url-pattern>/MyHproseServlet</url-pattern>
+        <servlet-name>MyRpcServlet</servlet-name>
+        <url-pattern>/MyRpcServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MyHproseServlet2</servlet-name>
-        <url-pattern>/MyHproseServlet2</url-pattern>
+        <servlet-name>MyRpcServlet2</servlet-name>
+        <url-pattern>/MyRpcServlet2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

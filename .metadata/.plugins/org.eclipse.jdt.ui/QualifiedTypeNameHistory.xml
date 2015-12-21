@@ -8,4 +8,8 @@
 <fullyQualifiedTypeName name="com.ocean.rpc.server.HttpContext"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.ocean.rpc.client.ClientContext"/>
+<fullyQualifiedTypeName name="org.springframework.ocean.remoting.hessian.Isay"/>
+<fullyQualifiedTypeName name="org.springframework.aop.framework.adapter.ThrowsAdviceInterceptor"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>
