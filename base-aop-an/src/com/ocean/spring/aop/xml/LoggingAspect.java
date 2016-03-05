@@ -11,7 +11,7 @@ public class LoggingAspect {
 	public void beforeMethod(JoinPoint joinPoint){
 		String methodName = joinPoint.getSignature().getName();
 		Object [] args = joinPoint.getArgs();
-		
+		System.err.println(joinPoint.getSignature().toString());
 		System.out.println("The method " + methodName + " begins with " + Arrays.asList(args));
 	}
 	
@@ -37,18 +37,18 @@ public class LoggingAspect {
 		String methodName = pjd.getSignature().getName();
 		
 		try {
-			//前置通知
+			//前锟斤拷通知
 			System.out.println("The method " + methodName + " begins with " + Arrays.asList(pjd.getArgs()));
-			//执行目标方法
+			//执锟斤拷目锟疥方锟斤拷
 			result = pjd.proceed();
-			//返回通知
+			//锟斤拷锟斤拷通知
 			System.out.println("The method " + methodName + " ends with " + result);
 		} catch (Throwable e) {
-			//异常通知
+			//锟届常通知
 			System.out.println("The method " + methodName + " occurs exception:" + e);
 			throw new RuntimeException(e);
 		}
-		//后置通知
+		//锟斤拷锟斤拷通知
 		System.out.println("The method " + methodName + " ends");
 		
 		return result;

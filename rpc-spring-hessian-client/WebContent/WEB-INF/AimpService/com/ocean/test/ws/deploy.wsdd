@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from AimpService WSDL service -->
+
+  <service name="Aimp" provider="java:RPC" style="rpc" use="encoded">
+      <parameter name="wsdlTargetNamespace" value="http://ws.test.ocean.com"/>
+      <parameter name="wsdlServiceElement" value="AimpService"/>
+      <parameter name="wsdlServicePort" value="Aimp"/>
+      <parameter name="className" value="com.ocean.test.ws.Aimp"/>
+      <parameter name="wsdlPortType" value="Aimp"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://ws.test.ocean.com" name="test" qname="operNS:test" soapAction="">
+      </operation>
+      <parameter name="allowedMethods" value="test"/>
+
+  </service>
+</deployment>
